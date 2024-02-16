@@ -1,0 +1,6641 @@
+Microsoft Windows [Version 10.0.22631.3085]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\drine>d:
+
+D:\>cd Study
+
+D:\Study>cd "4 semestr"
+
+D:\Study\4 semestr>cd IGI
+
+D:\Study\4 semestr\IGI>dir
+ Volume in drive D is Data
+ Volume Serial Number is 0C12-8B49
+
+ Directory of D:\Study\4 semestr\IGI
+
+12.02.2024  15:05    <DIR>          .
+12.02.2024  19:18    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  212 862 664 704 bytes free
+
+D:\Study\4 semestr\IGI>tree
+Folder PATH listing for volume Data
+Volume serial number is 0C12-8B49
+D:.
+No subfolders exist
+
+
+D:\Study\4 semestr\IGI>mkdir 253502_Drinevskiy_8
+
+D:\Study\4 semestr\IGI>cd 253502_Drinevskiy_8
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>mkdir IGI
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>mkdir STRWEB
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>cd IGI
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>mkdir LR1
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>mkdir LR2
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>mkdir LR3
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>mkdir LR4
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>mkdir LR5
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>cd STRWEB
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>mkdir LR1
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>mkdir LR2
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>mkdir LR3
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>mkdir LR4
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>tree
+Folder PATH listing for volume Data
+Volume serial number is 0C12-8B49
+D:.
+├───IGI
+│   ├───LR1
+│   ├───LR2
+│   ├───LR3
+│   ├───LR4
+│   └───LR5
+└───STRWEB
+    ├───LR1
+    ├───LR2
+    ├───LR3
+    └───LR4
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>cd ..
+
+D:\Study\4 semestr\IGI>tree
+Folder PATH listing for volume Data
+Volume serial number is 0C12-8B49
+D:.
+└───253502_Drinevskiy_8
+    ├───IGI
+    │   ├───LR1
+    │   ├───LR2
+    │   ├───LR3
+    │   ├───LR4
+    │   └───LR5
+    └───STRWEB
+        ├───LR1
+        ├───LR2
+        ├───LR3
+        └───LR4
+
+D:\Study\4 semestr\IGI>tree
+Folder PATH listing for volume Data
+Volume serial number is 0C12-8B49
+D:.
+└───253502_Drinevskiy_8
+    ├───IGI
+    │   ├───LR1
+    │   ├───LR2
+    │   ├───LR3
+    │   ├───LR4
+    │   └───LR5
+    └───STRWEB
+        ├───LR1
+        ├───LR2
+        ├───LR3
+        └───LR4
+
+D:\Study\4 semestr\IGI>cd 253502_Drinevskiy_8
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>cd IGI
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>cd LR1
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1>git clone https://github.com/smartiqaorg/geometric_lib
+Cloning into 'geometric_lib'...
+remote: Enumerating objects: 35, done.
+remote: Total 35 (delta 0), reused 0 (delta 0), pack-reused 35
+Receiving objects: 100% (35/35), 4.60 KiB | 2.30 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1>tree
+Folder PATH listing for volume Data
+Volume serial number is 0C12-8B49
+D:.
+└───geometric_lib
+    └───docs
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1>cd geometric_lib
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git add -A
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   circle.py
+        modified:   square.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git commit -a -m "Edit circle.py, square.py"
+[main 39e985e] Edit circle.py, square.py
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git rm *.py
+rm 'circle.py'
+rm 'square.py'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    circle.py
+        deleted:    square.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    circle.py
+        deleted:    square.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TEST.txt
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git commit -a -m "Delete circle.py, square.py, add TEST.txt"
+[main dd3f3d6] Delete circle.py, square.py, add TEST.txt
+ 2 files changed, 17 deletions(-)
+ delete mode 100644 circle.py
+ delete mode 100644 square.py
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git lg
+* dd3f3d6d8e80f0b5647020597c3269893233f0fd (HEAD -> main) Delete circle.py, square.py, add TEST.txt
+* 39e985e156908789758c1227a7dc3bcf63bd119f Edit circle.py, square.py
+| * 86edb1c3dd57fa9abc7ba2ec7052507938084727 (origin/release) L-05: Update Docs. Add user agreement info
+| * 438b89a1dfc58d90e9036fe431771427965cd1ff L-05: Add user agreement
+| * 6adb96248a4d00d3bea13bd95d78ef52352cd1b4 L-03: Docs added
+| | * 30494317cde4419be779c14306561e0eaa78b88b (origin/feature) L-04: Add rectangle.py
+| |/
+|/|
+| | * b5b0fae727ca72c317c383b39c0af73d6adcd81c (origin/develop) L-04: Update docs for calculate.py
+| | * d76db2ac7f69cc920ae2e6f669fb0671a7fa7d71 L-04: Add calculate.py
+| | * 51c40ebfd0e0b65f52fe5e54740cbb038e492db3 L-04: Doc updated for triangle
+| | * d080c7888b81955bad2ed78d58ad910526b5132a L-04: Triangle added
+| |/
+|/|
+* | d078c8d9ee6155f3cb0e577d28d337b791de28e2 (origin/main, origin/HEAD) L-03: Docs added
+|/
+* 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>git log --graph --pretty=oneline
+* dd3f3d6d8e80f0b5647020597c3269893233f0fd (HEAD -> main) Delete circle.py, square.py, add TEST.txt
+* 39e985e156908789758c1227a7dc3bcf63bd119f Edit circle.py, square.py
+* d078c8d9ee6155f3cb0e577d28d337b791de28e2 (origin/main, origin/HEAD) L-03: Docs added
+* 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>rmdir .git
+The directory is not empty.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>rmdir /s /q .git
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>dir
+ Volume in drive D is Data
+ Volume Serial Number is 0C12-8B49
+
+ Directory of D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib
+
+15.02.2024  14:44    <DIR>          .
+15.02.2024  14:27    <DIR>          ..
+15.02.2024  14:27    <DIR>          docs
+15.02.2024  14:39                 4 TEST.txt
+               1 File(s)              4 bytes
+               3 Dir(s)  212 861 616 128 bytes free
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\geometric_lib>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git init
+Initialized empty Git repository in D:/Study/4 semestr/IGI/253502_Drinevskiy_8/.git/
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>tree
+Folder PATH listing for volume Data
+Volume serial number is 0C12-8B49
+D:.
+├───IGI
+│   ├───LR1
+│   │   └───geometric_lib
+│   │       └───docs
+│   ├───LR2
+│   ├───LR3
+│   ├───LR4
+│   └───LR5
+└───STRWEB
+    ├───LR1
+    ├───LR2
+    ├───LR3
+    └───LR4
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git checkout -b "IGI"
+Switched to a new branch 'IGI'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git lg
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git branch
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git branch -all
+error: did you mean `--all` (with two dashes)?
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git branch --all
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git branch main
+fatal: not a valid object name: 'IGI'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git checkout -b main
+Switched to a new branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git lg
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git branch -all
+error: did you mean `--all` (with two dashes)?
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git branch --all
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git commit -m "Initial commit"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        IGI/
+        STRWEB/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git branch --all
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git lg
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git commit -m -a "Initial commit"
+error: pathspec 'Initial commit' did not match any file(s) known to git
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git add IGI/
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git add STRWEB/
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   IGI/LR1/geometric_lib/TEST.txt
+        new file:   IGI/LR1/geometric_lib/docs/README.md
+        new file:   IGI/LR2/README.md
+        new file:   IGI/LR3/README.md
+        new file:   IGI/LR4/README.md
+        new file:   IGI/LR5/README.md
+        new file:   STRWEB/LR1/README.md
+        new file:   STRWEB/LR2/README.md
+        new file:   STRWEB/LR3/README.md
+        new file:   STRWEB/LR4/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git commit -m "Initial commit"
+[main (root-commit) 168c599] Initial commit
+ 10 files changed, 11 insertions(+)
+ create mode 100644 IGI/LR1/geometric_lib/TEST.txt
+ create mode 100644 IGI/LR1/geometric_lib/docs/README.md
+ create mode 100644 IGI/LR2/README.md
+ create mode 100644 IGI/LR3/README.md
+ create mode 100644 IGI/LR4/README.md
+ create mode 100644 IGI/LR5/README.md
+ create mode 100644 STRWEB/LR1/README.md
+ create mode 100644 STRWEB/LR2/README.md
+ create mode 100644 STRWEB/LR3/README.md
+ create mode 100644 STRWEB/LR4/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git lg
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git branch --all
+* main
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git checkout -b IGI
+Switched to a new branch 'IGI'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git branch --all
+* IGI
+  main
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git lg
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> IGI, main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git rm STRWEB
+fatal: not removing 'STRWEB' recursively without -r
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git rm STRWEB -r
+rm 'STRWEB/LR1/README.md'
+rm 'STRWEB/LR2/README.md'
+rm 'STRWEB/LR3/README.md'
+rm 'STRWEB/LR4/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git status
+On branch IGI
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    STRWEB/LR1/README.md
+        deleted:    STRWEB/LR2/README.md
+        deleted:    STRWEB/LR3/README.md
+        deleted:    STRWEB/LR4/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git commit -m -a "IGI"
+On branch IGI
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    STRWEB/LR1/README.md
+        deleted:    STRWEB/LR2/README.md
+        deleted:    STRWEB/LR3/README.md
+        deleted:    STRWEB/LR4/README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git add -A
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git status
+On branch IGI
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    STRWEB/LR1/README.md
+        deleted:    STRWEB/LR2/README.md
+        deleted:    STRWEB/LR3/README.md
+        deleted:    STRWEB/LR4/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git commit -m "IGI"
+[IGI d0e90e1] IGI
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 STRWEB/LR1/README.md
+ delete mode 100644 STRWEB/LR2/README.md
+ delete mode 100644 STRWEB/LR3/README.md
+ delete mode 100644 STRWEB/LR4/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git status
+On branch IGI
+nothing to commit, working tree clean
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git branch
+* IGI
+  main
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git checkout main
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git checkout -b "STRWEB"
+Switched to a new branch 'STRWEB'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git lg
+* d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> STRWEB, main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git rm IGI -r
+rm 'IGI/LR1/geometric_lib/TEST.txt'
+rm 'IGI/LR1/geometric_lib/docs/README.md'
+rm 'IGI/LR2/README.md'
+rm 'IGI/LR3/README.md'
+rm 'IGI/LR4/README.md'
+rm 'IGI/LR5/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git add -A
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git status
+On branch STRWEB
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    IGI/LR1/geometric_lib/TEST.txt
+        deleted:    IGI/LR1/geometric_lib/docs/README.md
+        deleted:    IGI/LR2/README.md
+        deleted:    IGI/LR3/README.md
+        deleted:    IGI/LR4/README.md
+        deleted:    IGI/LR5/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git commit -m "STRWEB"
+[STRWEB 94e19a4] STRWEB
+ 6 files changed, 11 deletions(-)
+ delete mode 100644 IGI/LR1/geometric_lib/TEST.txt
+ delete mode 100644 IGI/LR1/geometric_lib/docs/README.md
+ delete mode 100644 IGI/LR2/README.md
+ delete mode 100644 IGI/LR3/README.md
+ delete mode 100644 IGI/LR4/README.md
+ delete mode 100644 IGI/LR5/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git lg
+* 94e19a4803069157875617df949d48bd8287376c (HEAD -> STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git checkout -b "STRWEB-LR1"
+Switched to a new branch 'STRWEB-LR1'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>cd STRWEB
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR2
+fatal: not removing 'LR2' recursively without -r
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR2 -r
+rm 'STRWEB/LR2/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR3 -r
+rm 'STRWEB/LR3/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR4 -r
+rm 'STRWEB/LR4/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git status
+On branch STRWEB-LR1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    LR2/README.md
+        deleted:    LR3/README.md
+        deleted:    LR4/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git add -A
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git commit -m "STRWEB-LR1"
+[STRWEB-LR1 1c8ad5e] STRWEB-LR1
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 STRWEB/LR2/README.md
+ delete mode 100644 STRWEB/LR3/README.md
+ delete mode 100644 STRWEB/LR4/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 1c8ad5e107a0fc025e09a429209846660ce91522 (HEAD -> STRWEB-LR1) STRWEB-LR1
+* 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout main
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+* 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout STRWEB
+Switched to branch 'STRWEB'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+* 94e19a4803069157875617df949d48bd8287376c (HEAD -> STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout -b "STRWEB-LR2"
+Switched to a new branch 'STRWEB-LR2'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR1 -r
+rm 'STRWEB/LR1/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR3 -r
+rm 'STRWEB/LR3/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR4 -r
+rm 'STRWEB/LR4/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git status
+On branch STRWEB-LR2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    LR1/README.md
+        deleted:    LR3/README.md
+        deleted:    LR4/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git add -A
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git commit -m "STRWEB-LR2"
+[STRWEB-LR2 9243a83] STRWEB-LR2
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 STRWEB/LR1/README.md
+ delete mode 100644 STRWEB/LR3/README.md
+ delete mode 100644 STRWEB/LR4/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 9243a8316b417c17f7567466afcbb60242bb9023 (HEAD -> STRWEB-LR2) STRWEB-LR2
+| * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+|/
+* 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout STRWEB
+Switched to branch 'STRWEB'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git branch
+  IGI
+* STRWEB
+  STRWEB-LR1
+  STRWEB-LR2
+  main
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout -b "STRWEB-LR3"
+Switched to a new branch 'STRWEB-LR3'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+|/
+* 94e19a4803069157875617df949d48bd8287376c (HEAD -> STRWEB-LR3, STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR1 -r
+rm 'STRWEB/LR1/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR2 -r
+rm 'STRWEB/LR2/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR4 -r
+rm 'STRWEB/LR4/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git status
+On branch STRWEB-LR3
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    LR1/README.md
+        deleted:    LR2/README.md
+        deleted:    LR4/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git add -A
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git commit -m "STRWEB-LR3"
+[STRWEB-LR3 edc7fee] STRWEB-LR3
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 STRWEB/LR1/README.md
+ delete mode 100644 STRWEB/LR2/README.md
+ delete mode 100644 STRWEB/LR4/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (HEAD -> STRWEB-LR3) STRWEB-LR3
+| * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+|/
+| * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+|/
+* 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout STRWEB
+Switched to branch 'STRWEB'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout -b "STRWEB-LR4"
+Switched to a new branch 'STRWEB-LR4'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+|/
+| * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+|/
+* 94e19a4803069157875617df949d48bd8287376c (HEAD -> STRWEB-LR4, STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR1 -r
+rm 'STRWEB/LR1/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR2 -r
+rm 'STRWEB/LR2/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm LR3 -r
+rm 'STRWEB/LR3/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git status
+On branch STRWEB-LR4
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    LR1/README.md
+        deleted:    LR2/README.md
+        deleted:    LR3/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git commit -m "STRWEB-LR4"
+[STRWEB-LR4 34c03da] STRWEB-LR4
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 STRWEB/LR1/README.md
+ delete mode 100644 STRWEB/LR2/README.md
+ delete mode 100644 STRWEB/LR3/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 34c03da84a37cb4bc920615f15a0418f3200a724 (HEAD -> STRWEB-LR4) STRWEB-LR4
+| * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+|/
+| * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+|/
+| * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+|/
+* 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout main
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout IGI
+Switched to branch 'IGI'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout -b "IGI-LR1"
+Switched to a new branch 'IGI-LR1'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+|/
+| * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+|/
+| * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+|/
+* 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (HEAD -> IGI-LR1, IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout STRWEB
+Switched to branch 'STRWEB'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git branch -d IGI-LR1
+error: the branch 'IGI-LR1' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D IGI-LR1'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git branch -D IGI-LR1
+Deleted branch IGI-LR1 (was d0e90e1).
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+|/
+| * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+|/
+| * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+|/
+* 94e19a4803069157875617df949d48bd8287376c (HEAD -> STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout IGI
+Switched to branch 'IGI'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+|/
+| * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+|/
+| * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+|/
+* 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+| * d0e90e14c4ab0e2092518ed55a30718592f2e5a0 (HEAD -> IGI) IGI
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout main
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git branch -D IGI
+Deleted branch IGI (was d0e90e1).
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+|/
+| * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+|/
+| * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+|/
+* 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git checkout -b "IGI"
+Switched to a new branch 'IGI'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git lg
+* 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+|/
+| * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+|/
+| * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+|/
+* 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> IGI, main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>git rm STRWEB -r
+fatal: pathspec 'STRWEB' did not match any files
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\STRWEB>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git rm STRWEB -r
+rm 'STRWEB/LR1/README.md'
+rm 'STRWEB/LR2/README.md'
+rm 'STRWEB/LR3/README.md'
+rm 'STRWEB/LR4/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git status
+On branch IGI
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    STRWEB/LR1/README.md
+        deleted:    STRWEB/LR2/README.md
+        deleted:    STRWEB/LR3/README.md
+        deleted:    STRWEB/LR4/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git commit -m "IGI"
+[IGI 266afdd] IGI
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 STRWEB/LR1/README.md
+ delete mode 100644 STRWEB/LR2/README.md
+ delete mode 100644 STRWEB/LR3/README.md
+ delete mode 100644 STRWEB/LR4/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git lg
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (HEAD -> IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git checkout -b "IGI-LR1"
+Switched to a new branch 'IGI-LR1'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>cd IGI
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR2 -r
+rm 'IGI/LR2/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR3 -r
+rm 'IGI/LR3/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR4 -r
+rm 'IGI/LR4/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR5 -r
+rm 'IGI/LR5/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    LR2/README.md
+        deleted:    LR3/README.md
+        deleted:    LR4/README.md
+        deleted:    LR5/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git commit -m "IGI-LR1"
+[IGI-LR1 970bbca] IGI-LR1
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 IGI/LR2/README.md
+ delete mode 100644 IGI/LR3/README.md
+ delete mode 100644 IGI/LR4/README.md
+ delete mode 100644 IGI/LR5/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 (HEAD -> IGI-LR1) IGI-LR1
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout IGI
+Switched to branch 'IGI'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout -b "IGI-LR2"
+Switched to a new branch 'IGI-LR2'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 (IGI-LR1) IGI-LR1
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (HEAD -> IGI-LR2, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR1 -r
+rm 'IGI/LR1/geometric_lib/TEST.txt'
+rm 'IGI/LR1/geometric_lib/docs/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR3 -r
+rm 'IGI/LR3/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR4 -r
+rm 'IGI/LR4/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR5 -r
+rm 'IGI/LR5/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git commmit -m "IGI-LR2"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git commit -m "IGI-LR2"
+[IGI-LR2 78f1c5d] IGI-LR2
+ 5 files changed, 11 deletions(-)
+ delete mode 100644 IGI/LR1/geometric_lib/TEST.txt
+ delete mode 100644 IGI/LR1/geometric_lib/docs/README.md
+ delete mode 100644 IGI/LR3/README.md
+ delete mode 100644 IGI/LR4/README.md
+ delete mode 100644 IGI/LR5/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 78f1c5d7512623dca5e727baf268d0f3d77907f0 (HEAD -> IGI-LR2) IGI-LR2
+| * 970bbca7d2fe92a066582ff4d4179b59a5faa655 (IGI-LR1) IGI-LR1
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout IGI
+Switched to branch 'IGI'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout -b "IGI-LR3"
+Switched to a new branch 'IGI-LR3'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR1 -r
+rm 'IGI/LR1/geometric_lib/TEST.txt'
+rm 'IGI/LR1/geometric_lib/docs/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR2 -r
+rm 'IGI/LR2/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR4 -r
+rm 'IGI/LR4/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR5 -r
+rm 'IGI/LR5/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git commit -m "IGI-LR3"
+[IGI-LR3 8f5c718] IGI-LR3
+ 5 files changed, 11 deletions(-)
+ delete mode 100644 IGI/LR1/geometric_lib/TEST.txt
+ delete mode 100644 IGI/LR1/geometric_lib/docs/README.md
+ delete mode 100644 IGI/LR2/README.md
+ delete mode 100644 IGI/LR4/README.md
+ delete mode 100644 IGI/LR5/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout IGI
+Switched to branch 'IGI'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout -b "IGI-LR4"
+Switched to a new branch 'IGI-LR4'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR1 -r
+rm 'IGI/LR1/geometric_lib/TEST.txt'
+rm 'IGI/LR1/geometric_lib/docs/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR2 -r
+rm 'IGI/LR2/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR3 -r
+rm 'IGI/LR3/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR5 -r
+rm 'IGI/LR5/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git commit -m "IGI-LR4"
+[IGI-LR4 99717f4] IGI-LR4
+ 5 files changed, 11 deletions(-)
+ delete mode 100644 IGI/LR1/geometric_lib/TEST.txt
+ delete mode 100644 IGI/LR1/geometric_lib/docs/README.md
+ delete mode 100644 IGI/LR2/README.md
+ delete mode 100644 IGI/LR3/README.md
+ delete mode 100644 IGI/LR5/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout -
+Switched to branch 'IGI'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout -b "IGI-LR5"
+Switched to a new branch 'IGI-LR5'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR1 -r
+rm 'IGI/LR1/geometric_lib/TEST.txt'
+rm 'IGI/LR1/geometric_lib/docs/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR2 -r
+rm 'IGI/LR2/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR3 -r
+rm 'IGI/LR3/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rm LR4 -r
+rm 'IGI/LR4/README.md'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git commit -m "IGI-LR5"
+[IGI-LR5 4384fbe] IGI-LR5
+ 5 files changed, 11 deletions(-)
+ delete mode 100644 IGI/LR1/geometric_lib/TEST.txt
+ delete mode 100644 IGI/LR1/geometric_lib/docs/README.md
+ delete mode 100644 IGI/LR2/README.md
+ delete mode 100644 IGI/LR3/README.md
+ delete mode 100644 IGI/LR4/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5) IGI-LR5
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+| * 970bbca7d2fe92a066582ff4d4179b59a5faa655 (IGI-LR1) IGI-LR1
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout main
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log -5
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout -
+Switched to branch 'IGI-LR5'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log -3
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --since="2023-02-15"
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --until="2023-02-14"
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --until="2023-02-15"
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --until="2023-02-16"
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --until="2024-02-15"
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --until="2024-02-14"
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --author="Kirill Drinevskiy"
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --commiter="Kirill Drinevskiy"
+fatal: unrecognized argument: --commiter=Kirill Drinevskiy
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --committer="Kirill Drinevskiy"
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lop --grep "IGI"
+git: 'lop' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --grep "IGI"
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --all --grep "IGI"
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+commit 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:03:02 2024 +0300
+
+    IGI-LR4
+
+commit 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:00:42 2024 +0300
+
+    IGI-LR3
+
+commit 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:56:38 2024 +0300
+
+    IGI-LR2
+
+commit 970bbca7d2fe92a066582ff4d4179b59a5faa655 (IGI-LR1)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:51:31 2024 +0300
+
+    IGI-LR1
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log -p
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+deleted file mode 100644
+index 30d74d2..0000000
+--- a/IGI/LR1/geometric_lib/TEST.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+deleted file mode 100644
+index 63f8727..0000000
+--- a/IGI/LR1/geometric_lib/docs/README.md
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Math formulas
+-## Area
+-- Circle: S = πR²
+-- Rectangle: S = ab
+-- Square: S = a²
+-
+-## Perimeter
+-- Circle: P = 2πR
+-- Rectangle: P = 2a + 2b
+-- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+ ESCOD
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+deleted file mode 100644
+index 30d74d2..0000000
+--- a/IGI/LR1/geometric_lib/TEST.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+deleted file mode 100644
+index 63f8727..0000000
+--- a/IGI/LR1/geometric_lib/docs/README.md
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Math formulas
+-## Area
+-- Circle: S = πR²
+-- Rectangle: S = ab
+-- Square: S = a²
+-
+-## Perimeter
+-- Circle: P = 2πR
+-- Rectangle: P = 2a + 2b
+-- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+new file mode 100644
+index 0000000..30d74d2
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/TEST.txt
+@@ -0,0 +1 @@
++test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+deleted file mode 100644
+index 30d74d2..0000000
+--- a/IGI/LR1/geometric_lib/TEST.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+deleted file mode 100644
+index 63f8727..0000000
+--- a/IGI/LR1/geometric_lib/docs/README.md
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Math formulas
+-## Area
+-- Circle: S = πR²
+-- Rectangle: S = ab
+-- Square: S = a²
+-
+-## Perimeter
+-- Circle: P = 2πR
+-- Rectangle: P = 2a + 2b
+-- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+new file mode 100644
+index 0000000..30d74d2
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/TEST.txt
+@@ -0,0 +1 @@
++test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --graph
+* commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+| Date:   Thu Feb 15 16:04:21 2024 +0300
+|
+|     IGI-LR5
+|
+* commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+| Date:   Thu Feb 15 15:23:21 2024 +0300
+|
+|     IGI
+|
+* commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+  Date:   Thu Feb 15 14:52:37 2024 +0300
+
+      Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --graph --decorate
+* commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+| Date:   Thu Feb 15 16:04:21 2024 +0300
+|
+|     IGI-LR5
+|
+* commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+| Date:   Thu Feb 15 15:23:21 2024 +0300
+|
+|     IGI
+|
+* commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+  Date:   Thu Feb 15 14:52:37 2024 +0300
+
+      Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --shortstat
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+ 5 files changed, 11 deletions(-)
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+ 10 files changed, 11 insertions(+)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --name-only
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+IGI/LR1/geometric_lib/TEST.txt
+IGI/LR1/geometric_lib/docs/README.md
+IGI/LR2/README.md
+IGI/LR3/README.md
+IGI/LR4/README.md
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+STRWEB/LR1/README.md
+STRWEB/LR2/README.md
+STRWEB/LR3/README.md
+STRWEB/LR4/README.md
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+IGI/LR1/geometric_lib/TEST.txt
+IGI/LR1/geometric_lib/docs/README.md
+IGI/LR2/README.md
+IGI/LR3/README.md
+IGI/LR4/README.md
+IGI/LR5/README.md
+STRWEB/LR1/README.md
+STRWEB/LR2/README.md
+STRWEB/LR3/README.md
+STRWEB/LR4/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --name-status
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+D       IGI/LR1/geometric_lib/TEST.txt
+D       IGI/LR1/geometric_lib/docs/README.md
+D       IGI/LR2/README.md
+D       IGI/LR3/README.md
+D       IGI/LR4/README.md
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+D       STRWEB/LR1/README.md
+D       STRWEB/LR2/README.md
+D       STRWEB/LR3/README.md
+D       STRWEB/LR4/README.md
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+A       IGI/LR1/geometric_lib/TEST.txt
+A       IGI/LR1/geometric_lib/docs/README.md
+A       IGI/LR2/README.md
+A       IGI/LR3/README.md
+A       IGI/LR4/README.md
+A       IGI/LR5/README.md
+A       STRWEB/LR1/README.md
+A       STRWEB/LR2/README.md
+A       STRWEB/LR3/README.md
+A       STRWEB/LR4/README.md
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --relative-date
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   24 minutes ago
+
+    IGI-LR5
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   65 minutes ago
+
+    IGI
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   2 hours ago
+
+    Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --pretty=oneline --graph
+* 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5) IGI-LR5
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --pretty=short --graph
+* commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|     IGI-LR5
+|
+* commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|     IGI
+|
+* commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+
+      Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --pretty=short --graph --all
+* commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|     IGI-LR5
+|
+| * commit 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4)
+|/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|       IGI-LR4
+|
+| * commit 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3)
+|/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|       IGI-LR3
+|
+| * commit 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2)
+|/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|       IGI-LR2
+* commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|     IGI-LR5
+|
+| * commit 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4)
+|/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|       IGI-LR4
+|
+| * commit 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3)
+|/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|       IGI-LR3
+|
+| * commit 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2)
+|/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|       IGI-LR2
+|
+| * commit 970bbca7d2fe92a066582ff4d4179b59a5faa655 (IGI-LR1)
+|/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|       IGI-LR1
+|
+* commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|     IGI
+|
+| * commit 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4)
+| | Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+| |
+| |     STRWEB-LR4
+| |
+| | * commit edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3)
+| |/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+| |
+| |       STRWEB-LR3
+| |
+| | * commit 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2)
+| |/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+| |
+| |       STRWEB-LR2
+| |
+| | * commit 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1)
+| |/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+| |
+| |       STRWEB-LR1
+| |
+| * commit 94e19a4803069157875617df949d48bd8287376c (STRWEB)
+|/  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+|
+|       STRWEB
+|
+* commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+
+      Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --pretty=medium --graph
+* commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+| Date:   Thu Feb 15 16:04:21 2024 +0300
+|
+|     IGI-LR5
+|
+* commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+| Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+| Date:   Thu Feb 15 15:23:21 2024 +0300
+|
+|     IGI
+|
+* commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+  Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+  Date:   Thu Feb 15 14:52:37 2024 +0300
+
+      Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --pretty=fuller --graph
+* commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+| Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| AuthorDate: Thu Feb 15 16:04:21 2024 +0300
+| Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| CommitDate: Thu Feb 15 16:04:21 2024 +0300
+|
+|     IGI-LR5
+|
+* commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+| Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| AuthorDate: Thu Feb 15 15:23:21 2024 +0300
+| Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| CommitDate: Thu Feb 15 15:23:21 2024 +0300
+|
+|     IGI
+|
+* commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+  Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+  AuthorDate: Thu Feb 15 14:52:37 2024 +0300
+  Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+  CommitDate: Thu Feb 15 14:52:37 2024 +0300
+
+      Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --pretty=fuller --graph --all
+* commit 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5)
+| Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| AuthorDate: Thu Feb 15 16:04:21 2024 +0300
+| Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| CommitDate: Thu Feb 15 16:04:21 2024 +0300
+|
+|     IGI-LR5
+|
+| * commit 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4)
+|/  Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+|   AuthorDate: Thu Feb 15 16:03:02 2024 +0300
+|   Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+|   CommitDate: Thu Feb 15 16:03:02 2024 +0300
+|
+|       IGI-LR4
+|
+| * commit 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3)
+|/  Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+|   AuthorDate: Thu Feb 15 16:00:42 2024 +0300
+|   Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+|   CommitDate: Thu Feb 15 16:00:42 2024 +0300
+|
+|       IGI-LR3
+|
+| * commit 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2)
+|/  Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+|   AuthorDate: Thu Feb 15 15:56:38 2024 +0300
+|   Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+|   CommitDate: Thu Feb 15 15:56:38 2024 +0300
+|
+|       IGI-LR2
+|
+| * commit 970bbca7d2fe92a066582ff4d4179b59a5faa655 (IGI-LR1)
+|/  Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+|   AuthorDate: Thu Feb 15 15:51:31 2024 +0300
+|   Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+|   CommitDate: Thu Feb 15 15:51:31 2024 +0300
+|
+|       IGI-LR1
+|
+* commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+| Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| AuthorDate: Thu Feb 15 15:23:21 2024 +0300
+| Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| CommitDate: Thu Feb 15 15:23:21 2024 +0300
+|
+|     IGI
+|
+| * commit 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4)
+| | Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| | AuthorDate: Thu Feb 15 15:15:19 2024 +0300
+| | Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| | CommitDate: Thu Feb 15 15:15:19 2024 +0300
+| |
+| |     STRWEB-LR4
+| |
+| | * commit edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3)
+| |/  Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| |   AuthorDate: Thu Feb 15 15:12:24 2024 +0300
+| |   Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| |   CommitDate: Thu Feb 15 15:12:24 2024 +0300
+| |
+| |       STRWEB-LR3
+| |
+| | * commit 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2)
+| |/  Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| |   AuthorDate: Thu Feb 15 15:09:29 2024 +0300
+| |   Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| |   CommitDate: Thu Feb 15 15:09:29 2024 +0300
+| |
+| |       STRWEB-LR2
+| |
+| | * commit 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1)
+| |/  Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| |   AuthorDate: Thu Feb 15 15:06:15 2024 +0300
+| |   Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+| |   CommitDate: Thu Feb 15 15:06:15 2024 +0300
+| |
+| |       STRWEB-LR1
+| |
+| * commit 94e19a4803069157875617df949d48bd8287376c (STRWEB)
+|/  Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+|   AuthorDate: Thu Feb 15 15:01:53 2024 +0300
+|   Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+|   CommitDate: Thu Feb 15 15:01:53 2024 +0300
+|
+|       STRWEB
+|
+* commit 168c599be134af4b17e0b7f177d8bbffe2935985 (main)
+  Author:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+  AuthorDate: Thu Feb 15 14:52:37 2024 +0300
+  Commit:     Kirill Drinevskiy <drinevskiy3@gmail.com>
+  CommitDate: Thu Feb 15 14:52:37 2024 +0300
+
+      Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --pretty=raw --graph --all
+* commit 4384fbe61bff3014e7391de5e252b642f424d136
+* commit 4384fbe61bff3014e7391de5e252b642f424d136
+| tree 45ac333858c291c7d20d6115b1d069c9c87970b8
+| parent 266afdda4a974f736f086538a5c6b1f040760ea2
+| author Kirill Drinevskiy <drinevskiy3@gmail.com> 1708002261 +0300
+| author Kirill Drinevskiy <drinevskiy3@gmail.com> 1708002261 +0300
+| committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1708002261 +0300
+|
+|     IGI-LR5
+|
+| * commit 99717f4ec0ab5057561a057747c473e62bc45444
+|/  tree 05f62bad13ff091d8bd9b0f370e4db835ac421af
+|   parent 266afdda4a974f736f086538a5c6b1f040760ea2
+|   author Kirill Drinevskiy <drinevskiy3@gmail.com> 1708002182 +0300
+|   committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1708002182 +0300
+|
+|       IGI-LR4
+|
+| * commit 8f5c718c16d65079d07fabbfef66468eff222267
+|/  tree 3482e97171a46ca40afb50b796d0656b8812e4f7
+|   parent 266afdda4a974f736f086538a5c6b1f040760ea2
+|   author Kirill Drinevskiy <drinevskiy3@gmail.com> 1708002042 +0300
+|   committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1708002042 +0300
+|
+|       IGI-LR3
+|
+| * commit 78f1c5d7512623dca5e727baf268d0f3d77907f0
+|/  tree 0f2f540181e137efae5e72600c5e79081bb560c6
+|   parent 266afdda4a974f736f086538a5c6b1f040760ea2
+|   author Kirill Drinevskiy <drinevskiy3@gmail.com> 1708001798 +0300
+|   committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1708001798 +0300
+|
+|       IGI-LR2
+|
+| * commit 970bbca7d2fe92a066582ff4d4179b59a5faa655
+|/  tree c8b0343a6919be6e102d3c1c4c8bbc9162c24b5c
+|   parent 266afdda4a974f736f086538a5c6b1f040760ea2
+|   author Kirill Drinevskiy <drinevskiy3@gmail.com> 1708001491 +0300
+|   committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1708001491 +0300
+|
+|       IGI-LR1
+|
+* commit 266afdda4a974f736f086538a5c6b1f040760ea2
+| tree 8ba7a8b9de50dd81e29d1517ed84a3327c7eaddb
+| parent 168c599be134af4b17e0b7f177d8bbffe2935985
+| author Kirill Drinevskiy <drinevskiy3@gmail.com> 1707999801 +0300
+| committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1707999801 +0300
+|
+|     IGI
+|
+| * commit 34c03da84a37cb4bc920615f15a0418f3200a724
+| | tree 8768196edcf5c8f5e939b19706c2cab181735ab8
+| | parent 94e19a4803069157875617df949d48bd8287376c
+| | author Kirill Drinevskiy <drinevskiy3@gmail.com> 1707999319 +0300
+| | committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1707999319 +0300
+| |
+| |     STRWEB-LR4
+| |
+| | * commit edc7fee8dee0c69147e4dc1527c74a39b7c46ab6
+| |/  tree 609dc37e6dfc66c81a7870bf2d26ef19f5c0cae6
+| |   parent 94e19a4803069157875617df949d48bd8287376c
+| |   author Kirill Drinevskiy <drinevskiy3@gmail.com> 1707999144 +0300
+| |   committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1707999144 +0300
+| |
+| |       STRWEB-LR3
+| |
+| | * commit 9243a8316b417c17f7567466afcbb60242bb9023
+| |/  tree 260f799e805df2db75441c35007010c31a21a868
+| |   parent 94e19a4803069157875617df949d48bd8287376c
+| |   author Kirill Drinevskiy <drinevskiy3@gmail.com> 1707998969 +0300
+| |   committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1707998969 +0300
+| |
+| |       STRWEB-LR2
+| |
+| | * commit 1c8ad5e107a0fc025e09a429209846660ce91522
+| |/  tree 257f5f5138248f9f59cb5237235077c194e38fe4
+| |   parent 94e19a4803069157875617df949d48bd8287376c
+| |   author Kirill Drinevskiy <drinevskiy3@gmail.com> 1707998775 +0300
+| |   committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1707998775 +0300
+| |
+| |       STRWEB-LR1
+| |
+| * commit 94e19a4803069157875617df949d48bd8287376c
+|/  tree a0ee7e9e0dac5fd9f57684548fc85e4937cbdc7f
+|   parent 168c599be134af4b17e0b7f177d8bbffe2935985
+|   author Kirill Drinevskiy <drinevskiy3@gmail.com> 1707998513 +0300
+|   committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1707998513 +0300
+|
+|       STRWEB
+|
+* commit 168c599be134af4b17e0b7f177d8bbffe2935985
+  tree ac1dc87918ebd3db83121cf3420286b1cf6f7e11
+  author Kirill Drinevskiy <drinevskiy3@gmail.com> 1707997957 +0300
+  committer Kirill Drinevskiy <drinevskiy3@gmail.com> 1707997957 +0300
+
+      Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5) IGI-LR5
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+| * 970bbca7d2fe92a066582ff4d4179b59a5faa655 (IGI-LR1) IGI-LR1
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff 266afdd 4384fbe
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+deleted file mode 100644
+index 30d74d2..0000000
+--- a/IGI/LR1/geometric_lib/TEST.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+deleted file mode 100644
+index 63f8727..0000000
+--- a/IGI/LR1/geometric_lib/docs/README.md
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Math formulas
+-## Area
+-- Circle: S = πR²
+-- Rectangle: S = ab
+-- Square: S = a²
+-
+-## Perimeter
+-- Circle: P = 2πR
+-- Rectangle: P = 2a + 2b
+-- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff 266afdd 99717f4e
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+deleted file mode 100644
+index 30d74d2..0000000
+--- a/IGI/LR1/geometric_lib/TEST.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+deleted file mode 100644
+index 63f8727..0000000
+--- a/IGI/LR1/geometric_lib/docs/README.md
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Math formulas
+-## Area
+-- Circle: S = πR²
+-- Rectangle: S = ab
+-- Square: S = a²
+-
+-## Perimeter
+-- Circle: P = 2πR
+-- Rectangle: P = 2a + 2b
+-- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff 266afdd 8f5c718
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+deleted file mode 100644
+index 30d74d2..0000000
+--- a/IGI/LR1/geometric_lib/TEST.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+deleted file mode 100644
+index 63f8727..0000000
+--- a/IGI/LR1/geometric_lib/docs/README.md
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Math formulas
+-## Area
+-- Circle: S = πR²
+-- Rectangle: S = ab
+-- Square: S = a²
+-
+-## Perimeter
+-- Circle: P = 2πR
+-- Rectangle: P = 2a + 2b
+-- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5) IGI-LR5
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+| * 970bbca7d2fe92a066582ff4d4179b59a5faa655 (IGI-LR1) IGI-LR1
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff 266afdd 78f1c5d
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+deleted file mode 100644
+index 30d74d2..0000000
+--- a/IGI/LR1/geometric_lib/TEST.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+deleted file mode 100644
+index 63f8727..0000000
+--- a/IGI/LR1/geometric_lib/docs/README.md
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Math formulas
+-## Area
+-- Circle: S = πR²
+-- Rectangle: S = ab
+-- Square: S = a²
+-
+-## Perimeter
+-- Circle: P = 2πR
+-- Rectangle: P = 2a + 2b
+-- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff 266afdd  970bbca
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5) IGI-LR5
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+| * 970bbca7d2fe92a066582ff4d4179b59a5faa655 (IGI-LR1) IGI-LR1
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff 168c59 266afd
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff  94e19a 34c03d
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff  94e19a edc7fe
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff  94e19a 9243a83
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff  94e19a 1c8ad5
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git diff 168c59 94e19a
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+deleted file mode 100644
+index 30d74d2..0000000
+--- a/IGI/LR1/geometric_lib/TEST.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+deleted file mode 100644
+index 63f8727..0000000
+--- a/IGI/LR1/geometric_lib/docs/README.md
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Math formulas
+-## Area
+-- Circle: S = πR²
+-- Rectangle: S = ab
+-- Square: S = a²
+-
+-## Perimeter
+-- Circle: P = 2πR
+-- Rectangle: P = 2a + 2b
+-- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+deleted file mode 100644
+index e69de29..0000000
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 4384fbe61bff3014e7391de5e252b642f424d136 (HEAD -> IGI-LR5) IGI-LR5
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+| * 970bbca7d2fe92a066582ff4d4179b59a5faa655 (IGI-LR1) IGI-LR1
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout IGI-LR1
+Switched to branch 'IGI-LR1'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        LR1/geometric_lib/text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git add -A
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git commit -m "Add text.txt"
+[IGI-LR1 15859d7] Add text.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 IGI/LR1/geometric_lib/text.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac (HEAD -> IGI-LR1) Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git revert HEAD
+[IGI-LR1 05c7ad6] Revert "Add text.txt"
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 IGI/LR1/geometric_lib/text.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c (HEAD -> IGI-LR1) Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+nothing to commit, working tree clean
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        LR1/geometric_lib/qwerty.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git add -A
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   LR1/geometric_lib/qwerty.txt
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git restore --staged  LR1/geometric_lib/qwerty.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        LR1/geometric_lib/qwerty.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        LR1/geometric_lib/qwerty.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        LR1/geometric_lib/qwerty.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+nothing to commit, working tree clean
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote add IS https://github.com/Drinevskiy/IGI-STRWEB.git
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+IS      https://github.com/Drinevskiy/IGI-STRWEB.git (fetch)
+IS      https://github.com/Drinevskiy/IGI-STRWEB.git (push)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -м
+error: unknown non-ascii option in string: `-м'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+IS      https://github.com/Drinevskiy/IGI-STRWEB.git (fetch)
+IS      https://github.com/Drinevskiy/IGI-STRWEB.git (push)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote show IS
+* remote IS
+  Fetch URL: https://github.com/Drinevskiy/IGI-STRWEB.git
+  Push  URL: https://github.com/Drinevskiy/IGI-STRWEB.git
+  HEAD branch: main
+  Remote branch:
+    main new (next fetch will store in remotes/IS)
+  Local ref configured for 'git push':
+    main pushes to main (local out of date)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote show IS
+remote: Repository not found.
+fatal: repository 'https://github.com/Drinevskiy/IGI-STRWEB.git/' not found
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote add IS https://github.com/Drinevskiy/IGI-STRWEB.git
+error: remote IS already exists.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote add I-S https://github.com/Drinevskiy/IGI-STRWEB.git
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote show I-S
+* remote I-S
+  Fetch URL: https://github.com/Drinevskiy/IGI-STRWEB.git
+  Push  URL: https://github.com/Drinevskiy/IGI-STRWEB.git
+  HEAD branch: (unknown)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote show I-S
+* remote I-S
+  Fetch URL: https://github.com/Drinevskiy/IGI-STRWEB.git
+  Push  URL: https://github.com/Drinevskiy/IGI-STRWEB.git
+  HEAD branch: main
+  Remote branch:
+    main new (next fetch will store in remotes/I-S)
+  Local ref configured for 'git push':
+    main pushes to main (local out of date)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c (HEAD -> IGI-LR1) Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   LR1/geometric_lib/TEST.txt
+        modified:   LR1/geometric_lib/docs/README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git add -A
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git status
+On branch IGI-LR1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   LR1/geometric_lib/TEST.txt
+        modified:   LR1/geometric_lib/docs/README.md
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git commit -m "Edit README.md, TEST.txt"
+[IGI-LR1 2d45bd7] Edit README.md, TEST.txt
+ 2 files changed, 7 insertions(+), 7 deletions(-)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (HEAD -> IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (fetch)
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (push)
+IS      https://github.com/Drinevskiy/IGI-STRWEB.git (fetch)
+IS      https://github.com/Drinevskiy/IGI-STRWEB.git (push)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote remove IS
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (fetch)
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (push)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote show I-S
+* remote I-S
+  Fetch URL: https://github.com/Drinevskiy/IGI-STRWEB.git
+  Push  URL: https://github.com/Drinevskiy/IGI-STRWEB.git
+  HEAD branch: main
+  Remote branch:
+    main new (next fetch will store in remotes/I-S)
+  Local ref configured for 'git push':
+    main pushes to main (local out of date)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git push --all I-S
+Enumerating objects: 54, done.
+Counting objects: 100% (54/54), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (54/54), 3.64 KiB | 744.00 KiB/s, done.
+Total 54 (delta 10), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (10/10), done.
+To https://github.com/Drinevskiy/IGI-STRWEB.git
+ * [new branch]      IGI -> IGI
+ * [new branch]      IGI-LR1 -> IGI-LR1
+ * [new branch]      IGI-LR2 -> IGI-LR2
+ * [new branch]      IGI-LR3 -> IGI-LR3
+ * [new branch]      IGI-LR4 -> IGI-LR4
+ * [new branch]      IGI-LR5 -> IGI-LR5
+ * [new branch]      STRWEB -> STRWEB
+ * [new branch]      STRWEB-LR1 -> STRWEB-LR1
+ * [new branch]      STRWEB-LR2 -> STRWEB-LR2
+ * [new branch]      STRWEB-LR3 -> STRWEB-LR3
+ * [new branch]      STRWEB-LR4 -> STRWEB-LR4
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Drinevskiy/IGI-STRWEB.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout main
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout -
+Switched to branch 'IGI-LR1'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git pull I-S
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 860 bytes | 33.00 KiB/s, done.
+From https://github.com/Drinevskiy/IGI-STRWEB
+ * [new branch]      main       -> I-S/main
+You asked to pull from the remote 'I-S', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout -
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (I-S/main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout I-S/main
+Note: switching to 'I-S/main'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 98cde5e Create file_for_github
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout -
+Previous HEAD position was 98cde5e Create file_for_github
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout I-S/main
+Note: switching to 'I-S/main'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 98cde5e Create file_for_github
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git reset --hard HEAD~1
+fatal: ambiguous argument 'HEAD~1': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git reset --hard HEAD^
+More?
+More?
+fatal: ambiguous argument 'HEAD
+': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (HEAD, I-S/main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout I-S/main
+HEAD is now at 98cde5e Create file_for_github
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (HEAD, I-S/main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout main
+Previous HEAD position was 98cde5e Create file_for_github
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (I-S/main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git reset --hard I-S/main
+HEAD is now at 98cde5e Create file_for_github
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (HEAD -> main, I-S/main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout *
+error: pathspec '*' did not match any file(s) known to git
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout 168c599
+Note: switching to '168c599'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 168c599 Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (I-S/main, main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git branch -f main
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (I-S/main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD, main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git branch -f I-S/main
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (I-S/main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD, main, I-S/main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout main
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (I-S/main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main, I-S/main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git branch -d I-S/main
+Deleted branch I-S/main (was 168c599).
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (I-S/main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=I-S/<branch> main
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git branch --set-upstream-to=I-S/main main
+branch 'main' set up to track 'I-S/main'.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 98cde5e61411ce6c204aa7b92786208465285e6f (I-S/main) Create file_for_github
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote remove I-S
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote add I-S https://github.com/Drinevskiy/IGI-STRWEB.git
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (fetch)
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (push)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote show I-S
+* remote I-S
+  Fetch URL: https://github.com/Drinevskiy/IGI-STRWEB.git
+  Push  URL: https://github.com/Drinevskiy/IGI-STRWEB.git
+  HEAD branch: main
+  Remote branch:
+    main new (next fetch will store in remotes/I-S)
+  Local ref configured for 'git push':
+    main pushes to main (local out of date)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git push --force-with-lease I-S
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream I-S main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git pull I-S
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 859 bytes | 71.00 KiB/s, done.
+From https://github.com/Drinevskiy/IGI-STRWEB
+ * [new branch]      main       -> I-S/main
+You asked to pull from the remote 'I-S', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* a0d06655dc3a0ec615a7a6d0b595ac6035a6e1f5 (I-S/main) Create file_for_github
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote remove I-S
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote add https://github.com/Drinevskiy/IGI-STRWEB.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote add I-S https://github.com/Drinevskiy/IGI-STRWEB.git
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (fetch)
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (push)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git fetch I-S
+From https://github.com/Drinevskiy/IGI-STRWEB
+ * [new branch]      main       -> I-S/main
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* a0d06655dc3a0ec615a7a6d0b595ac6035a6e1f5 (I-S/main) Create file_for_github
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote remove I-S
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout IGI-LR1
+Switched to branch 'IGI-LR1'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout -
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote add I-S https://github.com/Drinevskiy/IGI-STRWEB.git
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (fetch)
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (push)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git pull I-S main
+From https://github.com/Drinevskiy/IGI-STRWEB
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> I-S/main
+fatal: refusing to merge unrelated histories
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* a0d06655dc3a0ec615a7a6d0b595ac6035a6e1f5 (I-S/main) Create file_for_github
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote remove I-S
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote add I-S https://github.com/Drinevskiy/IGI-STRWEB.git
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote -v
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (fetch)
+I-S     https://github.com/Drinevskiy/IGI-STRWEB.git (push)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git push -f I-S
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream I-S main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git push --set-upstream I-S main
+To https://github.com/Drinevskiy/IGI-STRWEB.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Drinevskiy/IGI-STRWEB.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git pull I-S main
+From https://github.com/Drinevskiy/IGI-STRWEB
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> I-S/main
+fatal: refusing to merge unrelated histories
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* a0d06655dc3a0ec615a7a6d0b595ac6035a6e1f5 (I-S/main) Create file_for_github
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log I-S/main
+commit a0d06655dc3a0ec615a7a6d0b595ac6035a6e1f5 (I-S/main)
+Author: Drinevskiy <drinevskiy3@gmail.com>
+Date:   Fri Feb 16 14:57:44 2024 +0300
+
+    Create file_for_github
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log IGI-LR1
+commit 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Fri Feb 16 14:27:10 2024 +0300
+
+    Edit README.md, TEST.txt
+
+commit 05c7ad6102464f819bbbfd841aad654dd3aee79c
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:48:04 2024 +0300
+
+    Revert "Add text.txt"
+
+    This reverts commit 15859d7cf0a32e6d6e9901b040260ee5208d4aac.
+
+commit 15859d7cf0a32e6d6e9901b040260ee5208d4aac
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:46:42 2024 +0300
+
+    Add text.txt
+
+commit 970bbca7d2fe92a066582ff4d4179b59a5faa655
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:51:31 2024 +0300
+
+    IGI-LR1
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout I-S/main
+Note: switching to 'I-S/main'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a0d0665 Create file_for_github
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* a0d06655dc3a0ec615a7a6d0b595ac6035a6e1f5 (HEAD, I-S/main) Create file_for_github
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git rebase main
+Successfully rebased and updated detached HEAD.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* e0d661b722569463f2090b3f91333811f021e7fa (HEAD) Create file_for_github
+| * a0d06655dc3a0ec615a7a6d0b595ac6035a6e1f5 (I-S/main) Create file_for_github
+| * 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+| * 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+| * 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+| * 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| | * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+| |/
+| | * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+| |/
+| | * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+| |/
+| | * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+| |/
+| * 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+|/
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git reset --hard ORIG_HEAD
+HEAD is now at a0d0665 Create file_for_github
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* a0d06655dc3a0ec615a7a6d0b595ac6035a6e1f5 (HEAD, I-S/main) Create file_for_github
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git push -all I-S
+error: did you mean `--all` (with two dashes)?
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git push --all I-S
+Enumerating objects: 54, done.
+Counting objects: 100% (54/54), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (54/54), 3.64 KiB | 744.00 KiB/s, done.
+Total 54 (delta 10), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (10/10), done.
+To https://github.com/Drinevskiy/IGI-STRWEB.git
+ * [new branch]      IGI -> IGI
+ * [new branch]      IGI-LR1 -> IGI-LR1
+ * [new branch]      IGI-LR2 -> IGI-LR2
+ * [new branch]      IGI-LR3 -> IGI-LR3
+ * [new branch]      IGI-LR4 -> IGI-LR4
+ * [new branch]      IGI-LR5 -> IGI-LR5
+ * [new branch]      STRWEB -> STRWEB
+ * [new branch]      STRWEB-LR1 -> STRWEB-LR1
+ * [new branch]      STRWEB-LR2 -> STRWEB-LR2
+ * [new branch]      STRWEB-LR3 -> STRWEB-LR3
+ * [new branch]      STRWEB-LR4 -> STRWEB-LR4
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Drinevskiy/IGI-STRWEB.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git pull
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* a0d06655dc3a0ec615a7a6d0b595ac6035a6e1f5 (HEAD, I-S/main) Create file_for_github
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git checkout main
+Previous HEAD position was a0d0665 Create file_for_github
+Switched to branch 'main'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=I-S/<branch> main
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git-pull
+'git-pull' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git push -f I-S main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Drinevskiy/IGI-STRWEB.git
+ + a0d0665...168c599 main -> main (forced update)
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (I-S/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (I-S/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (I-S/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (I-S/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (I-S/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (I-S/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (I-S/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (I-S/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (I-S/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (I-S/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (I-S/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main, I-S/main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote
+I-S
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote rename I-S origin
+Renaming remote references: 100% (12/12), done.
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git remote
+origin
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main
+
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git lg
+* 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (origin/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+* 05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+* 15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+* 970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+| * 4384fbe61bff3014e7391de5e252b642f424d136 (origin/IGI-LR5, IGI-LR5) IGI-LR5
+|/
+| * 99717f4ec0ab5057561a057747c473e62bc45444 (origin/IGI-LR4, IGI-LR4) IGI-LR4
+|/
+| * 8f5c718c16d65079d07fabbfef66468eff222267 (origin/IGI-LR3, IGI-LR3) IGI-LR3
+|/
+| * 78f1c5d7512623dca5e727baf268d0f3d77907f0 (origin/IGI-LR2, IGI-LR2) IGI-LR2
+|/
+* 266afdda4a974f736f086538a5c6b1f040760ea2 (origin/IGI, IGI) IGI
+| * 34c03da84a37cb4bc920615f15a0418f3200a724 (origin/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+| | * edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (origin/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+| |/
+| | * 9243a8316b417c17f7567466afcbb60242bb9023 (origin/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+| |/
+| | * 1c8ad5e107a0fc025e09a429209846660ce91522 (origin/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+| |/
+| * 94e19a4803069157875617df949d48bd8287376c (origin/STRWEB, STRWEB) STRWEB
+|/
+* 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main, origin/main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log -p
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main, origin/main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+new file mode 100644
+index 0000000..30d74d2
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/TEST.txt
+@@ -0,0 +1 @@
++test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+ ESCOC
+.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+ ^X
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+ ^X
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+ ^X
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main, origin/main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+new file mode 100644
+index 0000000..30d74d2
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/TEST.txt
+@@ -0,0 +1 @@
++test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+ ESCOD
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+ ESCOD
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+...skipping...
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main, origin/main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+diff --git a/IGI/LR1/geometric_lib/TEST.txt b/IGI/LR1/geometric_lib/TEST.txt
+new file mode 100644
+index 0000000..30d74d2
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/TEST.txt
+@@ -0,0 +1 @@
++test
+\ No newline at end of file
+diff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md
+new file mode 100644
+index 0000000..63f8727
+--- /dev/null
++++ b/IGI/LR1/geometric_lib/docs/README.md
+@@ -0,0 +1,10 @@
++# Math formulas
++## Area
++- Circle: S = πR²
++- Rectangle: S = ab
++- Square: S = a²
++
++## Perimeter
++- Circle: P = 2πR
++- Rectangle: P = 2a + 2b
++- Square: P = 4a
+\ No newline at end of file
+diff --git a/IGI/LR2/README.md b/IGI/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR3/README.md b/IGI/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR4/README.md b/IGI/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/IGI/LR5/README.md b/IGI/LR5/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR1/README.md b/STRWEB/LR1/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR2/README.md b/STRWEB/LR2/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR3/README.md b/STRWEB/LR3/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/STRWEB/LR4/README.md b/STRWEB/LR4/README.md
+new file mode 100644
+index 0000000..e69de29
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main, origin/main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --all
+commit 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (origin/IGI-LR1, IGI-LR1)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Fri Feb 16 14:27:10 2024 +0300
+
+    Edit README.md, TEST.txt
+
+commit 05c7ad6102464f819bbbfd841aad654dd3aee79c
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:48:04 2024 +0300
+
+    Revert "Add text.txt"
+
+    This reverts commit 15859d7cf0a32e6d6e9901b040260ee5208d4aac.
+
+commit 15859d7cf0a32e6d6e9901b040260ee5208d4aac
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:46:42 2024 +0300
+
+    Add text.txt
+
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (origin/IGI-LR5, IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+commit 99717f4ec0ab5057561a057747c473e62bc45444 (origin/IGI-LR4, IGI-LR4)
+commit 2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (origin/IGI-LR1, IGI-LR1)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Fri Feb 16 14:27:10 2024 +0300
+
+    Edit README.md, TEST.txt
+
+commit 05c7ad6102464f819bbbfd841aad654dd3aee79c
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:48:04 2024 +0300
+
+    Revert "Add text.txt"
+
+    This reverts commit 15859d7cf0a32e6d6e9901b040260ee5208d4aac.
+
+commit 15859d7cf0a32e6d6e9901b040260ee5208d4aac
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:46:42 2024 +0300
+
+    Add text.txt
+
+commit 4384fbe61bff3014e7391de5e252b642f424d136 (origin/IGI-LR5, IGI-LR5)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:04:21 2024 +0300
+
+    IGI-LR5
+
+commit 99717f4ec0ab5057561a057747c473e62bc45444 (origin/IGI-LR4, IGI-LR4)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:03:02 2024 +0300
+
+    IGI-LR4
+
+commit 8f5c718c16d65079d07fabbfef66468eff222267 (origin/IGI-LR3, IGI-LR3)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 16:00:42 2024 +0300
+
+    IGI-LR3
+
+commit 78f1c5d7512623dca5e727baf268d0f3d77907f0 (origin/IGI-LR2, IGI-LR2)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:56:38 2024 +0300
+
+    IGI-LR2
+
+commit 970bbca7d2fe92a066582ff4d4179b59a5faa655
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:51:31 2024 +0300
+
+    IGI-LR1
+
+commit 266afdda4a974f736f086538a5c6b1f040760ea2 (origin/IGI, IGI)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:23:21 2024 +0300
+
+    IGI
+
+commit 34c03da84a37cb4bc920615f15a0418f3200a724 (origin/STRWEB-LR4, STRWEB-LR4)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:15:19 2024 +0300
+
+    STRWEB-LR4
+
+commit edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (origin/STRWEB-LR3, STRWEB-LR3)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:12:24 2024 +0300
+
+    STRWEB-LR3
+
+commit 9243a8316b417c17f7567466afcbb60242bb9023 (origin/STRWEB-LR2, STRWEB-LR2)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:09:29 2024 +0300
+
+    STRWEB-LR2
+
+commit 1c8ad5e107a0fc025e09a429209846660ce91522 (origin/STRWEB-LR1, STRWEB-LR1)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:06:15 2024 +0300
+
+    STRWEB-LR1
+
+commit 94e19a4803069157875617df949d48bd8287376c (origin/STRWEB, STRWEB)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 15:01:53 2024 +0300
+
+    STRWEB
+
+commit 168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main, origin/main)
+Author: Kirill Drinevskiy <drinevskiy3@gmail.com>
+Date:   Thu Feb 15 14:52:37 2024 +0300
+
+    Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>git log --all --pretty=oneline
+2d45bd73bcdeb900a70e2d5f9d584b886c12f823 (origin/IGI-LR1, IGI-LR1) Edit README.md, TEST.txt
+05c7ad6102464f819bbbfd841aad654dd3aee79c Revert "Add text.txt"
+15859d7cf0a32e6d6e9901b040260ee5208d4aac Add text.txt
+4384fbe61bff3014e7391de5e252b642f424d136 (origin/IGI-LR5, IGI-LR5) IGI-LR5
+99717f4ec0ab5057561a057747c473e62bc45444 (origin/IGI-LR4, IGI-LR4) IGI-LR4
+8f5c718c16d65079d07fabbfef66468eff222267 (origin/IGI-LR3, IGI-LR3) IGI-LR3
+78f1c5d7512623dca5e727baf268d0f3d77907f0 (origin/IGI-LR2, IGI-LR2) IGI-LR2
+970bbca7d2fe92a066582ff4d4179b59a5faa655 IGI-LR1
+266afdda4a974f736f086538a5c6b1f040760ea2 (origin/IGI, IGI) IGI
+34c03da84a37cb4bc920615f15a0418f3200a724 (origin/STRWEB-LR4, STRWEB-LR4) STRWEB-LR4
+edc7fee8dee0c69147e4dc1527c74a39b7c46ab6 (origin/STRWEB-LR3, STRWEB-LR3) STRWEB-LR3
+9243a8316b417c17f7567466afcbb60242bb9023 (origin/STRWEB-LR2, STRWEB-LR2) STRWEB-LR2
+1c8ad5e107a0fc025e09a429209846660ce91522 (origin/STRWEB-LR1, STRWEB-LR1) STRWEB-LR1
+94e19a4803069157875617df949d48bd8287376c (origin/STRWEB, STRWEB) STRWEB
+168c599be134af4b17e0b7f177d8bbffe2935985 (HEAD -> main, origin/main) Initial commit
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>tree
+Folder PATH listing for volume Data
+Volume serial number is 0C12-8B49
+D:.
+├───LR1
+│   └───geometric_lib
+│       └───docs
+├───LR2
+├───LR3
+├───LR4
+└───LR5
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>tree
+Folder PATH listing for volume Data
+Volume serial number is 0C12-8B49
+D:.
+├───IGI
+│   ├───LR1
+│   │   └───geometric_lib
+│   │       └───docs
+│   ├───LR2
+│   ├───LR3
+│   ├───LR4
+│   └───LR5
+└───STRWEB
+    ├───LR1
+    ├───LR2
+    ├───LR3
+    └───LR4
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>git checkout IGI-LR1
+Switched to branch 'IGI-LR1'
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8>cd IGI
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI>cd LR1
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1>mkdir bin
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1>mkdir foo
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1>cd bin
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin>mkdir 700
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin>mkdir which
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin>cd 700
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin\700>echo "" >> empty.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin\700>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin>cd which
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin\which>mkdir 700
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin\which>cd 700
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin\which\700>echo   >> empty.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin\which\700>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin\which>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\bin>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1>cd foo
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo>mkdir 441
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo>mkdir bar
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo>mkdir example
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo>mkdir baz
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo>cd 441
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\441>echo   >> empty.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\441>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo>cd bar
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\bar>mkdir 664
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\bar>cd 664
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\bar\664>echo   >> empty.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\bar\664>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\bar>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo>cd example
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\example>mkdir 200
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\example>cd 200
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\example\200>echo   >> empty.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\example\200>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\example>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo>echo 000 >> test.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo>cd baz
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\baz>mkdir 244
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\baz>cd 244
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\baz\244>echo   >> empty.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\baz\244>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\baz>echo 411 >> readme.txt
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo\baz>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1\foo>cd ..
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1>tree
+Folder PATH listing for volume Data
+Volume serial number is 0C12-8B49
+D:.
+├───bin
+│   ├───700
+│   └───which
+│       └───700
+├───foo
+│   ├───441
+│   ├───bar
+│   │   └───664
+│   ├───baz
+│   │   └───244
+│   └───example
+│       └───200
+└───geometric_lib
+    └───docs
+
+D:\Study\4 semestr\IGI\253502_Drinevskiy_8\IGI\LR1>
