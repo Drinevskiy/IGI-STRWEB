@@ -2,29 +2,30 @@ def input_int():
     """
     Input int and check it.
 
-    Return: 
+    Return:
     number(int): entered number
     """
     number = 0
-    while(True):
+    while (True):
         try:
-            number = int(input()) 
+            number = int(input())
             break
         except ValueError:
             print("Incorrect input. Try again.")
     return number
 
+
 def input_float():
     """
     Input float and check it.
 
-    Return: 
+    Return:
     number(float): entered number
     """
     number = 0
-    while(True):
+    while (True):
         try:
-            number = float(input()) 
+            number = float(input())
             break
         except ValueError:
             print("Incorrect input. Try again.")

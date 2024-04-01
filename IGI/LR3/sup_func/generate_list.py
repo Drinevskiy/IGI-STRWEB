@@ -1,6 +1,7 @@
 import random
 import sup_func.correct_input
 
+
 def generate_float_list(size):
     """
     Generate list of random float value.
@@ -12,11 +13,10 @@ def generate_float_list(size):
     float_list(list): generated list with random values
     """
     index = 0
-    float_list = list()
-    while(index < size):
-        float_list.append(random.uniform(-100000,100000))
-        index+=1
-    return float_list
+    while (index < size):
+        yield random.uniform(-100000, 100000)
+        index += 1
+
 
 def input_float_list(size):
     """
@@ -31,9 +31,9 @@ def input_float_list(size):
     a = 1
     index = 0
     float_list = list()
-    while(index < size):
-        print("Input value:", end = " ")
+    while (index < size):
+        print("Input value:", end=" ")
         a = sup_func.correct_input.input_float()
         float_list.append(a)
-        index+=1
-    return float_list        
+        index += 1
+    return float_list

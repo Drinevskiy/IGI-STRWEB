@@ -1,5 +1,6 @@
 from sup_func.correct_input import input_int
 
+
 def sum_second_number():
     """
     Sums up every second number.
@@ -11,13 +12,14 @@ def sum_second_number():
     a = 1
     even = False
     res = 0
-    while(a!=0):
-        print("Input value:", end = " ")
+    while (a != 0):
+        print("Input value:", end=" ")
         a = input_int()
-        if(even):
+        if (even):
             res += a
         even = not even
-    return res      
+    return res
+
 
 def task2():
     """
@@ -25,3 +27,4 @@ def task2():
     """
     print("Sums up every second number")
     print(f"Result: {sum_second_number()}")
+    print()
