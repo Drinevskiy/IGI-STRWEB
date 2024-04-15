@@ -1,0 +1,10 @@
+Narrative: 3
+Interrogative: 1
+Exlamation: 2
+Sentences: 6
+Average sentence length: 61.0
+Average word length: 4.357142857142857
+Smiles: 5
+Upper case and numbers: ['A', 'A', 'B', '74HJ8N9', 'F', 'A', 'HJBK645KJ']
+Longest word starts with 'l': laugHt’er
+Repeatable words: {'A', 'was', 'a', 'of', 'park', 'day', 'The', 'hand', 'in', 'the'}
