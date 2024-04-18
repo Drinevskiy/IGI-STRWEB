@@ -49,7 +49,7 @@ class Shop:
             with open(self.__filename_pickle, "wb") as fh:
                 pickle.dump(self.products, fh)
         except Exception as ex:
-            print("{ex}")
+            print(f"{ex}")
             
     def load_pickle(self):
         """
@@ -59,7 +59,7 @@ class Shop:
             with open(self.__filename_pickle, "rb") as fh:
                 return pickle.load(fh)
         except Exception as ex:
-            print("{ex}")
+            print(f"{ex}")
             
     def save_csv(self):
         """
@@ -72,7 +72,7 @@ class Shop:
                 for key, value in sorted(self.products.items()):
                     writer.writerow(dict(Product=key, Old=value[0], New=value[1]))
         except Exception as ex:
-            print("{ex}")
+            print(f"{ex}")
                 
     def load_csv(self):
         """
@@ -85,7 +85,7 @@ class Shop:
                 for row in list(reader):
                     products[row[0]] = [row[1], row[2]]
         except Exception as ex:
-            print("{ex}")
+            print(f"{ex}")
         return products
 
 class ExtendedShop(Shop):
