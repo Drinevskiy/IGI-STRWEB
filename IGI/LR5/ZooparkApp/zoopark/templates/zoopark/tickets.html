@@ -1,0 +1,15 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/tickets.css' %}">
+{% endblock %}
+{% block content %}
+    <h1>Покупка билетов</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Купить" >
+    </form>
+{% endblock %}

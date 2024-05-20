@@ -1,12 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+    <form method="GET" action="{% url 'zoopark:index' %}">
+        <label for="name">Имя </label>
+        <input name="name" id="name" type="text"/>
+        <label for="age">Сортировать по возрасту </label>
+        <input type="checkbox" id="age" name="age"/>
+        <input type="submit" value="Поиск">
+    </form>
+    <div class="animal-cards-container">
+        {% for animal in animals %}
+            <a href="{% url 'zoopark:animal' animal.pk %}">
+                <div class="animal-card">
+                    <img src="{% if animal.image %}{{ animal.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}" alt="">
+                    {% comment %} <img src="{% static animal.image.url %}" alt="{% static 'images/no.jpg' %}"> {% endcomment %}
+                    <div class="animal-info">
+                    <h3>{{ animal.name }}</h3>
+                    <p>{{ animal.description }}</p>
+                    <ul class="animal-details">
+                        <li><span>Вид:</span> {{ animal.type }}</li>
+                        <li><span>Семейство:</span> {{ animal.family }}</li>
+                        <li><span>Возраст: </span>{{ animal.age }} {% if animal.age == 1 %}год{% elif animal.age < 5 and animal.age > 1 %}года{% else %}лет{% endif %}</li>
+                        <li><span>Вольер:</span> {{ animal.aviary }}</li>
+                    </ul>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+{{content}}
+{% endblock %}

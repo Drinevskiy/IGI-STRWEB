@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('zoopark.urls')),
+    path('admin/', admin.site.urls, name="admin:index"),
+    path('', include("zoopark.urls", namespace="zoopark")),
+    path('auth/', include("users.urls", namespace="users")),
+    path("__debug__/", include("debug_toolbar.urls")),
 ]

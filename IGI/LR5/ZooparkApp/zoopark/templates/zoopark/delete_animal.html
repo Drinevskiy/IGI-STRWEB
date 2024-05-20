@@ -1,0 +1,10 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/tickets.css' %}">
+{% endblock %}
+{% block content %}
+    <h3 align="center">{{name}} удален</h3>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{animal.name}}{% endblock %}
+{% block content %}
+<div class="animal-card" >
+    <div class="animal-image">
+      <img src="{% if animal.image %}{{ animal.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}">
+    </div>
+    <div class="animal-info">
+      <h2>{{ animal.name }}</h2>
+      <p>{{ animal.description }}</p>
+      <p>Возраст: {{ animal.age }} {% if animal.age == 1 %}год{% elif animal.age < 5 and animal.age > 1 %}года{% else %}лет{% endif %}</p>
+      <p>Дата поступления: {{ animal.date_of_receipt }}</p>
+      <p>Вид: {{ animal.type.name }}</p>
+      <p>Семейство: {{ animal.family.name }}</p>
+      <p>Континент: {{ animal.family.continent }}</p>
+      <p>Вольер: {{ animal.aviary.name }}</p>
+      {% if user.is_superuser%}
+        <a href="{% url 'zoopark:edit-animal' animal.pk%}">Изменить</a>
+        <a href="{% url 'zoopark:delete-animal' animal.pk%}">Удалить</a>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
