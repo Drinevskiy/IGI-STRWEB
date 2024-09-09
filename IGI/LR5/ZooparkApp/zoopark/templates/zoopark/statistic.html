@@ -1,0 +1,140 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock %}
+{% block content %}
+    <h2>Сотрудники</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ник</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Дата рождения</th>
+                <th>Должность</th>
+                <th>Зарплата</th>
+                <th>Телефон</th>
+                <th>Вольеры</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in zip_list %}
+            <tr>
+                    <td>{{ item.0.user.username }}</td>
+                    <td>{{ item.0.user.last_name }}</td>
+                    <td>{{ item.0.user.first_name }}</td>
+                    <td>{{ item.0.user.date_of_birth }}</td>
+                    <td>{{ item.0.position.name }}</td>
+                    <td>{{ item.0.position.salary }}</td>
+                    <td>{{ item.0.user.phone }}</td>
+                    <td>{{ item.1|join:", " }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2>Вольеры</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Вольер</th>
+                <th>Площадь</th>
+                <th>Водоем</th>
+                <th>Отопление</th>
+                <th>Количество животных</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for av in aviaries %}
+            <tr>
+                    <td>{{ av.id }}</td>
+                    <td>{{ av.name }}</td>
+                    <td>{{ av.square }}</td>
+                    <td>{% if av.reservoir %}+{% else %}-{% endif%}</td>
+                    <td>{% if av.heating %}+{% else %}-{% endif%}</td>
+                    <td>{{ av.num_animals }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2>Животные</h2>
+    <div>
+        <form method="GET" action="{% url 'zoopark:statistic' %}">
+            <label for="name">Поступили в последнее полугодие </label>
+            <input type="checkbox" id="name" name="recently"/>
+            <input type="submit" value="Фильтровать">
+        </form>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Фото</th>
+                <th>Животное</th>
+                <th>Описание</th>
+                <th>Дата рождения</th>
+                <th>Дата поступления</th>
+                <th>Вид</th>
+                <th>Семейство</th>
+                <th>Континент</th>
+                <th>Корм</th>
+                <th>Суточное потребление корма</th>
+                <th>Расписание кормления</th>
+                <th>Вольер</th>
+                <th>Сотрудник</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in animals %}
+            <tr>
+                    {% comment %} <td><img src="{% static item.0.image.url %}" width=200px alt="{% static 'images/no.jpg' %}"></td> {% endcomment %}
+                    <td><img src="{% if item.0.image %}{{ item.0.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}" width=200px alt=""></td>
+                    <td>{{ item.0.name }}</td>
+                    <td>{{ item.0.description }}</td>
+                    <td>{{ item.0.date_of_birth }}</td>
+                    <td>{{ item.0.date_of_receipt }}</td>
+                    <td>{{ item.0.type.name }}</td>
+                    <td>{{ item.0.family.name }}</td>
+                    <td>{{ item.0.family.continent }}</td>
+                    <td>{{ item.1|join:", " }}</td>
+                    <td>{{ item.0.daily_norm }}</td>
+                    <td>{{ item.0.feeding_schedule }}</td>
+                    <td>{{ item.0.aviary }}</td>
+                    <td>{{ item.0.employee }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2>Данные</h2>
+    <div>
+        <form method="GET" action="{% url 'zoopark:statistic' %}">
+            <label for="aviary">Вольер </label>
+            <select name="aviary" id="aviary">
+                {% for aviary in aviaries %}
+                    <option value="{{ aviary.id }}">{{ aviary.name }}</option>
+                {% endfor %}
+            </select>
+            <label for="type">Вид </label>
+            <select name="type" id="type">
+                {% for type in types %}
+                    <option value="{{ type.id }}">{{ type.name }}</option>
+                {% endfor %}
+            </select>
+            <label for="family">Семейство </label>
+            <select name="family" id="family">
+                {% for family in families %}
+                    <option value="{{ family.name }}">{{ family.name }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Получить">
+        </form>
+    </div>
+    <p>Суточное потребление корма в {{ aviary_info.0.name }}: {{ aviary_info.1 }}. Виды  животных в {{ aviary_info.0.name }}: {{ aviary_info.2|join:", " }}</p>
+    <p>Численность вида {{ type_info.0.name }} в зоопарке составляет {{ type_info.1 }} {% if type_info.1 == 1 %}особь{% elif type_info.1 > 1 and type_info.1 < 5%}особи{% else %}особей{% endif%}</p>
+    <p>Численность семейства {{ family_info.0 }} в зоопарке составляет {{ family_info.1 }} {% if family_info.1 == 1 %}особь{% elif family_info.1 > 1 and family_info.1 < 5%}особи{% else %}особей{% endif%}</p>
+    {% comment %} <img src="../../static/media/images/graph.png"></img> {% endcomment %}
+    {{ plot|safe }}
+    {% comment %} <img src="{% static 'media/images/graph.png' %}"/> {% endcomment %}
+{% endblock %}
