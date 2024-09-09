@@ -1,0 +1,15 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+{% for vacancy in vacancies %}
+    <div class="animal-card">
+        <div class="animal-info">
+            <h3>{{ vacancy.position.name }}</h3>
+            <p>{{ vacancy.position.description}}</p>
+            <p>{{ vacancy.count }} {% if vacancy.count == 1 %}место{% elif vacancy.count < 5 and vacancy.count > 1 %}места{% else %}мест{% endif %}</p>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

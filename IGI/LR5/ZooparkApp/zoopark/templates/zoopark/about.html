@@ -1,0 +1,12 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+    <p>{{company.info}}</p>
+    <p>{{company.history}}</p>
+    <p>{{company.certificate}}</p>
+    <p>{{company.requisites}}</p>
+    <div><img src="{{company.image.url}}" width="300"/></div>
+    <video src="{{company.video.url}}" autoplay controls></video>
+{% endblock %}
