@@ -17,7 +17,6 @@
                 {% if ticket.photosession %}<li>Фотосессия</li>{% endif %}
                 {% if not ticket.photosession and not ticket.feeding and not ticket.excursion %}<li>Стандартный</li>{% endif %}
             </ul>
-            <input type="range" value="{{ticket.count}}" min="1" max="10" id="count" />
             <p id="countDisplay">{{ticket.count}} шт.</p>
             <p class="price">{{ ticket.full_cost}} рублей</p>
         </div>

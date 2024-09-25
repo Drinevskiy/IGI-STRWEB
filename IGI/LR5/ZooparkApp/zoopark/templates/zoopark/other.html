@@ -4,7 +4,26 @@
 {% block title %}{{title}}{% endblock %}
 {% block content %}
     <h1 id="start">Прочее</h1>
-    <h2>Листинг</h2>
+    <h2>Навигация</h2>
+    <aside>
+        <p><a href=#listing>Листинг</a></p>
+        <p><a href=#abbr>Аббревиатуры</a></p>
+        <p><a href=#dfn>Определения</a></p>
+        <p><a href=#quote>Цитаты</a></p>
+        <p><a href=#date>Дата и время</a></p>
+        <p><a href=#poem>Стихотворение</a></p>
+        <p><a href=#references>Ссылки</a></p>
+        <p><a href=#olist>Нумерованный список</a></p>
+        <p><a href=#ulist>Маркированный список</a></p>
+        <p><a href=#dlist>Список определений</a></p>
+        <p><a href=#figure>Фигура</a></p>
+        <p><a href=#table>Таблица</a></p>
+        <p><a href=#form1>Форма</a></p>
+        <p><a href=#frame>Фрейм</a></p>
+        <p><a href=#audio>Аудио и видео</a></p>
+        <p><a href=#image>Адаптивное изображение</a></p>
+    </aside>
+    <h2 id="listing">Листинг</h2>
     <pre>
         <code>
         function addNumbers(a, b) {
@@ -18,23 +37,23 @@
     <samp>15</samp>
     
     <p>Чтобы ввести данные, нажмите <kbd>Enter</kbd> после ввода.</p> 
-    <h2>Аббревиатуры</h2>
+    <h2 id="abbr">Аббревиатуры</h2>
     <abbr title="Belarusian State University of Informatics and Radioelectronics">BSUIR</abbr><br>
     <abbr title="Union of Soviet Socialist Republics">USSR</abbr><br>
     <abbr title="United States of America">USA</abbr><br>
-    <h2>Определения</h2>
+    <h2 id="dfn">Определения</h2>
     <dfn title="Python">Python - это интерпретируемый, интерактивный, объектно-ориентированный и высокоуровневый язык программирования общего назначения c динамической строгой типизацией и автоматическим управлением памятью, ориентированный на повышение производительности разработчика, читаемости кода, а также на обеспечение переносимости написанных на нем программ.</dfn><br>
     <dfn title="Petrichor">Петрикор — землистый запах, который ощущается сразу после начала дождя</dfn><br>
     <dfn title="Internet">Интернет — информационно - коммуникационная сеть и всемирная система объединённых компьютерных сетей для хранения и передачи информации.</dfn>
-    <h2>Цитаты</h2>
+    <h2 id="quote">Цитаты</h2>
     <q cite="https://www.litres.ru/journal/120-tsitat-pro-zhizn-kotorye-pomogut-vdokhnovitsia-i-zadumatsia/">Думайте о прошлом, только если воспоминания приятны вам.</q><br>
     <blockquote cite="https://www.litres.ru/journal/120-tsitat-pro-zhizn-kotorye-pomogut-vdokhnovitsia-i-zadumatsia/">
         <p>Человек создан, чтобы жить в обществе; разлучите его с ним, изолируйте его – и мысли у него спутаются, характер ожесточится, сотни нелепых страстей зародятся в его душе, сумасбродные идеи пустят ростки в его мозгу, как дикий терновник среди пустыря.</p>
     </blockquote>
-    <h2>Дата и время</h2>
+    <h2 id="date">Дата и время</h2>
     <time datetime="11:00">11 o'clock</time>
     <time datetime="2004-21-12">12 декабря 2024 года</time>
-    <h2>Четверостишие</h2>
+    <h2 id="poem">Стихотворение</h2>
     <p>Ветры шепчут нежно, <br>
         Листья кружатся в танце, <br>
         Ночь окутывает мир, <br>
@@ -45,23 +64,23 @@
             Наполняя душу светом,
             Открывая новые дали.</pre>
             В теплый солнечный день, когда ветер лениво колыхал листья деревьев, я решил отправиться на прогулку в парк, где пели птицы, цветы распускались, а дети смеялись и играли,<wbr> создавая атмосферу радости и умиротворения, что напомнило мне о беззаботных летних днях моего детства, когда всё казалось проще и ярче.
-    <h2>Ссылки</h2>
+    <h2 id="references">Ссылки</h2>
     <a href="mailto:drinevskiy3@gmail.com?subject=Вопрос">Отправить сообщение по адресу drinevskiy3@gmail.com</a><br>
     <a href="tel:+375447438818">Позвонить </a><br>
     <a href="{% static 'media/images/zoopark_icon.jpg' %}" download="zoo_icon.pdf">Download Icon</a><br>
-    <h2>Нумерованный список</h2>
+    <h2 id="olist">Нумерованный список</h2>
     <ol type="a" reversed>
         <li>Первый элемент</li>
         <li>Второй элемент</li>
         <li>Третий элемент</li>
     </ol>
-    <h2>Маркированный список</h2>
+    <h2 id="ulist">Маркированный список</h2>
     <ul type="square">
         <li>Элемент A</li>
         <li type="disc">Элемент B</li>
         <li>Элемент C</li>
     </ul>
-    <h2>Список определений</h2>
+    <h2 id="dlist">Список определений</h2>
     <dl>
         <dt>HTML</dt>
         <dd>Язык разметки для создания веб-страниц.</dd>
@@ -70,24 +89,12 @@
         <dt>JavaScript</dt>
         <dd>Язык программирования для создания интерактивных элементов на веб-страницах.</dd>
     </dl>
-    <h2>Фигура</h2>
+    <h2 id="figure">Фигура</h2>
     <figure>
         <p><img src="{% static 'media/images/zoopark_icon.jpg' %}" alt=""></p>
         <figcaption>Logo</figcaption>
     </figure>
-    <h2>Навигация</h2>
-    <aside>
-        <p><a href="{% url 'zoopark:service' %}">Услуги</a></p>
-        <p><a href="{% url 'zoopark:about' %}">О нас</a></p>
-        <p><a href="{% url 'zoopark:news' %}">Новости</a></p>
-        <p><a href="{% url 'zoopark:questions' %}">Вопросы</a></p>
-        <p><a href="{% url 'zoopark:contacts' %}">Контакты</a></p>
-        <p><a href="{% url 'zoopark:vacancies' %}">Вакансии</a></p>
-        <p><a href="{% url 'zoopark:politics' %}">Политика конфиденциальности</a></p>
-        <p><a href="{% url 'zoopark:feedbacks' %}">Отзывы</a></p>
-        <p><a href="{% url 'zoopark:other' %}">Прочее</a></p>
-    </aside>
-    <h2>Таблица</h2>
+    <h2 id="table">Таблица</h2>
     <table border="1px" cellpading="5%" cellspacing="5px">
         <caption>Тестовый пример</caption>
         <thead>
@@ -126,7 +133,7 @@
             </tr>
         </tbody>
     </table>
-    <h2>Форма</h2>
+    <h2 id="form1">Форма</h2>
     <form method="post" enctype="multipart/form-data" accept="image/jpeg, image/png, image/jpg">
         {% csrf_token %}
         <label for="name">Имя:</label>
@@ -155,7 +162,7 @@
         <br><br>
         <p>Пол:</p>
         <label>
-            <input type="radio" name="gender" value="male" required> Мужской
+            <input type="radio" name="gender" value="male" required checked> Мужской
         </label>
         <label>
             <input type="radio" name="gender" value="female"> Женский
@@ -197,17 +204,33 @@
         <option value="Помидоры">Сочные помидоры</option>
         <option value="Перец" />
       </datalist>
-    <h2>Фрейм</h2>
+    <h2 id="frame">Фрейм</h2>
     <a href="https://iis.bsuir.by/schedule" target="fr">IIS</a><br>
     <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" target="fr">Википедия</a>
     <br><br>
-    <iframe name="fr" width="1280" height="720">Old browser</iframe>
+    <iframe name="fr" width="1280" height="720" src="https://iis.bsuir.by/schedule">Old browser</iframe>
     <br><br>
-    <h2>Аудио</h2>
+    <h2 id="audio">Аудио и видео</h2>
     <audio controls>
         <source src="{% static 'media/audio/amazed.mp3' %}"/>
     </audio>
+    <div>
+        <embed
+            src="http://www.youtube.com/v/qzA60hHca9s?version=3"
+            type="application/x-shockwave-flash"
+            width="1080" height="720">
+    </div>
+    <div>
+        <object width="1080" height="720" 
+            data="http://www.youtube.com/v/qzA60hHca9s?version=3"
+            type="application/x-shockwave-flash">
+        <param name="allowFullScreen" value="true">
+            <b>Sorry!</b> We can't display this content
+ </object>
+
+    </div>
     <br><br>
+    <h2 id="image">Адаптивное изображение</h2>
     {% comment %} <picture>
         <source media="(max-width: 500px)" 
             sizes="(max-width: 300px) 50vw, 30vw"

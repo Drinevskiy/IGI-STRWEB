@@ -6,9 +6,11 @@
 {% for question in questions %}
     <div class="animal-card">
         <div class="animal-info">
-        <h3>{{ question.question }}</h3>
-        <p>{{ question.answer }}</p>
+        <details>
+            <summary><h3>{{ question.question }}</h3></summary>
+            <p>{{ question.answer }}</p>
         <p>{{ question.date }}</p>
+        </details>
         </div>
     </div>
 {% endfor %}
