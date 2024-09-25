@@ -1,0 +1,16 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+{% for new in news %}
+    <div class="animal-card">
+        <img src="{{new.image.url}}" alt="">
+        <div class="animal-info">
+        <h3>{{ new.header }}</h3>
+        <p>{{ new.short_description }}</p>
+        <a href="{% url 'zoopark:new' new.pk %}">Читать далее</a>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

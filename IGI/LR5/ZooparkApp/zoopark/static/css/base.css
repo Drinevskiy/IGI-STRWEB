@@ -1,0 +1,120 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Шапка */
+  header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-row: 1;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Основной контент */
+  .content {
+    padding: 20px;
+    grid-row: 2;
+  }
+  
+  /* Футер */
+  footer {
+    background-color: #5d8deb;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    grid-row: 3;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer address {
+    font-style: italic;
+  }
+
+  .animal-cards-container {
+    display: flex;
+    direction: ltr;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .animal-card {
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(172, 204, 247);
+  }
+  
+  .animal-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .animal-info {
+    padding: 15px;
+    color: #000000;
+  }
+  
+  .animal-info h3 {
+    margin-top: 0;
+  }
+  
+  .animal-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .animal-details li {
+    margin-bottom: 10px;
+  }
+  
+  .animal-details span {
+    font-weight: bold;
+  }

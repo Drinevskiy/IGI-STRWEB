@@ -1,0 +1,17 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+{% for feedback in feedbacks %}
+    <div class="animal-card">
+        <div class="animal-info">
+        <h3>{{ feedback.user.last_name }} {{ feedback.user.first_name }}</h3>
+        <p>{{ feedback.text }}</p>
+        <p>{{ feedback.mark }}/5</p>
+        <p>{{ feedback.date }}</p>
+        </div>
+    </div>
+{% endfor %}
+<a href="{% if user.is_authenticated %}{% url 'zoopark:add-feedback'%}{% else %}{% url 'users:registration'%}{% endif %}">Добавить отзыв</a>
+{% endblock %}

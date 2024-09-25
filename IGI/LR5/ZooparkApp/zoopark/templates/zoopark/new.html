@@ -1,0 +1,11 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{new.header}}{% endblock %}
+{% block content %}
+    <img src="{{new.image.url}}">
+    <div class="animal-info">
+        <h3>{{ new.header }}</h3>
+        <p>{{ new.description }}</p>
+    </div>
+{% endblock %}

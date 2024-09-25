@@ -1,0 +1,16 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/tickets.css' %}">
+{% endblock %}
+{% block content %}
+    <h1>Добавить промокод</h1>
+    <p align="center">{{success}}</p>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Добавить" >
+    </form>
+{% endblock %}

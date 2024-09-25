@@ -1,0 +1,16 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+{% for contact in contacts %}
+    <div class="animal-card">
+        <div class="animal-info">
+            <img src="{{contact.image.url}}" alt="">
+            <h3>{{ contact.user.last_name }} {{ contact.user.first_name }}</h3>
+            <p>Телефон: {{ contact.user.phone }}</p>
+            <p>Должность: {{ contact.position.name }}</p>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

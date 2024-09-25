@@ -1,0 +1,34 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/service.css' %}">
+{% endblock %}
+{% block content %}
+  <section class="schedule">
+    <h2>График работы</h2>
+    <ul>
+      <li>Понедельник - пятница: 10:00 - 18:00</li>
+      <li>Суббота - воскресенье: 10:00 - 19:00</li>
+      <li>Праздничные дни: 10:00 - 18:00</li>
+    </ul>
+  </section>
+  <section class="services">
+    <h2>Платные услуги</h2>
+    <ul>
+      <li>Стандартный билет: 12 руб./чел.</li>
+      <li>Экскурсия по зоопарку: 20 руб./чел.</li>
+      <li>Кормление животных: 3 руб./чел.</li>
+      <li>Фотосессия с животными: 15 руб./чел.</li>
+    </ul>
+  </section>
+  <section class="promocodes">
+    <h2>Промокоды</h2>
+    <ul>
+    {% for promocode in promocodes %}
+        <li>{{ promocode.name }} - {{ promocode.percentage }}%</li>
+    {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

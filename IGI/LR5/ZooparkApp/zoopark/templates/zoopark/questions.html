@@ -1,0 +1,17 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+{% for question in questions %}
+    <div class="animal-card">
+        <div class="animal-info">
+        <details>
+            <summary><h3>{{ question.question }}</h3></summary>
+            <p>{{ question.answer }}</p>
+        <p>{{ question.date }}</p>
+        </details>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

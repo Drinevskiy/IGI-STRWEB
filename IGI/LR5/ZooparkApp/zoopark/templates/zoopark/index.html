@@ -1,0 +1,65 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block meta %}
+    <meta name="author" content="Кирилл Дриневский" />
+    <meta name="description" content="Главная страница сайта зоопарка." />
+{% endblock %}
+{% block content %}
+    <div style="margin: 10px 20px" itemscope itemtype="https://schema.org/ImageObject">
+        <img itemprop="contentUrl" src="{% static 'media/images/banner1.jpg' %}" height="150" width="33%"/>
+        <img itemprop="contentUrl" src="{% static 'media/images/banner2.png' %}" height="150" width="33%"/>
+        <img itemprop="contentUrl" src="{% static 'media/images/banner3.jpg' %}" height="150" width="33%"/>
+    </div>
+    <section>
+        <p hidden>Скрытый текст</p>
+        <h1 draggable="true">Новости</h1>
+        <div itemscope itemtype="https://schema.org/NewsArticle">
+            <h3 itemprop="headline">{{ new.header }}</h3>
+            <p itemprop="description">{{ new.short_description }}</p>
+            <a href="{% url 'zoopark:new' new.pk %}" itemprop="url">Читать далее</a>
+        </div>
+    </section>
+    <section>
+        <h1>Питомцы</h1>
+        <form method="GET" action="{% url 'zoopark:index' %}">
+            <label for="name">Имя </label>
+            <input accesskey="q" name="name" id="name" type="text"/>
+            <label for="age">Сортировать по возрасту </label>
+            <input type="checkbox" id="age" name="age"/>
+            <input type="submit" value="Поиск">
+        </form>
+        <div class="animal-cards-container">
+            {% for animal in animals %}
+                <article>
+                    <a href="{% url 'zoopark:animal' animal.pk %}">
+                        <div class="animal-card">
+                            <img src="{% if animal.image %}{{ animal.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}" alt="">
+                            {% comment %} <img src="{% static animal.image.url %}" alt="{% static 'images/no.jpg' %}"> {% endcomment %}
+                            <div class="animal-info">
+                            <h3>{{ animal.name }}</h3>
+                            <p>{{ animal.description }}</p>
+                            <ul class="animal-details">
+                                <li><span>Вид:</span> {{ animal.type }}</li>
+                                <li><span>Семейство:</span> {{ animal.family }}</li>
+                                <li><span>Возраст: </span>{{ animal.age }} {% if animal.age == 1 %}год{% elif animal.age < 5 and animal.age > 1 %}года{% else %}лет{% endif %}</li>
+                                <li><span>Вольер:</span> {{ animal.aviary }}</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+    <aside>
+        {% for partner in partners %}
+            <a href="{{partner.url}}" target="_blank">
+                <img src="{{ partner.image.url }}" width="50" height="50" alt="">
+                {{partner.name}}
+            </a>
+        {% endfor %}
+    </aside>
+{{content}}
+{% endblock %}
