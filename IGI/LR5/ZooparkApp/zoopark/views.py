@@ -2,8 +2,8 @@ from django.shortcuts import get_object_or_404, redirect, render
 from datetime import datetime, timedelta
 from django.db.models import Count, Sum
 from django.contrib.auth.decorators import login_required, user_passes_test
-from zoopark.services.cat_facts import get_fact
-from zoopark.services.dog_photos import get_photo
+from .services.cat_facts import get_fact
+from .services.dog_photos import get_photo
 from .models import *
 from .forms import *
 from last_time import last_change_datetime
@@ -14,15 +14,18 @@ import logging
 def index(request):
     name = request.GET.get("name", "")
     age = request.GET.get("age") == "on"
-    animals = Animal.objects.filter(name__icontains=name.lower()) | Animal.objects.filter(name__icontains=name.upper())
+    # animals = Animal.objects.filter(name__icontains=name.lower() | name__icontains=name.upper()) 
+
+    animals = Animal.objects.filter(name_lower__icontains=name.lower())
+    # animals = Animal.objects.filter(name__icontains=name.upper())
     partners = Partner.objects.all()
-    new = News.objects.last()
+    news = News.objects.order_by('-id')[:3]
     if age:
         animals = animals.order_by("date_of_birth")
     context = {"title" : "Главная",
                "animals" : animals,
                "partners" : partners,
-               "new" : new }
+               "news" : news }
     return render(request, "zoopark/index.html", context)
 
 def service(request):
@@ -250,7 +253,7 @@ def add_animal(request):
             date_of_birth = datetime.strptime(request.POST.get("date_of_birth"), "%Y-%m-%d")
             feeding_schedule = request.POST.get('feeding_schedule')
             image = request.FILES.get('image')
-            Animal.objects.create(name=name,
+            animal = Animal.objects.create(name=name,
                                   type=AnimalType.objects.get(pk=type),
                                   family=AnimalFamily.objects.get(pk=family),
                                   employee=Employee.objects.get(pk=employee),
@@ -261,6 +264,7 @@ def add_animal(request):
                                   date_of_birth=date_of_birth,
                                   feeding_schedule=feeding_schedule,
                                   image=image).feed.set(feed)
+            Animal.save(animal)
             context["success"] = "Животное добавлено"
             global last_change_datetime
             last_change_datetime = datetime.now()

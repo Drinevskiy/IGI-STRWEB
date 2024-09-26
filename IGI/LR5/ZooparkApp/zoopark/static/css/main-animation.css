@@ -1,0 +1,194 @@
+@import url('/static/css/fonts.css');
+.scene {
+    position: relative;
+    /* width: 100vw; */
+    height: 40vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation: fade 2s both 1s; 
+}
+
+.branch {
+    position: absolute;
+    /* bottom: 50px; Высота ветки */
+    width: 30%; /* Длина ветки */
+    height: 20px; /* Толщина ветки */
+    background-color: #8B4513; /* Цвет ветки */
+    border-radius: 10px; /* Закругленные края ветки */
+}
+
+.panda {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: sway 1s infinite alternate; /* Анимация раскачивания */
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.eye {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    top: 30%;
+    z-index: 1;
+    animation: blink 3s infinite; /* Анимация моргания */
+    }
+
+.eye.left {
+    left: 20%;
+}
+
+.eye.right {
+    right: 20%;
+
+}
+
+.ear {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    top: -10%;
+}
+
+.ear.left {
+    left: -1%;
+}
+
+.ear.right {
+    right: -1%;
+}
+
+.mouth{
+    position: absolute;
+    border: 16px solid #de6262;
+    border-radius: 50%;
+    top: 55%;
+    left: 35%;
+    border-color: #de6262 #de6262 transparent transparent;
+    transform: rotate(135deg);
+}
+
+.body {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.arm {
+    position: absolute;
+    /* bottom: ; */
+    top: 60%;
+    width: 20px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.arm.left{
+    left: 15%;
+    animation: swing 1s infinite alternate; /* Анимация раскачивания лапы */
+}
+
+.arm.right{
+    right: 15%;
+    animation: swing-reverse 1s infinite alternate; /* Анимация раскачивания лапы */
+}
+
+
+.trees {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    /* gap: 50px; */
+}
+
+.tree {
+    width: 40px;
+    height: 90px;
+    border-radius: 0 0 15px 15px;
+    background-color: #8B4513; /* Цвет ствола */
+    position: relative;
+    animation: sway-trees 1s linear infinite alternate; /* Анимация колебания деревьев */
+
+}
+
+.tree:before {
+    content: '';
+    position: absolute;
+    bottom: 80%;
+    left: -15px;
+    width: 80px;
+    height: 80px;
+    background-color: #106210; /* Цвет листвы */
+    border-radius: 50%;
+}
+
+.zoo-name {
+    position: absolute;
+    top: 15%;
+    margin: 15px 0;
+    color: Black;
+    font-family: "Blade", "Bergamasco", sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 6px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards 1s; /* Появление названия */
+}
+
+@keyframes blink {
+    0%, 100% { height: 10px; }
+    50% { height: 1px; }
+}
+
+@keyframes sway {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(5deg); }
+}
+
+@keyframes swing {
+    0% { transform: rotate(-30deg); }
+    100% { transform: rotate(30deg); }
+}
+@keyframes swing-reverse {
+    0% { transform: rotate(30deg); }
+    100% { transform: rotate(-30deg); }
+}
+
+@keyframes sway-trees {
+    0% { transform: rotate(-15deg); }
+    100% { transform: rotate(15deg); }
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; letter-spacing: 200px; font-size: 10em; color: #ccc;}
+    100% { opacity: 1; letter-spacing: 50px; font-size: 3em; color: #000}
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% { opacity: 1;}
+}

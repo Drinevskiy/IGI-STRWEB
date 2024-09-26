@@ -1,0 +1,95 @@
+@import url('/static/css/fonts.css');
+
+.animal-cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Автоматически заполняем колонки */
+    gap: 35px; /* Промежутки между карточками */
+    margin: 50px 0;
+    /* width: 100%; */
+}
+
+.animal-cards-container a:hover{
+    text-decoration: none;
+}
+
+.animal-card{
+    /* background-color: #9e9df8; */
+    background-color: #927acf;
+    /* background-color: #FFE1A0; */
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex; /* Добавляем Flexbox для карточек */
+    flex-direction: column; /* Вертикальное расположение содержимого */
+    height: 100%; 
+    transition: background-color 0.5s, box-shadow 0.5s;
+} 
+
+.animal-card:hover{
+    background-color: rgb(196, 174, 251);
+    box-shadow: 0 4px 20px#feca3a;
+}
+.animal-card:hover .animal-info hr{
+    border: 1px solid #23c7f0;
+}
+
+.animal-card img{
+    max-width: 100%;
+    /* margin: 10px; */
+    height: auto; 
+    aspect-ratio: 3 / 2;
+}
+.animal-card .animal-info {
+    flex: 1; /* Позволяет содержимому занимать оставшееся пространство */
+    padding: 0 20px; /* Отступы для содержимого карточки */
+    display: flex; 
+    flex-direction: column;
+} 
+
+.animal-card .animal-info h3 {
+    padding: 0;
+    margin: 20px 0 10px;
+    color: Black;
+    font-family: "Blade", "Bergamasco", sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 6px;
+} 
+
+.animal-card p{
+    color: black;
+    line-height: 1.2em;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+}
+
+.animal-info ul{
+    padding: 0;
+}
+
+.animal-info hr{
+    width: 100%;
+    border: 1px solid #FFAE00;
+}
+
+.animal-details{
+    list-style: none;
+    color: black;
+}
+
+.animal-details li{
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+    color: black;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+}
+
+.animal-details span{
+    font-weight: bold;
+}
+
+

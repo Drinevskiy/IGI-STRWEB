@@ -56,6 +56,7 @@ class Feed(models.Model):
 
 class Animal(models.Model):
     name = models.CharField(max_length=20, verbose_name="Имя")
+    name_lower = models.CharField(max_length=20, verbose_name="Имя в нижнем регистре", blank=True)
     type = models.ForeignKey(AnimalType, on_delete = models.CASCADE, verbose_name="Вид")
     family = models.ForeignKey(AnimalFamily, on_delete = models.CASCADE, verbose_name="Семейство")
     employee = models.ForeignKey(Employee, on_delete = models.CASCADE, verbose_name="Сотрудник")
@@ -81,6 +82,10 @@ class Animal(models.Model):
                 age -= 1
             return age
         return None
+    def save(self, *args, **kwargs):
+        # Преобразуем имя в нижний регистр перед сохранением
+        self.name_lower = self.name.lower()
+        super().save(*args, **kwargs)  # Вызываем метод родительского класса
 
 class Promocode(models.Model):
     name = models.CharField(max_length=6, verbose_name="Промокод")
