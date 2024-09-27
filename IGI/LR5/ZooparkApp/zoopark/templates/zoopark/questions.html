@@ -2,16 +2,23 @@
 {% load static %}
 
 {% block title %}{{title}}{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/questions.css' %}">
+{% endblock %}
 {% block content %}
-{% for question in questions %}
-    <div class="animal-card">
-        <div class="animal-info">
-        <details>
-            <summary><h3>{{ question.question }}</h3></summary>
-            <p>{{ question.answer }}</p>
-        <p>{{ question.date }}</p>
-        </details>
-        </div>
+    <h1>Часто задаваемые вопросы</h1>
+    <div class="questions-container">
+        {% for question in questions %}
+            <div class="question-card">
+                <details>
+                    <summary class="custom-pointer"><h3>{{ question.question }}</h3></summary>
+                    <div class="content">    
+                        <p>{{ question.answer }}</p>
+                        <p>{{ question.date }}</p>
+                    </div>
+                </details>
+            </div>
+        {% endfor %}
     </div>
-{% endfor %}
+
 {% endblock %}

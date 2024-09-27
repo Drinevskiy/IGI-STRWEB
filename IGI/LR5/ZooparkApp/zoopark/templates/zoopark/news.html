@@ -2,15 +2,21 @@
 {% load static %}
 
 {% block title %}{{title}}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/news.css' %}">
+{% endblock %}
 {% block content %}
-{% for new in news %}
-    <div class="animal-card">
-        <img src="{{new.image.url}}" alt="">
-        <div class="animal-info">
-        <h3>{{ new.header }}</h3>
-        <p>{{ new.short_description }}</p>
-        <a href="{% url 'zoopark:new' new.pk %}">Читать далее</a>
+<h1>Новости</h1>
+<div id="news-card-container">
+    {% for new in news %}
+        <div class="new-card">
+            <img src="{{new.image.url}}" alt="">
+            <div class="new-info">
+                <h2>{{ new.header }}</h2>
+                <p>{{ new.short_description }}</p>
+                <a class="custom-pointer" href="{% url 'zoopark:new' new.pk %}">Читать далее</a>
+            </div>
         </div>
-    </div>
-{% endfor %}
+    {% endfor %}
+</div>
 {% endblock %}

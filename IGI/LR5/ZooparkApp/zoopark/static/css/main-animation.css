@@ -153,6 +153,7 @@
     font-size: 3em;
     font-style: normal;
     font-weight: normal;
+    font-kerning: none;
     letter-spacing: 6px;
     text-align: center;
     opacity: 0;
@@ -185,7 +186,7 @@
 
 @keyframes fadeIn {
     0% {opacity: 0; letter-spacing: 200px; font-size: 10em; color: #ccc;}
-    100% { opacity: 1; letter-spacing: 50px; font-size: 3em; color: #000}
+    100% { opacity: 1; letter-spacing: 50px; font-size: 3em; color: #000; text-shadow: 5px 5px 30px #FFAE00;}
 }
 
 @keyframes fade {

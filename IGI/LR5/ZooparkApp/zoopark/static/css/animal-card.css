@@ -21,6 +21,7 @@
     display: flex; /* Добавляем Flexbox для карточек */
     flex-direction: column; /* Вертикальное расположение содержимого */
     height: 100%; 
+    box-shadow: 0 5px 20px #000000;
     transition: background-color 0.5s, box-shadow 0.5s;
 } 
 
@@ -38,22 +39,12 @@
     height: auto; 
     aspect-ratio: 3 / 2;
 }
+
 .animal-card .animal-info {
     flex: 1; /* Позволяет содержимому занимать оставшееся пространство */
     padding: 0 20px; /* Отступы для содержимого карточки */
     display: flex; 
     flex-direction: column;
-} 
-
-.animal-card .animal-info h3 {
-    padding: 0;
-    margin: 20px 0 10px;
-    color: Black;
-    font-family: "Blade", "Bergamasco", sans-serif;
-    font-size: 2em;
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: 6px;
 } 
 
 .animal-card p{

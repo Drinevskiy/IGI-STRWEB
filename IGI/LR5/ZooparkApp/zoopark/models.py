@@ -151,7 +151,7 @@ class Company(models.Model):
     
 class News(models.Model):
     header = models.CharField(max_length=100, verbose_name="Заголовок")
-    short_description = models.CharField(max_length=100, verbose_name="Краткое описание")     
+    short_description = models.CharField(max_length=300, verbose_name="Краткое описание")     
     description = models.CharField(max_length=1000, verbose_name="Описание")     
     image = models.ImageField(upload_to='images', verbose_name="Фото")
     class Meta:
@@ -180,7 +180,7 @@ class Vacancy(models.Model):
         return self.position.name
     
 class Feedback(models.Model):
-    user = models.OneToOneField(User, on_delete = models.CASCADE, verbose_name="Пользователь")
+    user = models.ForeignKey(User, on_delete = models.CASCADE, verbose_name="Пользователь")
     text = models.CharField(max_length=1000, verbose_name="Текст")
     mark = models.PositiveIntegerField(default=5, validators=[MinValueValidator(1), MaxValueValidator(5)], verbose_name="Оценка")
     date = models.DateField(auto_now=True, verbose_name="Дата")

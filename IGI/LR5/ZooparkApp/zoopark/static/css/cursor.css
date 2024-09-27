@@ -1,0 +1,7 @@
+.custom-cursor{
+    cursor: url("/static/cursor/Chibi_Blue_Whale/pointer.cur") 16 16, auto;
+}
+
+.custom-pointer:hover{
+    cursor: url("/static/cursor/Chibi_Blue_Whale/cursor.cur") 16 16, auto;
+}

@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="custom-cursor">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,51 +20,51 @@
 </script>
 <body>
     <header>
-        <div class="logo"><a tabindex="1" title="Перейти на главную" href="{% url 'zoopark:index' %}"><img src="{% static 'media/images/logo.png' %}"/></a></div>
+        <div class="logo"><a class="custom-pointer" tabindex="1" title="Перейти на главную" href="{% url 'zoopark:index' %}"><img src="{% static 'media/images/logo.png' %}"/></a></div>
         <nav>
             <div class="dropdown">
-                <button class="dropbtn">Услуги</button>
+                <button class="dropbtn custom-pointer">Услуги</button>
                 <div class="dropdown-content">
-                    <a tabindex="2" lang="ru" href="{% url 'zoopark:service' %}">График работы</a>
+                    <a class="custom-pointer" tabindex="2" lang="ru" href="{% url 'zoopark:service' %}">График работы</a>
                     {% if user.is_authenticated and not user.is_superuser and not user.is_staff %}
-                        <a href="{% url 'zoopark:tickets' %}">Билеты</a>
+                        <a class="custom-pointer" href="{% url 'zoopark:tickets' %}">Билеты</a>
                     {% endif %}
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">О зоопарке</button>
+                <button class="dropbtn custom-pointer">О зоопарке</button>
                 <div class="dropdown-content">
-                    <a tabindex="3" lang="ru" href="{% url 'zoopark:about' %}">О нас</a>
-                    <a tabindex="4" lang="ru" href="{% url 'zoopark:feedbacks' %}">Отзывы</a>
-                    <a tabindex="5" lang="ru" href="{% url 'zoopark:news' %}">Новости</a>
-                    <a tabindex="6" lang="ru" href="{% url 'zoopark:questions' %}">Вопросы</a>
-                    <a tabindex="7" lang="ru" href="{% url 'zoopark:contacts' %}">Контакты</a>
+                    <a class="custom-pointer" tabindex="3" lang="ru" href="{% url 'zoopark:about' %}">О нас</a>
+                    <a class="custom-pointer" tabindex="4" lang="ru" href="{% url 'zoopark:feedbacks' %}">Отзывы</a>
+                    <a class="custom-pointer" tabindex="5" lang="ru" href="{% url 'zoopark:news' %}">Новости</a>
+                    <a class="custom-pointer" tabindex="6" lang="ru" href="{% url 'zoopark:questions' %}">Вопросы</a>
+                    <a class="custom-pointer" tabindex="7" lang="ru" href="{% url 'zoopark:contacts' %}">Контакты</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Работа</button>
+                <button class="dropbtn custom-pointer">Работа</button>
                 <div class="dropdown-content">
-                    <a tabindex="8" lang="ru" href="{% url 'zoopark:vacancies' %}">Вакансии</a>
-                    <a tabindex="9" lang="ru" href="{% url 'zoopark:politics' %}">Политика конфиденциальности</a>
+                    <a class="custom-pointer" tabindex="8" lang="ru" href="{% url 'zoopark:vacancies' %}">Вакансии</a>
+                    <a class="custom-pointer" tabindex="9" lang="ru" href="{% url 'zoopark:politics' %}">Политика конфиденциальности</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Прочее</button>
+                <button class="dropbtn custom-pointer">Прочее</button>
                 <div class="dropdown-content">
-                    <a tabindex="10" lang="ru" href="{% url 'zoopark:other' %}">Прочее</a>
+                    <a class="custom-pointer" tabindex="10" lang="ru" href="{% url 'zoopark:other' %}">Прочее</a>
                     {% if user.is_authenticated %}
-                        <a href="{% url 'zoopark:cat-fact' %}">Факты о кошках</a>
-                        <a href="{% url 'zoopark:dog-photo' %}">Случайное фото собак</a>
+                        <a class="custom-pointer" href="{% url 'zoopark:cat-fact' %}">Факты о кошках</a>
+                        <a class="custom-pointer" href="{% url 'zoopark:dog-photo' %}">Случайное фото собак</a>
                     {% endif %}
                 </div>
             </div>
             {% if user.is_authenticated and user.is_superuser %}
             <div class="dropdown">
-                <button class="dropbtn">Для админа</button>
+                <button class="dropbtn custom-pointer">Для админа</button>
                 <div class="dropdown-content">
-                    <a href="{% url 'zoopark:statistic' %}">Статистика</a>
-                    <a href="{% url 'zoopark:management' %}">Управление</a>
-                    <a href="{% url 'admin:index' %}">Админ панель</a>
+                    <a class="custom-pointer" href="{% url 'zoopark:statistic' %}">Статистика</a>
+                    <a class="custom-pointer" href="{% url 'zoopark:management' %}">Управление</a>
+                    <a class="custom-pointer" href="{% url 'admin:index' %}">Админ панель</a>
                 </div>
             </div>
             {% endif %}
@@ -72,12 +72,12 @@
         <div class="user-actions">
             {% if user.is_authenticated %}
             {% comment %} <a href="{% url 'users:logout' %}"><img src="{% static 'media/images/logout.png' %}" width="40px"></a> {% endcomment %}
-            <a href="{% url 'users:logout' %}">Выйти</a>
-            <a href="{% url 'users:profile' %}">Профиль</a>
+            <a class="custom-pointer" href="{% url 'users:logout' %}">Выйти</a>
+            <a class="custom-pointer" href="{% url 'users:profile' %}">Профиль</a>
             {% else %}
                 {% comment %} <a href="{% url 'users:login' %}"><img src="{% static 'media/images/login_icon.png' %}" width="40px"></a> {% endcomment %}
-                <a href="{% url 'users:login' %}">Войти</a>
-                <a href="{% url 'users:registration' %}">Регистрация</a>
+                <a class="custom-pointer" href="{% url 'users:login' %}">Войти</a>
+                <a class="custom-pointer" href="{% url 'users:registration' %}">Регистрация</a>
                 {% comment %} <a href="{% url 'users:registration' %}"><img src="{% static 'media/images/registration_icon.png' %}" width="40px"></a> {% endcomment %}
             {% endif %}
         </div>
@@ -95,10 +95,10 @@
         </main>
         <footer>
             <div class="top">
-                <a href="{% url 'zoopark:index' %}">Главная</a>
-                <a href="{% url 'zoopark:about' %}">О нас</a>
-                <a href="{% url 'zoopark:contacts' %}">Контакты</a>
-                <a href="{% url 'zoopark:vacancies' %}">Вакансии</a>
+                <a class="custom-pointer" href="{% url 'zoopark:index' %}">Главная</a>
+                <a class="custom-pointer" href="{% url 'zoopark:about' %}">О нас</a>
+                <a class="custom-pointer" href="{% url 'zoopark:contacts' %}">Контакты</a>
+                <a class="custom-pointer" href="{% url 'zoopark:vacancies' %}">Вакансии</a>
             </div>
             <hr/>
             <div class="bottom">
@@ -107,13 +107,13 @@
                     <p>&copy 2024 Kirad, Inc. <br/>All rights reserved.</p>
                 </div>
                 <div class="links">
-                    <div class="logo"><a href="https://www.youtube.com/channel/UCRWCw25KZqqxu5OVeb37hEA" target="_blank">
+                    <div class="logo"><a class="custom-pointer" href="https://www.youtube.com/channel/UCRWCw25KZqqxu5OVeb37hEA" target="_blank">
                         <img src="{% static 'media/images/youtube_logo.png' %}">
                     </a></div>
-                    <div class="logo"><a href="https://vk.com/id208792228" target="_blank">
+                    <div class="logo"><a class="custom-pointer" href="https://vk.com/id208792228" target="_blank">
                         <img src="{% static 'media/images/vk_logo.png' %}">
                     </a></div>
-                    <div class="logo"><a href="https://www.instagram.com/kira_dri/" target="_blank">
+                    <div class="logo"><a class="custom-pointer" href="https://www.instagram.com/kira_dri/" target="_blank">
                         <img src="{% static 'media/images/instagram_logo.png' %}">
                     </a></div>
                 </div>

@@ -76,7 +76,8 @@ def politics(request):
 def feedbacks(request):
     feedbacks = Feedback.objects.all()
     context = {"title" : "Отзывы",
-               "feedbacks" : feedbacks}
+               "feedbacks" : feedbacks,
+               "marks" : list(range(1,6))}
     return render(request, "zoopark/feedbacks.html", context)
 
 def add_feedback(request):
@@ -84,14 +85,16 @@ def add_feedback(request):
     context = {"title" : "Добавить отзыв",
                "success" : "",
                "form" : form}
+    user = request.user
     if request.method == 'POST':
         if form.is_valid():
             text = request.POST.get('text')
             mark = request.POST.get('mark')
-            Feedback.objects.create(user=request.user,
+            Feedback.objects.create(user=user,
                                     text=text,
                                     mark=mark)
             context["success"] = "Отзыв добавлен"
+        return redirect("zoopark:feedbacks")
     return render(request, "zoopark/add_feedback.html", context)
 
 def payment(request):
@@ -242,6 +245,7 @@ def add_animal(request):
     if request.method == 'POST':
         if form.is_valid():
             name = request.POST.get('name')
+            name_lower = request.POST.get('name_lower')
             type = request.POST.get('type')
             family = request.POST.get('family')
             employee = request.POST.get('employee')
@@ -254,6 +258,7 @@ def add_animal(request):
             feeding_schedule = request.POST.get('feeding_schedule')
             image = request.FILES.get('image')
             animal = Animal.objects.create(name=name,
+                                  name_lower = name_lower,
                                   type=AnimalType.objects.get(pk=type),
                                   family=AnimalFamily.objects.get(pk=family),
                                   employee=Employee.objects.get(pk=employee),
@@ -264,7 +269,7 @@ def add_animal(request):
                                   date_of_birth=date_of_birth,
                                   feeding_schedule=feeding_schedule,
                                   image=image).feed.set(feed)
-            Animal.save(animal)
+            # Animal.save(animal)
             context["success"] = "Животное добавлено"
             global last_change_datetime
             last_change_datetime = datetime.now()

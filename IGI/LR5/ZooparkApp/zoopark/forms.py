@@ -51,3 +51,13 @@ class AddFeedbackForm(forms.ModelForm):
     class Meta:
         model = Feedback
         fields = ['text', 'mark']
+        widgets = {
+            'text': forms.TextInput(attrs={
+                'class': 'form-text-input',  # Задаем класс для текстовой области
+                'rows': 4,
+                'placeholder': ''
+            }),
+            'mark': forms.Select(choices=[(1, 1), (2, 2), (3, 3), (4, 4), (5, 5)],
+                                 attrs={'class': 'form-select',  # Задаем класс для выпадающего списка
+            }),
+        }

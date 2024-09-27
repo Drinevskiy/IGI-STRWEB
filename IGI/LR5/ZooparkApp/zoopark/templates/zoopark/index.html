@@ -50,7 +50,7 @@
                 <div class="new" itemscope itemtype="https://schema.org/NewsArticle">
                     <h3 itemprop="headline">{{ new.header }}</h3>
                     <p itemprop="description">{{ new.short_description }}</p>
-                    <a href="{% url 'zoopark:new' new.pk %}" itemprop="url">Читать далее</a>
+                    <a class="custom-pointer" href="{% url 'zoopark:new' new.pk %}" itemprop="url">Читать далее</a>
                 </div>
             {% endfor %}
         </div>
@@ -62,7 +62,7 @@
             <div class="input-name">
                 <input accesskey="q" name="name" id="name" type="text" placeholder=""/>
                 <label for="name">Имя </label>  
-                <input type="submit" value="Поиск">
+                <input type="submit" value="Поиск" class="custom-pointer">
             </div>
             {% comment %} <label for="age">Сортировать по возрасту </label> {% endcomment %}
             {% comment %} <input type="checkbox" id="age" name="age"/> {% endcomment %}
@@ -71,12 +71,12 @@
             <div class="animal-cards-container">
                 {% for animal in animals %}
                     <article>
-                        <a href="{% url 'zoopark:animal' animal.pk %}">
+                        <a class="custom-pointer" href="{% url 'zoopark:animal' animal.pk %}">
                             <div class="animal-card">
                                 <img src="{% if animal.image %}{{ animal.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}" alt="">
                                 {% comment %} <img src="{% static animal.image.url %}" alt="{% static 'images/no.jpg' %}"> {% endcomment %}
                                 <div class="animal-info">
-                                    <h3>{{ animal.name }}</h3>
+                                    <h2>{{ animal.name }}</h2>
                                     <hr/>
                                     <p>{{ animal.description }}</p> 
                                     <ul class="animal-details">
@@ -96,10 +96,10 @@
             {% endif %}        
     </section>
     <hr/>
-    <h1>Наши спонсоры</h3>
+    <h1>Наши спонсоры</h1>
     <aside>
         {% for partner in partners %}
-        <a href="{{partner.url}}" target="_blank">
+        <a class="custom-pointer" href="{{partner.url}}" target="_blank">
             {{partner.name}}
                 <img src="{{ partner.image.url }}" alt="">
             </a>
