@@ -7,7 +7,6 @@ body{
     padding: 0;
     display: grid;
     grid-template-rows: 1fr auto;
-  /* cursor: url("/static/cursor/Chibi_Blue_Whale/Chibi--Blue--Whale--cursor--SweezyCursors.cur"), auto; */
 }
   /* Headers*/
 h1{
@@ -55,6 +54,11 @@ h3{
     grid-row: 1;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+  }
+  @media (max-width: 800px){
+    header{
+      background-color: aqua;
+    }
   }
   /* Логотип */
   header .logo{
@@ -179,6 +183,11 @@ h3{
     /* justify-content: space-between; */
     flex: 1;
     /* grid-row: 2; */
+  }
+  @media (max-height: 800px){
+    main{
+      background-color: rgb(216, 73, 230);
+    }
   }
   /* Footer */
   footer{

@@ -1,0 +1,146 @@
+a[href^="mailto"]:link{
+    color:brown
+}
+
+a[href^="mailto"]:active{
+    font-size: 2em;
+}
+
+a[href^="mailto"]:hover{
+    color: #ced420;
+    text-decoration-color:#1edb60;
+}
+/* Начало */
+a[href^="mailto"]:focus{
+    color:rgb(74, 179, 254)
+}
+/*Конец*/
+a[href$=".by/"]:visited{
+    color:rgb(127, 16, 202)
+}
+
+/*Вся строка*/
+a[href*="yandex"]::before{
+    content: "";
+    background-image: url('/static/media/images/yandex.png');
+    display: inline-block; /* Позволяет задать размеры */
+    width: 20px; /* Ширина изображения */
+    height: 20px; /* Высота изображения */
+    background-size: contain; 
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+ul li{
+    padding-left: 10px;
+}
+ul li::marker{
+    content: "✯";
+    font-size: 1.2em;
+}
+
+figure img{
+    float: left;
+}
+
+table{
+    clear: left;
+}
+
+q:lang(en){
+    quotes: "\201C" "\201D";
+    font-size: 2em;
+}
+
+q:lang(ru){
+    quotes: "\00AB" "\00BB";
+    font-size: 1em;
+}
+
+form textarea:disabled{
+    background-color: rgb(68, 68, 68);
+}
+
+form input:enabled{
+    background-color: blanchedalmond;
+}
+
+form input:required{
+    border: 5px solid #ac0f0f;
+}
+
+form input[type="number"]:in-range{
+    background-color: #1edb60;
+}
+
+form input[type="number"]:out-of-range{
+    background-color: #ff0000;
+}
+
+form input[type="radio"] {
+    display: none; /* Скрываем стандартный элемент */
+}
+
+form input[type="radio"] {
+    display: none; /* Скрываем стандартный элемент */
+}
+
+form input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px; /* Отступ для кастомного стиля */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+form input[type="radio"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /* Ширина кастомного радиокнопки */
+    height: 10px; /* Высота кастомного радиокнопки */
+    border: 5px solid #ffffff; /* Граница кастомного радиокнопки */
+    border-radius: 50%; /* Закругление для создания круга */
+    background-color: #ffffff; /* Цвет фона кастомного радиокнопки */
+}
+
+form input[type="radio"]:checked + label::before {
+    background-color: #2797dd; /* Цвет фона при выборе */
+    /* border-color: #1edb60; Цвет границы при выборе */
+}
+
+
+
+form input[type="checkbox"] {
+    display: none; /* Скрываем стандартный элемент */
+}
+
+form input[type="checkbox"] {
+    display: none; /* Скрываем стандартный элемент */
+}
+
+form input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px; /* Отступ для кастомного стиля */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+form input[type="checkbox"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Ширина кастомного радиокнопки */
+    height: 20px; /* Высота кастомного радиокнопки */
+    border: 2px solid #ccc; /* Граница кастомного радиокнопки */
+    border-radius: 2px; /* Закругление для создания круга */
+    /* background-image: none; */
+    background-color: white;
+}
+
+form input[type="checkbox"]:checked + label::before {
+    background-image: url("/static/media/images/galka.png");
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь квадрат */
+    background-repeat: no-repeat; /* Избегаем повторения изображения */
+}

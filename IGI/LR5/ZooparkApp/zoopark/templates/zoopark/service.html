@@ -6,27 +6,40 @@
     <link rel="stylesheet" href="{% static 'css/service.css' %}">
 {% endblock %}
 {% block content %}
+<h1>График работы</h1>  
   <section class="schedule">
-    <h2>График работы</h2>
     <ul>
       <li>Понедельник - пятница: 10:00 - 18:00</li>
+      <hr/>
       <li>Суббота - воскресенье: 10:00 - 19:00</li>
+      <hr/>
       <li>Праздничные дни: 10:00 - 18:00</li>
     </ul>
   </section>
+  <h1>Платные услуги</h1>
   <section class="services">
-    <h2>Платные услуги</h2>
     <ul>
       <li>Стандартный билет: 12 руб./чел.</li>
+      <hr/>
       <li>Экскурсия по зоопарку: 20 руб./чел.</li>
+      <hr/>
       <li>Кормление животных: 3 руб./чел.</li>
+      <hr/>
       <li>Фотосессия с животными: 15 руб./чел.</li>
     </ul>
   </section>
+  <h1>Промокоды</h1>
   <section class="promocodes">
-    <h2>Промокоды</h2>
     <ul>
     {% for promocode in promocodes %}
+        <li>{{ promocode.name }} - {{ promocode.percentage }}%</li>
+    {% endfor %}
+    </ul>
+  </section>
+  <h1>Архивные промокоды</h1>
+  <section class="archive-promocodes">
+    <ul>
+    {% for promocode in promocodes_archive %}
         <li>{{ promocode.name }} - {{ promocode.percentage }}%</li>
     {% endfor %}
     </ul>

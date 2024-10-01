@@ -3,11 +3,13 @@
 
 {% block title %}{{ title }}{% endblock %}
 {% block style %} 
-    {% comment %} <link rel="stylesheet" href="{% static 'css/profile.css' %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/statistic.css' %}">
 {% endblock %}
 {% block content %}
-    <h2>Сотрудники</h2>
-    <table>
+    <h1>Статистика</h1>
+    
+    <table class="table-employees">
+        <caption><h2>Сотрудники</h2></caption>
         <thead>
             <tr>
                 <th>Ник</th>
@@ -35,8 +37,8 @@
             {% endfor %}
         </tbody>
     </table>
-    <h2>Вольеры</h2>
     <table>
+        <caption><h2>Вольеры</h2></caption>
         <thead>
             <tr>
                 <th>Номер</th>
@@ -60,12 +62,14 @@
             {% endfor %}
         </tbody>
     </table>
-    <h2>Животные</h2>
+    <h2 style="text-align: center;">Животные</h2>
     <div>
         <form method="GET" action="{% url 'zoopark:statistic' %}">
-            <label for="name">Поступили в последнее полугодие </label>
-            <input type="checkbox" id="name" name="recently"/>
-            <input type="submit" value="Фильтровать">
+            <div class="form-group">
+                <label for="name">Поступили в последнее полугодие </label>
+                <input class="custom-pointer" type="checkbox" id="name" name="recently"/>
+            </div>
+            <input class="custom-pointer" type="submit" value="Фильтровать">
         </form>
     </div>
     <table>
@@ -90,7 +94,7 @@
             {% for item in animals %}
             <tr>
                     {% comment %} <td><img src="{% static item.0.image.url %}" width=200px alt="{% static 'images/no.jpg' %}"></td> {% endcomment %}
-                    <td><img src="{% if item.0.image %}{{ item.0.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}" width=200px alt=""></td>
+                    <td class="td-with-image"><img src="{% if item.0.image %}{{ item.0.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}"></td>
                     <td>{{ item.0.name }}</td>
                     <td>{{ item.0.description }}</td>
                     <td>{{ item.0.date_of_birth }}</td>
@@ -107,33 +111,41 @@
             {% endfor %}
         </tbody>
     </table>
-    <h2>Данные</h2>
+    <h2 style="text-align: center;">Данные</h2>
     <div>
         <form method="GET" action="{% url 'zoopark:statistic' %}">
-            <label for="aviary">Вольер </label>
-            <select name="aviary" id="aviary">
-                {% for aviary in aviaries %}
-                    <option value="{{ aviary.id }}">{{ aviary.name }}</option>
-                {% endfor %}
-            </select>
-            <label for="type">Вид </label>
-            <select name="type" id="type">
-                {% for type in types %}
-                    <option value="{{ type.id }}">{{ type.name }}</option>
-                {% endfor %}
-            </select>
-            <label for="family">Семейство </label>
-            <select name="family" id="family">
-                {% for family in families %}
-                    <option value="{{ family.name }}">{{ family.name }}</option>
-                {% endfor %}
-            </select>
-            <input type="submit" value="Получить">
+            <div class="form-group">
+                <label for="aviary">Вольер </label>
+                <select class="custom-pointer" name="aviary" id="aviary">
+                    {% for aviary in aviaries %}
+                        <option class="custom-pointer" value="{{ aviary.id }}">{{ aviary.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="type">Вид </label>
+                <select class="custom-pointer" name="type" id="type">
+                    {% for type in types %}
+                        <option class="custom-pointer" value="{{ type.id }}">{{ type.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="family">Семейство </label>
+                <select class="custom-pointer" name="family" id="family">
+                    {% for family in families %}
+                        <option class="custom-pointer" value="{{ family.name }}">{{ family.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <input class="custom-pointer" type="submit" value="Получить">
         </form>
     </div>
-    <p>Суточное потребление корма в {{ aviary_info.0.name }}: {{ aviary_info.1 }}. Виды  животных в {{ aviary_info.0.name }}: {{ aviary_info.2|join:", " }}</p>
-    <p>Численность вида {{ type_info.0.name }} в зоопарке составляет {{ type_info.1 }} {% if type_info.1 == 1 %}особь{% elif type_info.1 > 1 and type_info.1 < 5%}особи{% else %}особей{% endif%}</p>
-    <p>Численность семейства {{ family_info.0 }} в зоопарке составляет {{ family_info.1 }} {% if family_info.1 == 1 %}особь{% elif family_info.1 > 1 and family_info.1 < 5%}особи{% else %}особей{% endif%}</p>
+    <p>Суточное потребление корма в {{ aviary_info.0.name }}: {{ aviary_info.1 }}.</p>
+    <p>Виды  животных в {{ aviary_info.0.name }}: {{ aviary_info.2|join:", " }}.</p>
+    <p>Численность вида {{ type_info.0.name }} в зоопарке составляет {{ type_info.1 }} {% if type_info.1 == 1 %}особь{% elif type_info.1 > 1 and type_info.1 < 5%}особи{% else %}особей{% endif%}.</p>
+    <p>Численность семейства {{ family_info.0 }} в зоопарке составляет {{ family_info.1 }} {% if family_info.1 == 1 %}особь{% elif family_info.1 > 1 and family_info.1 < 5%}особи{% else %}особей{% endif%}.</p>
     {% comment %} <img src="../../static/media/images/graph.png"></img> {% endcomment %}
     {{ plot|safe }}
     {% comment %} <img src="{% static 'media/images/graph.png' %}"/> {% endcomment %}

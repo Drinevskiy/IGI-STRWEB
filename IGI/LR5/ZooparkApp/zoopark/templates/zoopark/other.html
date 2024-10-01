@@ -2,6 +2,9 @@
 {% load static %}
 
 {% block title %}{{title}}{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/other.css' %}">
+{% endblock %}
 {% block content %}
     <h1 id="start">Прочее</h1>
     <h2>Навигация</h2>
@@ -46,7 +49,8 @@
     <dfn title="Petrichor">Петрикор — землистый запах, который ощущается сразу после начала дождя</dfn><br>
     <dfn title="Internet">Интернет — информационно - коммуникационная сеть и всемирная система объединённых компьютерных сетей для хранения и передачи информации.</dfn>
     <h2 id="quote">Цитаты</h2>
-    <q cite="https://www.litres.ru/journal/120-tsitat-pro-zhizn-kotorye-pomogut-vdokhnovitsia-i-zadumatsia/">Думайте о прошлом, только если воспоминания приятны вам.</q><br>
+    <q lang="en" cite="https://www.litres.ru/journal/120-tsitat-pro-zhizn-kotorye-pomogut-vdokhnovitsia-i-zadumatsia/">The sun set behind the mountains, painting the sky in shades of orange and pink.</q><br>
+    <q lang="ru" cite="https://www.litres.ru/journal/120-tsitat-pro-zhizn-kotorye-pomogut-vdokhnovitsia-i-zadumatsia/">Думайте о прошлом, только если воспоминания приятны вам.</q><br>
     <blockquote cite="https://www.litres.ru/journal/120-tsitat-pro-zhizn-kotorye-pomogut-vdokhnovitsia-i-zadumatsia/">
         <p>Человек создан, чтобы жить в обществе; разлучите его с ним, изолируйте его – и мысли у него спутаются, характер ожесточится, сотни нелепых страстей зародятся в его душе, сумасбродные идеи пустят ростки в его мозгу, как дикий терновник среди пустыря.</p>
     </blockquote>
@@ -67,6 +71,7 @@
     <h2 id="references">Ссылки</h2>
     <a href="mailto:drinevskiy3@gmail.com?subject=Вопрос">Отправить сообщение по адресу drinevskiy3@gmail.com</a><br>
     <a href="tel:+375447438818">Позвонить </a><br>
+    <a href="https://yandex.by/">Яндекс </a><br>
     <a href="{% static 'media/images/zoopark_icon.jpg' %}" download="zoo_icon.pdf">Download Icon</a><br>
     <h2 id="olist">Нумерованный список</h2>
     <ol type="a" reversed>
@@ -91,7 +96,7 @@
     </dl>
     <h2 id="figure">Фигура</h2>
     <figure>
-        <p><img src="{% static 'media/images/zoopark_icon.jpg' %}" alt=""></p>
+        <img src="{% static 'media/images/zoopark_icon.jpg' %}" alt="">
         <figcaption>Logo</figcaption>
     </figure>
     <h2 id="table">Таблица</h2>
@@ -137,7 +142,7 @@
     <form method="post" enctype="multipart/form-data" accept="image/jpeg, image/png, image/jpg">
         {% csrf_token %}
         <label for="name">Имя:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required enabled>
         <br><br>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
@@ -160,24 +165,23 @@
         <label for="file">Загрузить файл:</label>
         <input type="file" id="file" name="file">
         <br><br>
+        <label for="file">Число от 1 до 10:</label>
+        <input type="number" id="file" name="file" min="1" max="10">
+        <br><br>
         <p>Пол:</p>
-        <label>
-            <input type="radio" name="gender" value="male" required checked> Мужской
-        </label>
-        <label>
-            <input type="radio" name="gender" value="female"> Женский
-        </label>
+        <input type="radio" id="gender1" name="gender" value="male" required checked> 
+        <label for="gender1">Мужской</label>
+        <input type="radio" id="gender2" name="gender" value="female" required checked> 
+        <label class="rd" for="gender2">Женский</label>
+        
         <br><br>
         <p>Интересы:</p>
-        <label>
-            <input type="checkbox" name="interests" value="sports"> Спорт
-        </label>
-        <label>
-            <input type="checkbox" name="interests" value="music"> Музыка
-        </label>
-        <label>
-            <input type="checkbox" name="interests" value="travel"> Путешествия
-        </label>
+        <input type="checkbox" id="interests1" name="interests" value="sports"> 
+        <label for="interests1">Спорт</label>
+        <input type="checkbox" id="interests2" name="interests" value="music"> 
+        <label for="interests2">Музыка</label>
+        <input type="checkbox" id="interests3" name="interests" value="travel"> 
+        <label for="interests3">Путешествия</label>
         <br><br>
         <label for="country">Страна:</label>
         <select id="country" name="country">
@@ -194,7 +198,7 @@
         <br><br>
         <textarea name="desc" cols="45" rows="10"
             placeholder="Input description"
-            required maxlength="450"></textarea>
+            required maxlength="450" disabled></textarea>
         <br><br>
         <input type="submit" value="Отправить">
         <input type="reset" value="Очистить">

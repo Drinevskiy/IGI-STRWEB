@@ -29,9 +29,11 @@ def index(request):
     return render(request, "zoopark/index.html", context)
 
 def service(request):
-    promocodes = Promocode.objects.all()
+    promocodes = Promocode.objects.filter(is_archive=False)
+    promocodes_archive = Promocode.objects.filter(is_archive=True)
     context = {"title" : "Услуги",
-               "promocodes" : promocodes}
+               "promocodes" : promocodes,
+               "promocodes_archive" : promocodes_archive}
     return render(request, "zoopark/service.html", context)
 
 def about(request):
@@ -65,7 +67,7 @@ def contacts(request):
 
 def vacancies(request):
     vacancies = Vacancy.objects.all()
-    context = {"title" : "Контакты",
+    context = {"title" : "Вакансии",
                "vacancies" : vacancies}
     return render(request, "zoopark/vacancies.html", context)
 

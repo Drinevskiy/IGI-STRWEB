@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, datetime
 from django.db import models
 from django.urls import reverse
 from django.core.validators import MaxValueValidator, MinValueValidator 
@@ -90,6 +90,7 @@ class Animal(models.Model):
 class Promocode(models.Model):
     name = models.CharField(max_length=6, verbose_name="Промокод")
     percentage = models.PositiveIntegerField(default=10, validators=[MinValueValidator(1), MaxValueValidator(100)], verbose_name="Процент")
+    is_archive = models.BooleanField(verbose_name="Архив", default=False)
     class Meta:
         verbose_name = "Промокод"
         verbose_name_plural = "Промокоды"
@@ -135,11 +136,25 @@ class Partner(models.Model):
         verbose_name_plural = "Партнеры"
     def __str__(self) -> str:
         return self.name
+
+class Certificate(models.Model):
+    header = models.CharField(max_length=100, verbose_name="Заголовок")
+    name = models.CharField(max_length=100, verbose_name="Название")
+    date = models.DateField(verbose_name="Дата", default=date.today())
+    city = models.CharField(max_length=100, verbose_name="Город")
+    text = models.CharField(max_length=600, verbose_name="Текст")
+    background_image =  models.ImageField(upload_to='images/', default='images/white_background.png', verbose_name="Фон")
     
+    class Meta:
+        verbose_name = "Сертификат"
+        verbose_name_plural = "Сертификаты"
+    def __str__(self) -> str:
+        return self.name
+
 class Company(models.Model):
     info = models.CharField(max_length=150, verbose_name="Описание")
     history = models.CharField(max_length=250, verbose_name="История")
-    certificate = models.CharField(max_length=250, verbose_name="Сертификат")
+    certificate = models.ForeignKey(Certificate, on_delete = models.SET_NULL, null=True, max_length=250, verbose_name="Сертификат")
     requisites = models.CharField(max_length=50, verbose_name="Реквизиты")
     video = models.FileField(upload_to='videos/', verbose_name="Видео")
     image = models.ImageField(default='images/zoopark_icon.jpg', verbose_name="Логотип")

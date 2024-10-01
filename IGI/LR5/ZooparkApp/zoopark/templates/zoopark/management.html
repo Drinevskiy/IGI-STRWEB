@@ -2,15 +2,19 @@
 {% load static %}
 
 {% block title %}{{ title }}{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/animal-card.css' %}">
+{% endblock %}
 {% block content %}
-    <h1 align="center">Управление</h1>
+    <h1>Управление</h1>
     <div class="animal-cards-container">
         {% for animal in animals %}
             <a href="{% url 'zoopark:animal' animal.pk %}">
                 <div class="animal-card">
                     <img src="{% if animal.image %}{{ animal.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}">
                     <div class="animal-info">
-                    <h3>{{ animal.name }}</h3>
+                    <h2>{{ animal.name }}</h3>
+                    <hr/>
                     <p>{{ animal.description }}</p>
                     <ul class="animal-details">
                         <li><span>Вид:</span> {{ animal.type }}</li>
@@ -24,7 +28,7 @@
         {% endfor %}
     </div>
     {% if user.is_superuser %}
-        <div align="center">
+        <div class="animal-actions">
             <a href="{% url 'zoopark:add-animal' %}">Добавить животное</a>
             <a href="{% url 'zoopark:add-promocode' %}">Добавить промокод</a>
         </div>

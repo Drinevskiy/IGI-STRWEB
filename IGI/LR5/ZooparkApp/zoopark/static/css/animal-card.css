@@ -83,4 +83,100 @@
     font-weight: bold;
 }
 
+#edit-page.animal-card{
+    background-color: #927acf;
+    /* background-color: #FFE1A0; */
+    border-radius: 25px;
+    width: 35%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex; /* Добавляем Flexbox для карточек */
+    flex-direction: column; /* Вертикальное расположение содержимого */
+    height: 100%; 
+    box-shadow: 0 5px 20px #000000;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+
+#edit-page.animal-card img{
+    max-width: 100%;
+    /* margin: 10px; */
+    height: auto; 
+    aspect-ratio: 3 / 2;
+}
+#edit-page.animal-card > .animal-info span{
+    font-weight: bold;
+
+}
+
+/* #edit-page.animal-card > .actions{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; 
+} */
+
+#edit-page.animal-card .actions{
+    padding: 20px;
+    display: flex;
+    justify-content:stretch;
+    width: 94%;
+    gap: 30px;
+}
+#edit-page.animal-card > .actions > a{
+    padding: 20px;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    font-size: 1.2em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#edit-page.animal-card > .actions > a:nth-child(1){
+    background-color: #FFAE00;
+    color: #ffffff;
+}
+#edit-page.animal-card > .actions > a:nth-child(1):hover{
+    background-color: #da9603;
+    text-decoration: none;
+}
+
+#edit-page.animal-card > .actions > a:nth-last-child(1){
+    background-color: #d46262;
+    color:#474747;
+}
+
+#edit-page.animal-card > .actions > a:nth-last-child(1):hover{
+    background-color: #942525;
+    color:#474747;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+.animal-actions{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* width: 60%; */
+    /* margin: 0 auto; */
+    gap: 10%;
+}
+.animal-actions > a{
+    padding: 20px;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    font-size: 1.2em;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.animal-actions > a{
+    background-color: #FFAE00;
+    color: #ffffff;
+}
+.animal-actions > a:hover{
+    background-color: #da9603;
+    text-decoration: none;
+}
 

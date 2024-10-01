@@ -1,27 +1,45 @@
 
 
-  
-  /* section {
+section {
     width: 60%;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+    padding: 1px 20px;
+    background-color: #927acf;
+    border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-  } */
-  
-  h2 {
+    color: black;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    box-shadow: 0 5px 20px #000000;
+}
+
+h2 {
     text-align: center;
     margin-bottom: 10px;
-  }
-  
-  ul {
+}
+
+ul {
     list-style: none;
     padding: 0;
-  }
-  
-  li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
+}
+
+li{
+  padding: 15px 0;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #FFAE00;
+}
+
+.promocodes ul li:not(:last-child)::after,
+.archive-promocodes ul li:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 2px; /* Высота линии */
+  background-color: #FFAE00; /* Цвет линии */
+  margin-top: 15px;
+}
+

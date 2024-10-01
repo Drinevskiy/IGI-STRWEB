@@ -3,21 +3,22 @@
 
 {% block title %}{{title}}{% endblock %}
 {% block style %} 
-    {% comment %} <link rel="stylesheet" href="{% static 'css/profile.css' %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/statistic.css' %}">
 {% endblock %}
 {% block content %}
-<h2>Профиль</h2>
+<h1>Профиль</h1>
 <div class="user-card">
-    <h3>{{ user.first_name }} {{ user.last_name }}</h3>
+    <h2>{{ user.first_name }} {{ user.last_name }}</h2>
     <p>Ник: {{ user.username }}</p>
     <p>Email: {{ user.email }}</p>
     <p>Статус: {% if user.is_superuser %}Админ{% elif user.is_staff %}Сотрудник{% elif not user.is_staff and not user.is_admin %}Посетитель{% endif %}</p>
     <p>Телефон: {{ user.phone }}</p>
 </div>
-<pre>{{ text_calendar }}</pre>
-<p>Часовой пояс: {{user_tz}}</p>
+{% comment %} <pre>{{ text_calendar }}</pre> {% endcomment %}
+{% comment %} <p>Часовой пояс: {{user_tz}}</p>
 <p>{{today|date:"d/m/Y H:i:s O"}}</p>
-<p>UTC:{{utc|date:"d/m/Y H:i:s O"}}</p>
+<p>UTC:{{utc|date:"d/m/Y H:i:s O"}}</p> {% endcomment %}
 {% if user.is_authenticated and not user.is_superuser and not user.is_staff %}
     <h2>Билеты оплаченные</h2>
     <div class="ticket-cards-container">

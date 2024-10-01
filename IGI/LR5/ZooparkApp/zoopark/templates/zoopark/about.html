@@ -2,11 +2,28 @@
 {% load static %}
 
 {% block title %}{{title}}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
 {% block content %}
-    <p>{{company.info}}</p>
-    <p>{{company.history}}</p>
-    <p>{{company.certificate}}</p>
-    <p>{{company.requisites}}</p>
-    <div><img src="{{company.image.url}}" width="300"/></div>
-    <video src="{{company.video.url}}" loop autoplay controls>Ошибка загрузки видео</video>
+    <h1>О зоопарке</h1>
+    <div class="logo-video">
+        <img src="{{company.image.url}}"/>
+        <video src="{{company.video.url}}" loop autoplay controls>Ошибка загрузки видео</video>
+        <img src="{{company.image.url}}"/>
+    </div>
+    <div class="certificate" style="
+        -webkit-border-image: url('{{company.certificate.background_image.url}}') 250 stretch repeat;
+        -moz-border-image: url('{{company.certificate.background_image.url}}') 250 stretch repeat;
+        -o-border-image: url('{{company.certificate.background_image.url}}') 250 stretch repeat;
+        border-image: url('{{company.certificate.background_image.url}}') 250 stretch repeat;">
+        <img src="{{company.image.url}}"/>
+        <p id="header">{{company.certificate.header}}</p>
+        <p id="name">{{company.certificate.name}}</p>
+        <p id="text">{{company.certificate.text}}</p>
+        <p id="city">{{company.certificate.city}}, {{company.certificate.date}}</p>
+    </div>
+    <p class="info">{{company.info}}</p>
+    <p class="history">{{company.history}}</p>
+    <p id="requisites"><span>Реквизиты: </span>{{company.requisites}}</p>
 {% endblock %}
