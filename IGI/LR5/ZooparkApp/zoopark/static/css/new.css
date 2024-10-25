@@ -16,6 +16,7 @@
 
 .new-text{
     columns: 2;
+    column-rule: 2px solid aqua;
     overflow: hidden;
     padding: 30px;
     color: black;
@@ -28,7 +29,8 @@
     letter-spacing: 2px;
     word-spacing: 0.5em;
     text-transform: capitalize;
-    /* word-wrap: break-word; */
+    /* word-wrap: break-word; <wbr>*/
+    white-space: normal; /* nowrap, pre, pre-line, pre-wrap*/
     word-break: break-all;
     font-kerning: none;
     font-variant: small-caps;

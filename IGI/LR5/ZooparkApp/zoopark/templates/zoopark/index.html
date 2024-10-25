@@ -48,7 +48,7 @@
         <div class="news-container">
             {% for new in news %}
                 <div class="new" itemscope itemtype="https://schema.org/NewsArticle">
-                    <h3 itemprop="headline">{{ new.header }}</h3>
+                    <h2 itemprop="headline">{{ new.header }}</h2>
                     <p itemprop="description">{{ new.short_description }}</p>
                     <a class="custom-pointer" href="{% url 'zoopark:new' new.pk %}" itemprop="url">Читать далее</a>
                 </div>
