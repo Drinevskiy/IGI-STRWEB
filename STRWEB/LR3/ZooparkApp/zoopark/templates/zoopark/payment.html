@@ -1,0 +1,30 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock %}
+{% block content %}
+<h2>Билеты неоплаченные</h2>
+<div class="ticket-cards-container">
+    {% for ticket in tickets %}
+        <div class="ticket-card">
+            <h3>{{ ticket.date }}</h3>
+            <ul>
+                {% if ticket.excursion %}<li>Экскурсия</li>{% endif %}
+                {% if ticket.feeding %}<li>Кормление</li>{% endif  %}
+                {% if ticket.photosession %}<li>Фотосессия</li>{% endif %}
+                {% if not ticket.photosession and not ticket.feeding and not ticket.excursion %}<li>Стандартный</li>{% endif %}
+            </ul>
+            <p id="countDisplay">{{ticket.count}} шт.</p>
+            <p class="price">{{ ticket.full_cost}} рублей</p>
+        </div>
+    {% endfor %}
+</div>
+<p>Общая сумма заказа: {{sum}} рублей.</p>
+<form method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Купить" >
+</form>
+{% endblock %}

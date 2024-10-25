@@ -1,0 +1,118 @@
+table{
+    width: 100%;
+    /* background-color: aqua; */
+    margin: 20px auto;
+    color: black;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    font-size: 1.1  em;
+    border-collapse: collapse;
+}
+
+table caption{
+    margin: 20px 0;
+}
+
+td, th {
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+td{
+    text-align: center;
+    vertical-align: top;
+}
+
+th{
+    background-color: #6b2fdb;
+    text-align: justify;
+}
+
+tr:nth-child(even){
+    background-color: #8c5ee0;
+}
+
+tr:nth-child(odd){
+    background-color: #a180df;
+}
+
+td:empty{
+    background-color: #aeaab4;
+}
+
+table .td-with-image{
+    padding: 2px;
+}
+table .td-with-image img{
+    width: 300px;
+    display: block;
+}
+
+p{
+    color: black;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form input[type="checkbox"]{
+    padding: 25px;
+}
+
+form [type="submit"]{
+    font-size: 1em ;
+    font-family: inherit;
+    margin: 15px 0;
+    padding: 0.25em 0.5em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    transition: 0.2s linear all; /* Плавный переход при изменении */
+}
+
+form [type="submit"]:hover{
+    background-color: #927acf;
+
+}
+
+form{
+    color: black;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: start;
+}
+
+select{
+    padding: 5px;
+    color: black;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1em;
+    text-align: center;
+    background-color: rgb(196, 174, 251);
+    width: 50%;
+}
+
+select:hover{
+    background-color: #927acf;
+
+}
+
+option {
+    background-color: #a180df;
+}
+
+form .form-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    /* align-items: center; */
+}

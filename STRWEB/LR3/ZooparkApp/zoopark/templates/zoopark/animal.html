@@ -1,0 +1,33 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{animal.name}}{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/animal-card.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'css/index.css' %}"> {% endcomment %}
+    {% comment %} <link rel="stylesheet" href="{% static 'css/main-animation.css' %}"> {% endcomment %}
+{% endblock %}
+{% block content %}
+<h1>{{ animal.name }}</h1>
+<div class="animal-card" id="edit-page">
+      <img src="{% if animal.image %}{{ animal.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}">
+    <div class="animal-info">
+      <h2>{{ animal.name }}</h2>
+      <hr/>
+      <p>{{ animal.description }}</p>
+      <p><span>Возраст: </span>{{ animal.age }} {% if animal.age == 1 %}год{% elif animal.age < 5 and animal.age > 1 %}года{% else %}лет{% endif %}</p>
+      <p><span>Дата поступления: </span>{{ animal.date_of_receipt }}</p>
+      <p><span>Вид: </span>{{ animal.type.name }}</p>
+      <p><span>Семейство: </span>{{ animal.family.name }}</p>
+      <p><span>Континент: </span>{{ animal.family.continent }}</p>
+      <p><span>Вольер: </span>{{ animal.aviary.name }}</p>
+      
+    </div>
+    {% if user.is_superuser%}
+      <div class="actions">
+        <a class="custom-pointer" href="{% url 'zoopark:edit-animal' animal.pk%}">Изменить</a>
+        <a class="custom-pointer" href="{% url 'zoopark:delete-animal' animal.pk%}">Удалить</a>
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

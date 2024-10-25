@@ -1,0 +1,27 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/add-feedback.css' %}">
+{% endblock %}
+{% block content %}
+    <h1>Добавить отзыв</h1>
+    {% comment %} <p align="center">{{success}}</p> {% endcomment %}
+    <form method="POST">
+        {% csrf_token %}
+        <div>
+            {% for field in form %}
+                <div class="form-group">
+                    {{field}}
+                    <label for="{{field.id_for_label}}" class="text-label">{{field.label}}</label>
+                    {% comment %} {% for error in field.errors %}
+                        <div class="alert alert-danger">{{error}}</div>
+                        {% empty %}
+                    {% endfor %}  {% endcomment %}
+                </div>
+            {% endfor %} 
+        </div>    
+        <input type="submit" value="Добавить" >
+    </form>
+{% endblock %}

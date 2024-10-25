@@ -1,0 +1,87 @@
+@import url('/static/css/fonts.css');
+
+#news-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+    justify-content: space-between;
+    margin: 0 0;
+}
+
+.new-card{
+    background-color: #927acf;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px 10px;
+    width: 800px;
+    height: 250px;
+    display: flex; 
+    box-shadow: 0 5px 20px #000000;
+}
+
+.new-card img{
+    /* float: left; */
+    width: 250px;
+    /* height: 250px; */
+    aspect-ratio: 1/1;
+    /* height:auto; */
+}
+
+.new-info{
+    padding: 20px;
+    max-height: 250px;
+    height: 210px;
+    width: 550px;
+}
+
+.new-info > h2{
+    text-align: center;
+    align-self: start;
+}
+
+.new-info p{
+    color: black;
+    line-height: 1.2em;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    overflow: hidden;
+    margin: 20px 0;
+    /* text-overflow: ellipsis; */
+    /* text-wrap: nowrap; */
+    text-indent: 1em;
+    word-spacing: 5px;
+    /* max-width: 500px; */
+    /* height: auto; */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.new-info p span{
+    font-weight: bold;
+}
+
+.new-card a{
+    color: #FFAE00;
+    line-height: 1.2em;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.new-card a::after{
+    content: "";
+    background-image: url("/static/media/images/link.png");
+    background-size: contain; /* Масштабирование изображения по размеру */
+    background-repeat: no-repeat; /* Убирает повторение изображения */
+    display: inline-block; /* Позволяет задавать размеры */
+    width: 1em; /* Ширина изображения */
+    height: 1em; /* Высота изображения */
+    margin-left: 10px;
+    vertical-align: middle;
+}

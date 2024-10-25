@@ -1,0 +1,162 @@
+
+
+.news-container{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 0 50px;
+}
+
+.new {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #927acf;
+    width: 25%;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px #000000;
+}
+
+.new p{
+    color: black;
+    line-height: 1.2em;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.new a{
+    color: #FFAE00;
+    /* color: rgb(5, 81, 203); */
+    line-height: 1.2em;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+}
+
+.new a::after{
+    content: "";
+    background-image: url("/static/media/images/link.png");
+    background-size: contain; /* Масштабирование изображения по размеру */
+    background-repeat: no-repeat; /* Убирает повторение изображения */
+    display: inline-block; /* Позволяет задавать размеры */
+    width: 1em; /* Ширина изображения */
+    height: 1em; /* Высота изображения */
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #FFAE00;
+}
+
+.input-name{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.input-name [for]{
+    position: absolute; /* Позволяет позиционировать label относительно контейнера */
+    left: 38%;     
+    top: 30%; 
+    font-size: 1em; /* Размер шрифта */
+    color: #ffffff; /* Цвет метки */
+    transition: 0.2s linear all; /*Плавный переход при изменении*/
+    pointer-events: none; /* Игнорирование событий мыши на label */
+}
+
+.input-name [type="text"]{
+    position: absolute;
+    font-size: 1.3em ;
+    font-family: inherit;
+    width: 25%;
+    padding: 0.5em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+}
+
+.input-name input:focus{
+    background-color: #927acf;
+    border: none;
+    outline: none;
+}
+
+.input-name input:focus + label,
+.input-name input:not(:placeholder-shown) + label{
+    top: -20%; 
+    left: 38%; 
+    font-size: 0.9em; /* Уменьшает размер шрифта */
+    color: #FFAE00 ; /* Цвет метки при фокусе */
+}
+
+.input-name [type="submit"]{
+    font-size: 1.3em ;
+    font-family: inherit;
+    padding: 0.5em 0.75em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+    margin-left: 35%;
+    transition: 0.2s linear all; /* Плавный переход при изменении */
+}
+
+.input-name [type="submit"]:hover{
+    background-color: #927acf;
+
+}
+
+
+.empty-container{
+    width: 100%; 
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;  
+    font-family: "Arista", "Bergamasco", sans-serif;
+    font-size: 1.5em;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;  
+    gap: 40px;
+}
+
+aside a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    gap: 30px;
+    color: #fff;
+    line-height: 1.2em;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    border-radius: 50px;
+    transition: background-color 0.5s linear, color 0.5s linear;
+}
+
+aside a:hover{
+    background-color: #FFAE00;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+aside img{
+    width: 100px;
+    height: 100px;
+}

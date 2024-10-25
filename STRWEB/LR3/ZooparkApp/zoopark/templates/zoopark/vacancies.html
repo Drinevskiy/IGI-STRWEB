@@ -1,0 +1,23 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/vacancies.css' %}">
+{% endblock %}
+{% block content %}
+<h1>Вакансии</h1>
+<div id="vacancies-card-container">
+    {% for vacancy in vacancies %}
+        <div class="vacancy-card">
+            {% comment %} <div class="vacancy-info"> {% endcomment %}
+                <h2>{{ vacancy.position.name }}</h2>
+                <hr/>
+                <p><span>Описание: </span>{{ vacancy.position.description}}</p>
+                <p><span>Мест: </span>{{ vacancy.count }} </p>
+                <p><span>Зарплата: </span>{{ vacancy.position.salary }} рублей</p>
+            {% comment %} </div> {% endcomment %}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

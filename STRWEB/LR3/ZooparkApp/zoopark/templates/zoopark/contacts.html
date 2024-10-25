@@ -1,0 +1,24 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/contacts.css' %}">
+{% endblock %}
+{% block content %}
+<h1>Контакты</h1>
+<div id="contacts-card-container">
+    {% for contact in contacts %}
+        <div class="contact-card">
+            <img src="{{contact.image.url}}" alt="">
+            <div class="contact-info">
+                <h2>{{ contact.user.last_name }} {{ contact.user.first_name }}</h2>
+                <hr/>
+                <p><span>Телефон:</span> {{ contact.user.phone }}</p>
+                <p><span>Почта:</span> {{ contact.user.email }}</p>
+                <p><span>Должность:</span> {{ contact.position.name }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

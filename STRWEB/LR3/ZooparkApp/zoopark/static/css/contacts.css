@@ -1,0 +1,48 @@
+@import url('/static/css/fonts.css');
+
+#contacts-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0 0;
+}
+
+.contact-card{
+    background-color: #927acf;
+    border-radius: 25px;
+    width: 25%;
+    overflow: hidden;
+    margin: 20px 10px;
+    display: flex; /* Добавляем Flexbox для карточек */
+    flex-direction: column; /* Вертикальное расположение содержимого */
+    box-shadow: 0 5px 20px #000000;
+}
+
+.contact-card img{
+    width: 100%;
+    height:auto;
+}
+
+.contact-info{
+    padding: 20px;
+}
+
+.contact-info p{
+    color: black;
+    line-height: 1.2em;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.contact-info p span{
+    font-weight: bold;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #FFAE00;
+}
+

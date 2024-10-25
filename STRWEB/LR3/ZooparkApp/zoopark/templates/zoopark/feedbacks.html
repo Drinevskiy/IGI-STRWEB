@@ -1,0 +1,30 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/feedbacks.css' %}">
+{% endblock %}
+{% block content %}
+<h1>Отзывы</h1>
+<div id="feedbacks-card-container">
+    {% for feedback in feedbacks %}
+        <div class="feedback-card">
+                <h2>{{ feedback.user.last_name }} {{ feedback.user.first_name }}</h2>
+                <hr/>
+                <div class="stars">
+                    {% for i in marks %}
+                        {% if i <= feedback.mark %}
+                            <img src="{% static 'media/images/ye-star.png' %}" alt="звезда" class="star">
+                        {% else %}
+                            <img src="{% static 'media/images/star.png' %}" alt="пустая звезда" class="star">
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <p>{{ feedback.text }}</p>
+                <p>{{ feedback.date }}</p>
+        </div>
+    {% endfor %}
+</div>
+<a id="add-feedback" class="custom-pointer" href="{% if user.is_authenticated %}{% url 'zoopark:add-feedback'%}{% else %}{% url 'users:registration'%}{% endif %}">Добавить отзыв</a>
+{% endblock %}

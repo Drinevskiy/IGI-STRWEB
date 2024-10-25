@@ -1,0 +1,112 @@
+.certificate {
+    display: flex; /* Убедитесь, что это блочный элемент */
+    margin: 20px auto; /* Отступы сверху и снизу */
+    padding: 15px; /* Внутренние отступы */
+    height: 550px;
+    width: 70%;
+    text-align: center;
+    border: 200px solid transparent;
+    justify-content: space-between;
+    flex-direction: column;
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-image: linear-gradient(#dcabea, #6f3180);
+    /* background-image: radial-gradient(ellipse farthest-corner at 30px 20px, #8cdeef, #d13fc0); */
+    position: relative; /*Для позиционирования дочерних элементов*/
+    z-index: 2;
+
+}
+
+.certificate img {
+    position: absolute;
+    width: 25%; /* Адаптивная ширина для изображения */
+    height: auto; /* Соотношение сторон */
+    top: 22%;
+    left: 38%;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.certificate p {
+    /* position: absolute; */
+    z-index: 1;
+    margin: 10px 0; /* Отступы между параграфами */
+}
+
+#header{
+    color: Black;
+    font-family: "Blade", "Bergamasco", sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+#name{
+    color: rgb(175, 12, 12);
+    font-family: "Ouvality", "Bergamasco", sans-serif;
+    font-size: 7em;
+    letter-spacing: 1px;
+}
+
+#text{
+    color: Black;
+    font-family: "Bergamasco", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+#city{
+    color: Black;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+.logo-video{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 50px;
+    padding: 20px;
+    background-color: #927acf;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px #000000;
+}
+
+.logo-video > img {
+    width: 250px;
+    height: 250px;
+    /* margin: 0 20px; */
+}
+
+.logo-video > img:first-of-type {
+    transform: rotate(-25deg);
+}
+
+.logo-video > img:last-of-type {
+    transform: rotate(25deg);
+}
+
+.logo-video > video {
+    padding: 5px;
+    outline: 5px solid #FFAE00;
+    width: 60%;
+    margin: 0 30px;
+}
+
+p.info, p.history{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+
+}
+
+#requisites{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#requisites > span{
+    font-weight: bold;
+}

@@ -1,0 +1,131 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" class="custom-cursor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'media/images/logo.png' %}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">   
+    {% block style %}{% endblock %}
+</head>
+<script>
+    let tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (!tz) {
+        tz = "UTC"
+    }
+    document.cookie = "mytz=" + tz + ";path=/";
+</script>
+<body>
+    <header>
+        <div class="logo"><a class="custom-pointer" tabindex="1" title="Перейти на главную" href="{% url 'zoopark:index' %}"><img src="{% static 'media/images/logo.png' %}"/></a></div>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn custom-pointer">Услуги</button>
+                <div class="dropdown-content">
+                    <a class="custom-pointer" tabindex="2" lang="ru" href="{% url 'zoopark:service' %}">График работы</a>
+                    {% if user.is_authenticated and not user.is_superuser and not user.is_staff %}
+                        <a class="custom-pointer" href="{% url 'zoopark:tickets' %}">Билеты</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn custom-pointer">О зоопарке</button>
+                <div class="dropdown-content">
+                    <a class="custom-pointer" tabindex="3" lang="ru" href="{% url 'zoopark:about' %}">О нас</a>
+                    <a class="custom-pointer" tabindex="4" lang="ru" href="{% url 'zoopark:feedbacks' %}">Отзывы</a>
+                    <a class="custom-pointer" tabindex="5" lang="ru" href="{% url 'zoopark:news' %}">Новости</a>
+                    <a class="custom-pointer" tabindex="6" lang="ru" href="{% url 'zoopark:questions' %}">Вопросы</a>
+                    <a class="custom-pointer" tabindex="7" lang="ru" href="{% url 'zoopark:contacts' %}">Контакты</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn custom-pointer">Работа</button>
+                <div class="dropdown-content">
+                    <a class="custom-pointer" tabindex="8" lang="ru" href="{% url 'zoopark:vacancies' %}">Вакансии</a>
+                    <a class="custom-pointer" tabindex="9" lang="ru" href="{% url 'zoopark:politics' %}">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn custom-pointer">Прочее</button>
+                <div class="dropdown-content">
+                    <a class="custom-pointer" tabindex="10" lang="ru" href="{% url 'zoopark:other' %}">Прочее</a>
+                    {% if user.is_authenticated %}
+                        <a class="custom-pointer" href="{% url 'zoopark:cat-fact' %}">Факты о кошках</a>
+                        <a class="custom-pointer" href="{% url 'zoopark:dog-photo' %}">Случайное фото собак</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% if user.is_authenticated and user.is_superuser %}
+            <div class="dropdown">
+                <button class="dropbtn custom-pointer">Для админа</button>
+                <div class="dropdown-content">
+                    <a class="custom-pointer" href="{% url 'zoopark:statistic' %}">Статистика</a>
+                    <a class="custom-pointer" href="{% url 'zoopark:management' %}">Управление</a>
+                    <a class="custom-pointer" href="{% url 'admin:index' %}">Админ панель</a>
+                </div>
+            </div>
+            {% endif %}
+        </nav>
+        <div class="user-actions">
+            {% if user.is_authenticated %}
+            {% comment %} <a href="{% url 'users:logout' %}"><img src="{% static 'media/images/logout.png' %}" width="40px"></a> {% endcomment %}
+            <a class="custom-pointer" href="{% url 'users:logout' %}">Выйти</a>
+            <a class="custom-pointer" href="{% url 'users:profile' %}">Профиль</a>
+            {% else %}
+                {% comment %} <a href="{% url 'users:login' %}"><img src="{% static 'media/images/login_icon.png' %}" width="40px"></a> {% endcomment %}
+                <a class="custom-pointer" href="{% url 'users:login' %}">Войти</a>
+                <a class="custom-pointer" href="{% url 'users:registration' %}">Регистрация</a>
+                {% comment %} <a href="{% url 'users:registration' %}"><img src="{% static 'media/images/registration_icon.png' %}" width="40px"></a> {% endcomment %}
+            {% endif %}
+        </div>
+    </header>
+    <div class="main-footer">
+        <main>
+            <div class="container">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div class="loader-container">
+                <div class="loader solid"></div>
+                <div class="loader dotted"></div>
+            </div>
+        </main>
+        <footer>
+            <div class="top">
+                <a class="custom-pointer" href="{% url 'zoopark:index' %}">Главная</a>
+                <a class="custom-pointer" href="{% url 'zoopark:about' %}">О нас</a>
+                <a class="custom-pointer" href="{% url 'zoopark:contacts' %}">Контакты</a>
+                <a class="custom-pointer" href="{% url 'zoopark:vacancies' %}">Вакансии</a>
+            </div>
+            <hr/>
+            <div class="bottom">
+                <div class="copyright">
+                    <div class="logo"><img src="{% static 'media/images/logo.png' %}"/></div>
+                    <p>&copy 2024 Kirad, Inc. <br/>All rights reserved.</p>
+                </div>
+                <div class="links">
+                    <div class="logo"><a class="custom-pointer" href="https://www.youtube.com/channel/UCRWCw25KZqqxu5OVeb37hEA" target="_blank">
+                        <img src="{% static 'media/images/youtube_logo.png' %}">
+                    </a></div>
+                    <div class="logo"><a class="custom-pointer" href="https://vk.com/id208792228" target="_blank">
+                        <img src="{% static 'media/images/vk_logo.png' %}">
+                    </a></div>
+                    <div class="logo"><a class="custom-pointer" href="https://www.instagram.com/kira_dri/" target="_blank">
+                        <img src="{% static 'media/images/instagram_logo.png' %}">
+                    </a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script type="text/javascript">
+    document.cookie = 'timezone=' + Intl.DateTimeFormat().resolvedOptions().timeZone;
+</script>
+</html>

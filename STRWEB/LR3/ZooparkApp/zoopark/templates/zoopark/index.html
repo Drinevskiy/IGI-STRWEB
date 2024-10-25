@@ -1,0 +1,109 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block meta %}
+    <meta name="author" content="Кирилл Дриневский" />
+    <meta name="description" content="Главная страница сайта зоопарка." />
+{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/animal-card.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main-animation.css' %}">
+{% endblock %}
+{% block content %}
+    {% comment %} <div style="margin: 10px 20px" itemscope itemtype="https://schema.org/ImageObject">
+        <img itemprop="contentUrl" src="{% static 'media/images/banner1.jpg' %}" height="150" width="33%"/>
+        <img itemprop="contentUrl" src="{% static 'media/images/banner2.png' %}" height="150" width="33%"/>
+        <img itemprop="contentUrl" src="{% static 'media/images/banner3.jpg' %}" height="150" width="33%"/>
+    </div> {% endcomment %}
+    <div class="scene">
+        <div class="branch"></div>
+        <div class="panda">
+            <div class="head">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="ear left"></div>
+                <div class="ear right"></div>
+                <div class="mouth"></div>
+            </div>
+            {% comment %} <div class="body"> {% endcomment %}
+                <div class="arm right"></div>
+                <div class="arm left"></div>
+            {% comment %} </div> {% endcomment %}
+        </div>
+        <div class="trees">
+            <div class="tree"></div>
+            <div class="tree"></div>
+            <div class="tree"></div>
+            <div class="tree"></div>
+            <div class="tree"></div>
+            <div class="tree"></div>
+        </div>
+        <div class="zoo-name">AniLand</div>
+    </div>
+    <section>
+        <p hidden>Скрытый текст</p>
+        <h1 draggable="true">Новости</h1>
+        <div class="news-container">
+            {% for new in news %}
+                <div class="new" itemscope itemtype="https://schema.org/NewsArticle">
+                    <h2 itemprop="headline">{{ new.header }}</h2>
+                    <p itemprop="description">{{ new.short_description }}</p>
+                    <a class="custom-pointer" href="{% url 'zoopark:new' new.pk %}" itemprop="url">Читать далее</a>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    <hr/>
+    <section>
+        <h1>Питомцы</h1>
+        <form method="GET" action="{% url 'zoopark:index' %}">
+            <div class="input-name">
+                <input accesskey="q" name="name" id="name" type="text" placeholder=""/>
+                <label for="name">Имя </label>  
+                <input type="submit" value="Поиск" class="custom-pointer">
+            </div>
+            {% comment %} <label for="age">Сортировать по возрасту </label> {% endcomment %}
+            {% comment %} <input type="checkbox" id="age" name="age"/> {% endcomment %}
+        </form>
+        {% if animals%}
+            <div class="animal-cards-container">
+                {% for animal in animals %}
+                    <article>
+                        <a class="custom-pointer" href="{% url 'zoopark:animal' animal.pk %}">
+                            <div class="animal-card">
+                                <img src="{% if animal.image %}{{ animal.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}" alt="">
+                                {% comment %} <img src="{% static animal.image.url %}" alt="{% static 'images/no.jpg' %}"> {% endcomment %}
+                                <div class="animal-info">
+                                    <h2>{{ animal.name }}</h2>
+                                    <hr/>
+                                    <p>{{ animal.description }}</p> 
+                                    <ul class="animal-details">
+                                        <li><span>Вид:</span> {{ animal.type }}</li>
+                                        <li><span>Семейство:</span> {{ animal.family }}</li>
+                                        <li><span>Возраст: </span>{{ animal.age }} {% if animal.age == 1 %}год{% elif animal.age < 5 and animal.age > 1 %}года{% else %}лет{% endif %}</li>
+                                        <li><span>Вольер:</span> {{ animal.aviary }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                {% endfor %}
+            </div>
+            {% else %}
+                <div class="empty-container"><p>К сожалению, в нашем зоопарке нет животных с таким именем.</p></div>            
+            {% endif %}        
+    </section>
+    <hr/>
+    <h1>Наши спонсоры</h1>
+    <aside>
+        {% for partner in partners %}
+        <a class="custom-pointer" href="{{partner.url}}" target="_blank">
+            {{partner.name}}
+                <img src="{{ partner.image.url }}" alt="">
+            </a>
+        {% endfor %}
+    </aside>
+{% comment %} {{content}} {% endcomment %}
+{% endblock %}
