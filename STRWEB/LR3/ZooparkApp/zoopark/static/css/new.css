@@ -19,7 +19,7 @@
     column-rule: 2px solid aqua;
     overflow: hidden;
     padding: 30px;
-    color: black;
+    /* color: black; */
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-style: italic;
@@ -77,4 +77,22 @@
 
 .new-info p span{
     font-weight: bold;
+}
+
+.edit-style{
+    font-size: 28px;
+    margin: 0 42%;
+    width: auto;
+}
+
+.edit-style label input {
+    width: 15px;
+    height: 15px;
+    font-size: 28px;
+}
+
+#generate-input div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
 }

@@ -1,3 +1,183 @@
+.slider-container {
+    position: relative;
+    width: 1000px;
+    height: 750px;
+    margin: 60px auto;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 5px;
+
+}
+
+.slider-container figure{
+    position: absolute;
+    margin: 0 auto;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.slider-container figure.active {
+    opacity: 1;
+    transform: translateX(0);
+
+}
+.slider-container figure.prev {
+    transform: translateX(-100%);
+}
+.slider-container figure.next {
+    transform: translateX(100%);
+}
+.slider-container figure figcaption{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для лучшей читаемости */
+    padding: 10px; /* Отступы вокруг текста */
+    border-radius: 5px; /* Скругление углов */
+}
+  
+.slider-container figure img {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.slider-container .slides-count{
+    position: absolute;
+    left: 4%;
+    top: 5%;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для лучшей читаемости */
+    padding: 10px; /* Отступы вокруг текста */
+    border-radius: 5px; /* Скругление углов */
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 90%;
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    color: inherit;
+}
+  
+.prev-button {
+    left: 10px;
+}
+  
+.next-button {
+    right: 10px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pagination div{
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+.pagination div.active{
+    background-color: #FFAE00;
+    /* background-color: #927acf; */
+}
+
+
+form.controls{
+    /* position: absolute; */
+    /* bottom: 1px; */
+    /* left: -50%; */
+    /* transform: translate(-105%, 50%); */
+    display: block;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    width: 30%;
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+form.controls .form-element{
+    display: block;
+    padding: 0 0 15px;  
+    width: 100%;
+}
+
+form.controls .form-element input{
+    padding: 5px;  
+    font-size: 16px;
+}
+ 
+form.controls .form-element input[type="checkbox"] {
+    display: none; /* Скрываем стандартный элемент */
+}
+
+form.controls .form-element input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px; /* Отступ для кастомного стиля */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+form.controls .form-element input[type="checkbox"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Ширина кастомного радиокнопки */
+    height: 20px; /* Высота кастомного радиокнопки */
+    border: 2px solid #ccc; /* Граница кастомного радиокнопки */
+    border-radius: 2px; /* Закругление для создания круга */
+    /* background-image: none; */
+    background-color: white;
+}
+
+form.controls .form-element input[type="checkbox"]:checked + label::before {
+    background-image: url("/static/media/images/galka.png");
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь квадрат */
+    background-repeat: no-repeat; /* Избегаем повторения изображения */
+}
+
+
+form.controls input[type="submit"]{
+    font-size: 1em ;
+    font-family: inherit;
+    padding: 0.5em 0.75em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+    transition: 0.2s linear all; /* Плавный переход при изменении */
+}
+
+form.controls input[type="submit"]:hover{
+    background-color: #927acf;
+
+}
+
 
 
 .news-container{

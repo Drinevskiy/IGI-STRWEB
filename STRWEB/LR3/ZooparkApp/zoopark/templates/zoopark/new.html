@@ -13,4 +13,13 @@
             {{ new.description }}
         </div>
     </div>
+    <div class="edit-style">
+        <label>
+            Редактировать <input type="checkbox" value="edit" id="edit"> 
+        </label>
+        <div id="generate-input"></div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{% static 'js/new.js' %}"></script>
 {% endblock %}

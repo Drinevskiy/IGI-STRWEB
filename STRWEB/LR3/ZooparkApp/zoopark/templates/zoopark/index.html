@@ -12,11 +12,7 @@
     <link rel="stylesheet" href="{% static 'css/main-animation.css' %}">
 {% endblock %}
 {% block content %}
-    {% comment %} <div style="margin: 10px 20px" itemscope itemtype="https://schema.org/ImageObject">
-        <img itemprop="contentUrl" src="{% static 'media/images/banner1.jpg' %}" height="150" width="33%"/>
-        <img itemprop="contentUrl" src="{% static 'media/images/banner2.png' %}" height="150" width="33%"/>
-        <img itemprop="contentUrl" src="{% static 'media/images/banner3.jpg' %}" height="150" width="33%"/>
-    </div> {% endcomment %}
+    
     <div class="scene">
         <div class="branch"></div>
         <div class="panda">
@@ -42,6 +38,68 @@
         </div>
         <div class="zoo-name">AniLand</div>
     </div>
+    
+    <div class="slider-container">
+        <div class="slider" itemscope itemtype="https://schema.org/ImageObject">
+            <figure>
+                <img itemprop="contentUrl" src="{% static 'media/images/lions.jpg' %}" />
+                <figcaption>Львы</figcaption>
+            </figure>
+            <figure>
+                <img itemprop="contentUrl" src="{% static 'media/images/rino.jpg' %}" />
+                <figcaption>Носороги</figcaption>
+            </figure>
+            <figure>
+                <img itemprop="contentUrl" src="{% static 'media/images/zebra.jpg' %}" />
+                <figcaption>Зебры</figcaption>
+            </figure>
+            <figure>
+                <img itemprop="contentUrl" src="{% static 'media/images/tiger2.jpg' %}" />
+                <figcaption>Тигры</figcaption>
+            </figure>
+        </div>
+        <span class="slides-count"></span>
+        <button class="custom-pointer prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+        <button class="custom-pointer next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+        <div class="pagination"></div>
+    </div>
+    {% if user.is_authenticated and user.is_superuser %}
+        <form class="controls" method="post">
+            {% csrf_token %}
+            <div class="form-element">
+                <label for="delay">Задержка переключения(мс): </label>
+                <input type="number" id="delay" name="delay" value="{{sliderOptions.delay}}" min="1000" max="10000">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="loop" name="loop" value="loop" {% if sliderOptions.loop %}checked{% endif %}>
+                <label for="loop">Циклический режим</label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="navs" name="navs" value="navs" {% if sliderOptions.navs %}checked{% endif %}>
+                <label for="navs">Показать стрелки</label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="pags" name="pags" value="pags" {% if sliderOptions.pags %}checked{% endif %}>
+                <label for="pags">Показать пагинацию</label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="auto" name="auto" value="auto" {% if sliderOptions.auto %}checked{% endif %}>
+                <label for="auto">Автопереключение</label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="stopMouseHover" name="stopMouseHover" value="stopMouseHover" {% if sliderOptions.stopMouseHover %}checked{% endif %}>
+                <label for="stopMouseHover">Остановить при наведении</label>
+            </div>
+            <input type="submit" value="Сохранить">
+        </form>
+    {% else %}
+        <input type="number" id="delay" name="delay" value="{{sliderOptions.delay}}" min="1000" max="10000" hidden>
+        <input type="checkbox" id="loop" name="loop" value="loop" {% if sliderOptions.loop %}checked{% endif %} hidden>
+        <input type="checkbox" id="navs" name="navs" value="navs" {% if sliderOptions.navs %}checked{% endif %} hidden>
+        <input type="checkbox" id="pags" name="pags" value="pags" {% if sliderOptions.pags %}checked{% endif %} hidden>
+        <input type="checkbox" id="auto" name="auto" value="auto" {% if sliderOptions.auto %}checked{% endif %} hidden>
+        <input type="checkbox" id="stopMouseHover" name="stopMouseHover" value="stopMouseHover" {% if sliderOptions.stopMouseHover %}checked{% endif %} hidden>
+    {% endif %}
     <section>
         <p hidden>Скрытый текст</p>
         <h1 draggable="true">Новости</h1>
@@ -106,4 +164,7 @@
         {% endfor %}
     </aside>
 {% comment %} {{content}} {% endcomment %}
+{% endblock %}
+{% block scripts %}
+    <script src="{% static 'js/index.js' %}"></script>
 {% endblock %}

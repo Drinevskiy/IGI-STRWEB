@@ -187,7 +187,7 @@ class Question(models.Model):
 
 class Vacancy(models.Model):
     position = models.ForeignKey(Position, on_delete = models.CASCADE, verbose_name="Должность")
-    count= models.PositiveIntegerField(default = 1, verbose_name="Количество") 
+    count = models.PositiveIntegerField(default = 1, verbose_name="Количество") 
     class Meta:
         verbose_name = "Вакансия"
         verbose_name_plural = "Вакансии"
@@ -205,4 +205,15 @@ class Feedback(models.Model):
     def __str__(self) -> str:
         return "Отзыв"
     
-    
+class SliderOptions(models.Model):
+    loop = models.BooleanField(default= True, verbose_name="Циклическая прокрутка")
+    navs = models.BooleanField(default= True, verbose_name="Стрелочки")
+    pags = models.BooleanField(default= True, verbose_name="Пагинация")
+    auto = models.BooleanField(default= True, verbose_name="Автоматическое переключение")
+    stopMouseHover = models.BooleanField(default= True, verbose_name="Остановка мышью")
+    delay = models.PositiveIntegerField(default = 5000, verbose_name="Задержка") 
+    class Meta:
+        verbose_name = "Опция слайдера"
+        verbose_name_plural = "Опции слайдера"
+    def __str__(self) -> str:
+        return "Опции слайдера"

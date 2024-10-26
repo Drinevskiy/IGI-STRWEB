@@ -12,6 +12,15 @@ import logging
 # Create your views here.
 
 def index(request):
+    if request.method == "POST":
+        options = SliderOptions.objects.all()[0]
+        options.delay = request.POST.get('delay', 5000)
+        options.loop = request.POST.get('loop', '') == 'loop'
+        options.navs = request.POST.get('navs', '') == 'navs'
+        options.pags = request.POST.get('pags', '') == 'pags'
+        options.auto = request.POST.get('auto', '') == 'auto'
+        options.stopMouseHover = request.POST.get('stopMouseHover', '') == 'stopMouseHover'
+        options.save()
     name = request.GET.get("name", "")
     age = request.GET.get("age") == "on"
     # animals = Animal.objects.filter(name__icontains=name.lower() | name__icontains=name.upper()) 
@@ -22,10 +31,12 @@ def index(request):
     news = News.objects.order_by('-id')[:3]
     if age:
         animals = animals.order_by("date_of_birth")
+    sliderOptions = SliderOptions.objects.all()[0]
     context = {"title" : "Главная",
                "animals" : animals,
                "partners" : partners,
-               "news" : news }
+               "news" : news,
+               "sliderOptions" : sliderOptions }
     return render(request, "zoopark/index.html", context)
 
 def service(request):
