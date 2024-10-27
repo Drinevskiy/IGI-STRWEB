@@ -5920,3 +5920,5 @@ TypeError: Object of type AnimalType is not JSON serializable
 2024-10-27 16:05:45,488 WARNING Not Found: /undefined
 2024-10-27 16:06:03,233 WARNING Not Found: /undefined
 2024-10-27 18:03:19,575 INFO Watching for file changes with StatReloader
+2024-10-27 19:45:20,035 INFO Watching for file changes with StatReloader
+2024-10-27 21:56:55,794 INFO Watching for file changes with StatReloader

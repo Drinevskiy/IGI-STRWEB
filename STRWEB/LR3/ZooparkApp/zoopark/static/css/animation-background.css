@@ -1,0 +1,77 @@
+#jungle{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    margin:  0;
+    padding: 0;
+    /* box-sizing:border-box;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    top: -90px;
+    background-color: #9db0ea;
+    transform: scale(1.11);
+}
+
+
+
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+#jungle::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height:200px;
+    width: 100%;
+    background:linear-gradient(to top,#9db0ea , transparent );
+    z-index: 1001;
+}
+
+#jungle img{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; */
+}
+
+#fox{
+    position: absolute;
+    width: 150px;
+    height: auto;
+}
+
+#palm_left, #palm_right{
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    /* left: 0; */
+    width: 400px;
+    height: 80%;
+    /* object-fit: cover; */
+
+    pointer-events: none;
+}
+
+#palm_left{
+    transform: rotateY(180deg);
+    
+    
+}
+#palm_right{
+    /* transform-origin: left; */
+}
+

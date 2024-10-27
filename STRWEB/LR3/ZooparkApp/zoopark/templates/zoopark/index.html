@@ -10,168 +10,188 @@
     <link rel="stylesheet" href="{% static 'css/animal-card.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="{% static 'css/main-animation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animation-background.css' %}">
+{% endblock %}
+{% block jungle %}
+    <section id="jungle">
+        <img src="{% static 'media/images/jungle.jpg' %}" id="bg" />
+        {% comment %} <h2 id="text">Mountains</h2> {% endcomment %}
+        <img src="{% static 'media/images/fox.png' %}" id="fox" />
+        {% comment %} <img src="https://aryan-tayal.github.io/Mountains-Parallax/clouds_1.png" id="clouds_1" /> {% endcomment %}
+        {% comment %} <img src="https://aryan-tayal.github.io/Mountains-Parallax/clouds_2.png" id="clouds_2" /> {% endcomment %}
+        <img src="{% static 'media/images/palm.png' %}" id="palm_left" />
+        <img src="{% static 'media/images/palm.png' %}" id="palm_right" />
+    </section>
 {% endblock %}
 {% block content %}
     
-    <div class="scene">
-        <div class="branch"></div>
-        <div class="panda">
-            <div class="head">
-                <div class="eye left"></div>
-                <div class="eye right"></div>
-                <div class="ear left"></div>
-                <div class="ear right"></div>
-                <div class="mouth"></div>
-            </div>
-            {% comment %} <div class="body"> {% endcomment %}
-                <div class="arm right"></div>
-                <div class="arm left"></div>
-            {% comment %} </div> {% endcomment %}
-        </div>
-        <div class="trees">
-            <div class="tree"></div>
-            <div class="tree"></div>
-            <div class="tree"></div>
-            <div class="tree"></div>
-            <div class="tree"></div>
-            <div class="tree"></div>
-        </div>
-        <div class="zoo-name">AniLand</div>
+    {% comment %} <div id="fox" class="animal">
+        <img src="{% static 'media/imagesfox.png' %}" />
     </div>
-    
-    <div class="slider-container">
-        <div class="slider" itemscope itemtype="https://schema.org/ImageObject">
-            <figure>
-                <img itemprop="contentUrl" src="{% static 'media/images/lions.jpg' %}" />
-                <figcaption>Львы</figcaption>
-            </figure>
-            <figure>
-                <img itemprop="contentUrl" src="{% static 'media/images/rino.jpg' %}" />
-                <figcaption>Носороги</figcaption>
-            </figure>
-            <figure>
-                <img itemprop="contentUrl" src="{% static 'media/images/zebra.jpg' %}" />
-                <figcaption>Зебры</figcaption>
-            </figure>
-            <figure>
-                <img itemprop="contentUrl" src="{% static 'media/images/tiger2.jpg' %}" />
-                <figcaption>Тигры</figcaption>
-            </figure>
-        </div>
-        <span class="slides-count"></span>
-        <button class="custom-pointer prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-        <button class="custom-pointer next-button" aria-label="Посмотреть следующий слайд">&gt</button>
-        <div class="pagination"></div>
-    </div>
-    {% if user.is_authenticated and user.is_superuser %}
-        <form class="controls" method="post">
-            {% csrf_token %}
-            <div class="form-element">
-                <label for="delay">Задержка переключения(мс): </label>
-                <input type="number" id="delay" name="delay" value="{{sliderOptions.delay}}" min="1000" max="10000">
-            </div>
-            <div class="form-element">
-                <input type="checkbox" id="loop" name="loop" value="loop" {% if sliderOptions.loop %}checked{% endif %}>
-                <label for="loop">Циклический режим</label>
-            </div>
-            <div class="form-element">
-                <input type="checkbox" id="navs" name="navs" value="navs" {% if sliderOptions.navs %}checked{% endif %}>
-                <label for="navs">Показать стрелки</label>
-            </div>
-            <div class="form-element">
-                <input type="checkbox" id="pags" name="pags" value="pags" {% if sliderOptions.pags %}checked{% endif %}>
-                <label for="pags">Показать пагинацию</label>
-            </div>
-            <div class="form-element">
-                <input type="checkbox" id="auto" name="auto" value="auto" {% if sliderOptions.auto %}checked{% endif %}>
-                <label for="auto">Автопереключение</label>
-            </div>
-            <div class="form-element">
-                <input type="checkbox" id="stopMouseHover" name="stopMouseHover" value="stopMouseHover" {% if sliderOptions.stopMouseHover %}checked{% endif %}>
-                <label for="stopMouseHover">Остановить при наведении</label>
-            </div>
-            <input type="submit" value="Сохранить">
-        </form>
-    {% else %}
-        <input type="number" id="delay" name="delay" value="{{sliderOptions.delay}}" min="1000" max="10000" hidden>
-        <input type="checkbox" id="loop" name="loop" value="loop" {% if sliderOptions.loop %}checked{% endif %} hidden>
-        <input type="checkbox" id="navs" name="navs" value="navs" {% if sliderOptions.navs %}checked{% endif %} hidden>
-        <input type="checkbox" id="pags" name="pags" value="pags" {% if sliderOptions.pags %}checked{% endif %} hidden>
-        <input type="checkbox" id="auto" name="auto" value="auto" {% if sliderOptions.auto %}checked{% endif %} hidden>
-        <input type="checkbox" id="stopMouseHover" name="stopMouseHover" value="stopMouseHover" {% if sliderOptions.stopMouseHover %}checked{% endif %} hidden>
-    {% endif %}
-    <section>
-        <p hidden>Скрытый текст</p>
-        <h1 draggable="true">Новости</h1>
-        <div class="news-container">
-            {% for new in news %}
-                <div class="new" itemscope itemtype="https://schema.org/NewsArticle">
-                    <h2 itemprop="headline">{{ new.header }}</h2>
-                    <p itemprop="description">{{ new.short_description }}</p>
-                    <a class="custom-pointer" href="{% url 'zoopark:new' new.pk %}" itemprop="url">Читать далее</a>
+    <div id="bear" class="animal"></div>
+    <div id="rabbit" class="animal"></div> {% endcomment %}
+    <div class="index-container">
+        <div class="scene">
+            <div class="branch"></div>
+            <div class="panda">
+                <div class="head">
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+                    <div class="mouth"></div>
                 </div>
-            {% endfor %}
-        </div>
-    </section>
-    <hr/>
-    <section>
-        <h1>Питомцы</h1>
-        <form method="GET" action="{% url 'zoopark:index' %}">
-            <div class="input-name">
-                <input accesskey="q" name="name" id="name" type="text" placeholder=""/>
-                <label for="name">Имя </label>  
-                <input type="submit" value="Поиск" class="custom-pointer">
+                {% comment %} <div class="body"> {% endcomment %}
+                    <div class="arm right"></div>
+                    <div class="arm left"></div>
+                {% comment %} </div> {% endcomment %}
             </div>
-            {% comment %} <label for="age">Сортировать по возрасту </label> {% endcomment %}
-            {% comment %} <input type="checkbox" id="age" name="age"/> {% endcomment %}
-        </form>
-        {% if animals%}
-            <div class="animal-cards-container" id="animalCardsContainer">
-                {% comment %} {% for animal in animals %}
-                    <article>
-                        <a class="custom-pointer" href="{% url 'zoopark:animal' animal.pk %}">
-                            <div class="animal-card">
-                                <img src="{% if animal.image %}{{ animal.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}" alt="">
-                                {% comment %} <img src="{% static animal.image.url %}" alt="{% static 'images/no.jpg' %}"> 
-                                <div class="animal-info">
-                                    <h2>{{ animal.name }}</h2>
-                                    <hr/>
-                                    <p>{{ animal.description }}</p> 
-                                    <ul class="animal-details">
-                                        <li><span>Вид:</span> {{ animal.type }}</li>
-                                        <li><span>Семейство:</span> {{ animal.family }}</li>
-                                        <li><span>Возраст: </span>{{ animal.age }} {% if animal.age == 1 %}год{% elif animal.age < 5 and animal.age > 1 %}года{% else %}лет{% endif %}</li>
-                                        <li><span>Вольер:</span> {{ animal.aviary }}</li>
-                                    </ul>
+            <div class="trees">
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+            </div>
+            <div class="zoo-name">AniLand</div>
+        </div>
+        
+        <div class="slider-container">
+            <div class="slider" itemscope itemtype="https://schema.org/ImageObject">
+                <figure>
+                    <img itemprop="contentUrl" src="{% static 'media/images/lions.jpg' %}" />
+                    <figcaption>Львы</figcaption>
+                </figure>
+                <figure>
+                    <img itemprop="contentUrl" src="{% static 'media/images/rino.jpg' %}" />
+                    <figcaption>Носороги</figcaption>
+                </figure>
+                <figure>
+                    <img itemprop="contentUrl" src="{% static 'media/images/zebra.jpg' %}" />
+                    <figcaption>Зебры</figcaption>
+                </figure>
+                <figure>
+                    <img itemprop="contentUrl" src="{% static 'media/images/tiger2.jpg' %}" />
+                    <figcaption>Тигры</figcaption>
+                </figure>
+            </div>
+            <span class="slides-count"></span>
+            <button class="custom-pointer prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+            <button class="custom-pointer next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+            <div class="pagination"></div>
+        </div>
+        {% if user.is_authenticated and user.is_superuser %}
+            <form class="controls" method="post">
+                {% csrf_token %}
+                <div class="form-element">
+                    <label for="delay">Задержка переключения(мс): </label>
+                    <input type="number" id="delay" name="delay" value="{{sliderOptions.delay}}" min="1000" max="10000">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="loop" name="loop" value="loop" {% if sliderOptions.loop %}checked{% endif %}>
+                    <label for="loop">Циклический режим</label>
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="navs" name="navs" value="navs" {% if sliderOptions.navs %}checked{% endif %}>
+                    <label for="navs">Показать стрелки</label>
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="pags" name="pags" value="pags" {% if sliderOptions.pags %}checked{% endif %}>
+                    <label for="pags">Показать пагинацию</label>
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="auto" name="auto" value="auto" {% if sliderOptions.auto %}checked{% endif %}>
+                    <label for="auto">Автопереключение</label>
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="stopMouseHover" name="stopMouseHover" value="stopMouseHover" {% if sliderOptions.stopMouseHover %}checked{% endif %}>
+                    <label for="stopMouseHover">Остановить при наведении</label>
+                </div>
+                <input type="submit" value="Сохранить">
+            </form>
+        {% else %}
+            <input type="number" id="delay" name="delay" value="{{sliderOptions.delay}}" min="1000" max="10000" hidden>
+            <input type="checkbox" id="loop" name="loop" value="loop" {% if sliderOptions.loop %}checked{% endif %} hidden>
+            <input type="checkbox" id="navs" name="navs" value="navs" {% if sliderOptions.navs %}checked{% endif %} hidden>
+            <input type="checkbox" id="pags" name="pags" value="pags" {% if sliderOptions.pags %}checked{% endif %} hidden>
+            <input type="checkbox" id="auto" name="auto" value="auto" {% if sliderOptions.auto %}checked{% endif %} hidden>
+            <input type="checkbox" id="stopMouseHover" name="stopMouseHover" value="stopMouseHover" {% if sliderOptions.stopMouseHover %}checked{% endif %} hidden>
+        {% endif %}
+        <section>
+            <p hidden>Скрытый текст</p>
+            <h1 draggable="true">Новости</h1>
+            <div class="news-container">
+                {% for new in news %}
+                    <div class="new" itemscope itemtype="https://schema.org/NewsArticle">
+                        <h2 itemprop="headline">{{ new.header }}</h2>
+                        <p itemprop="description">{{ new.short_description }}</p>
+                        <a class="custom-pointer" href="{% url 'zoopark:new' new.pk %}" itemprop="url">Читать далее</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        <hr/>
+        <section>
+            <h1>Питомцы</h1>
+            <form method="GET" action="{% url 'zoopark:index' %}">
+                <div class="input-name">
+                    <input accesskey="q" name="name" id="name" type="text" placeholder=""/>
+                    <label for="name">Имя </label>  
+                    <input type="submit" value="Поиск" class="custom-pointer">
+                </div>
+                {% comment %} <label for="age">Сортировать по возрасту </label> {% endcomment %}
+                {% comment %} <input type="checkbox" id="age" name="age"/> {% endcomment %}
+            </form>
+            {% if animals%}
+                <div class="animal-cards-container" id="animalCardsContainer">
+                    {% comment %} {% for animal in animals %}
+                        <article>
+                            <a class="custom-pointer" href="{% url 'zoopark:animal' animal.pk %}">
+                                <div class="animal-card">
+                                    <img src="{% if animal.image %}{{ animal.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}" alt="">
+                                    {% comment %} <img src="{% static animal.image.url %}" alt="{% static 'images/no.jpg' %}"> 
+                                    <div class="animal-info">
+                                        <h2>{{ animal.name }}</h2>
+                                        <hr/>
+                                        <p>{{ animal.description }}</p> 
+                                        <ul class="animal-details">
+                                            <li><span>Вид:</span> {{ animal.type }}</li>
+                                            <li><span>Семейство:</span> {{ animal.family }}</li>
+                                            <li><span>Возраст: </span>{{ animal.age }} {% if animal.age == 1 %}год{% elif animal.age < 5 and animal.age > 1 %}года{% else %}лет{% endif %}</li>
+                                            <li><span>Вольер:</span> {{ animal.aviary }}</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
-                {% endfor %} {% endcomment %}
-            </div>
-            <div class="animal-pagination-wrapper">
-                <div class="animal-pagination" id="animalPagination">
-                    <button type="button" id="prevPagination">&lt</button>
-                    {% comment %} <span id="pageInfo"></span> {% endcomment %}
-                    <button type="button" id="nextPagination">&gt</button>
+                            </a>
+                        </article>
+                    {% endfor %} {% endcomment %}
                 </div>
-            </div>
-            {% else %}
-                <div class="empty-container"><p>К сожалению, в нашем зоопарке нет животных с таким именем.</p></div>            
-            {% endif %}        
-    </section>
-    <hr/>
-    <h1>Наши спонсоры</h1>
-    <aside>
-        {% for partner in partners %}
-        <a class="custom-pointer" href="{{partner.url}}" target="_blank">
-            {{partner.name}}
-                <img src="{{ partner.image.url }}" alt="">
-            </a>
-        {% endfor %}
-    </aside>
+                <div class="animal-pagination-wrapper">
+                    <div class="animal-pagination" id="animalPagination">
+                        <button type="button" id="prevPagination">&lt</button>
+                        {% comment %} <span id="pageInfo"></span> {% endcomment %}
+                        <button type="button" id="nextPagination">&gt</button>
+                    </div>
+                </div>
+                {% else %}
+                    <div class="empty-container"><p>К сожалению, в нашем зоопарке нет животных с таким именем.</p></div>            
+                {% endif %}        
+        </section>
+        <hr/>
+        <h1>Наши спонсоры</h1>
+        <aside>
+            {% for partner in partners %}
+            <a class="custom-pointer" href="{{partner.url}}" target="_blank">
+                {{partner.name}}
+                    <img src="{{ partner.image.url }}" alt="">
+                </a>
+            {% endfor %}
+        </aside>
+    </div>
 {% comment %} {{content}} {% endcomment %}
 {% endblock %}
 {% block scripts %}
     <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/animation-background.js' %}"></script>
 {% endblock %}

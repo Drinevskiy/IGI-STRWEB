@@ -24,6 +24,7 @@
 </script>
 <body>
     <header>
+        <img class="anim-snake" id="anim-snake" src="{% static 'media/images/anim-snake.png' %}">
         <div class="logo"><a class="custom-pointer" tabindex="1" title="Перейти на главную" href="{% url 'zoopark:index' %}"><img src="{% static 'media/images/logo.png' %}"/></a></div>
         <nav>
             <div class="dropdown">
@@ -88,7 +89,10 @@
         </div>
     </header>
     <div class="main-footer">
+        
         <main>
+            {% block jungle %}
+            {% endblock %}
             <div class="container">
                 {% block content %}
                 {% endblock %}
@@ -126,6 +130,7 @@
         </footer>
     </div>
     <script src="{% static 'js/base.js' %}"></script>
+    <script src="{% static 'js/animation-header.js' %}"></script>
     {% block scripts %}{% endblock %}
 </body>
 <script type="text/javascript">

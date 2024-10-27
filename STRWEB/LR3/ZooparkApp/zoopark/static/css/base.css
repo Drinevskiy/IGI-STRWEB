@@ -73,6 +73,17 @@ h3{
     max-width: 100%;
     height: auto;
   }
+  header .anim-snake{
+    position: absolute;
+    top: -10%; 
+    left: -200px; /* Начальная позиция за пределами экрана */
+    height: 100px; /* Размер змеи */
+    width: auto;
+    /* transition: left 0.1s linear, top 0.1s linear; */
+    z-index: 1001; /* Змея выше других элементов */
+    pointer-events: none;
+  }
+
   nav{
     display: flex;
     align-content: baseline;
@@ -179,6 +190,7 @@ h3{
     padding: 90px 0 0;
     width: 100%;
   }
+  
   /* Main */
   main{
     background-color: #9db0ea;
