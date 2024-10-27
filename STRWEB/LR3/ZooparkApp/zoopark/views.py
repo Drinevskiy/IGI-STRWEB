@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from datetime import datetime, timedelta
 from django.db.models import Count, Sum
@@ -38,6 +39,25 @@ def index(request):
                "news" : news,
                "sliderOptions" : sliderOptions }
     return render(request, "zoopark/index.html", context)
+
+def animal_list_json(request):
+    try:
+        animals = Animal.objects.all()
+        animal_data = [
+            {
+                'name': animal.name,
+                'description': animal.description,
+                'type': getattr(animal.type, 'name', str(animal.type)),
+                'family': getattr(animal.family, 'name', str(animal.family)),
+                'age': animal.age,
+                'aviary': getattr(animal.aviary, 'name', str(animal.aviary)),
+                'image': animal.image.url if animal.image else '/static/media/images/no.jpg'
+            }
+            for animal in animals
+        ]
+        return JsonResponse(animal_data, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
 
 def service(request):
     promocodes = Promocode.objects.filter(is_archive=False)

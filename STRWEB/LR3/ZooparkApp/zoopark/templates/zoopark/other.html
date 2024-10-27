@@ -26,6 +26,23 @@
         <p><a href=#audio>Аудио и видео</a></p>
         <p><a href=#image>Адаптивное изображение</a></p>
     </aside>
+    <h2>Проводники</h2>
+    <form id="form-materials">
+        <label>Имя<label>
+        <input type="text" id="material-name"/>
+        <br/>
+        <label>Проводимость<label>
+        <input type="text" id="material-conductivity"/>
+        <br/>
+        <label>Удельный вес<label>
+        <input type="number" step="0.01" value="1" id="material-density"/>
+        <br/>
+        <input type="submit" id="submit-material">
+    </form>
+    <h3>Все материалы</h3>
+    <div id="materials-list"></div>
+    <h3>Полупроводники</h3>
+    <div id="semiconductors-list"></div>
     <h2 id="listing">Листинг</h2>
     <pre>
         <code>
@@ -252,4 +269,8 @@
                     {% static 'media/images/pizza-96.png' %} 400w">
     <hr>
     <a href="#start">В начало</a>
+{% endblock %}
+{% block scripts %}
+    {% comment %} <script src="{% static 'js/other_v1.js' %}"></script> {% endcomment %}
+    <script src="{% static 'js/other_v2.js' %}"></script>
 {% endblock %}

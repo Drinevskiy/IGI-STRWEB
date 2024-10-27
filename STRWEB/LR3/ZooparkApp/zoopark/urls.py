@@ -36,6 +36,7 @@ urlpatterns = [
     path("feedbacks/", views.feedbacks, name="feedbacks"),
     path("add-feedback/", views.add_feedback, name="add-feedback"),
     path("other/", views.other, name="other"),
+    path('api/animals/', views.animal_list_json, name='animal-list-json'),
 
     path(r'^new/(?P<pk>\d+)/$', views.new, name='new'),
     path(r'^animal/(?P<pk>\d+)/$', views.animal, name='animal'),

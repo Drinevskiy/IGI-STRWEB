@@ -295,6 +295,38 @@ hr{
 
 }
 
+.animal-pagination-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.animal-pagination{
+    display: inline-flex;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.animal-pagination button{
+    padding: 15px 20px;
+    color: #3778e1;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    font-size: 1.3em;
+    background-color: #ffffff;
+    border: none;
+    border-left: 1px solid #ccc;
+}
+
+.animal-pagination button.active{
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #3778e1;
+}
+
+.animal-pagination button[disabled]{
+    background-color: #b9b9b9;
+    border: none;
+}
 
 .empty-container{
     width: 100%; 

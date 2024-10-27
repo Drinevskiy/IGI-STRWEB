@@ -140,10 +140,10 @@ h3{
     border: 1px solid #FFAE00;
     border-radius: 5px;
   }
-  .user-actions a:first-child{
+  .user-actions a:nth-child(2){
     color: #FFAE00;
   }
-  .user-actions a:first-child:hover{
+  .user-actions a:nth-child(2):hover{
     background-color: #FFAE00;
     color: #fff;
     text-decoration: none;
@@ -189,7 +189,7 @@ h3{
     flex: 1;
     /* grid-row: 2; */
   }
-  @media (max-height: 800px){
+  @media (max-height: 200px){
     main{
       background-color: rgb(216, 73, 230);
     }

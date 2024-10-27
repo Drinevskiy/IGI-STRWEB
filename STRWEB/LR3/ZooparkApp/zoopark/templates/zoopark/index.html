@@ -126,13 +126,13 @@
             {% comment %} <input type="checkbox" id="age" name="age"/> {% endcomment %}
         </form>
         {% if animals%}
-            <div class="animal-cards-container">
-                {% for animal in animals %}
+            <div class="animal-cards-container" id="animalCardsContainer">
+                {% comment %} {% for animal in animals %}
                     <article>
                         <a class="custom-pointer" href="{% url 'zoopark:animal' animal.pk %}">
                             <div class="animal-card">
                                 <img src="{% if animal.image %}{{ animal.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}" alt="">
-                                {% comment %} <img src="{% static animal.image.url %}" alt="{% static 'images/no.jpg' %}"> {% endcomment %}
+                                {% comment %} <img src="{% static animal.image.url %}" alt="{% static 'images/no.jpg' %}"> 
                                 <div class="animal-info">
                                     <h2>{{ animal.name }}</h2>
                                     <hr/>
@@ -147,7 +147,14 @@
                             </div>
                         </a>
                     </article>
-                {% endfor %}
+                {% endfor %} {% endcomment %}
+            </div>
+            <div class="animal-pagination-wrapper">
+                <div class="animal-pagination" id="animalPagination">
+                    <button type="button" id="prevPagination">&lt</button>
+                    {% comment %} <span id="pageInfo"></span> {% endcomment %}
+                    <button type="button" id="nextPagination">&gt</button>
+                </div>
             </div>
             {% else %}
                 <div class="empty-container"><p>К сожалению, в нашем зоопарке нет животных с таким именем.</p></div>            

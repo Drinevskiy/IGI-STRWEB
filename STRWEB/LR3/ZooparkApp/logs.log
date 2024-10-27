@@ -5677,3 +5677,246 @@ django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '
 2024-10-26 23:49:14,883 WARNING Forbidden (CSRF token from POST incorrect.): /
 2024-10-26 23:49:15,039 WARNING Not Found: /favicon.ico
 2024-10-27 00:04:18,922 INFO Watching for file changes with StatReloader
+2024-10-27 11:12:37,187 INFO Watching for file changes with StatReloader
+2024-10-27 11:18:01,704 INFO Фамилия Имя вышел из аккаунта.
+2024-10-27 11:28:41,757 INFO Watching for file changes with StatReloader
+2024-10-27 11:47:41,452 INFO Фамилия Имя вошел в аккаунт.
+2024-10-27 11:47:45,071 WARNING Not Found: /favicon.ico
+2024-10-27 11:55:01,982 WARNING Not Found: /url_to_image
+2024-10-27 12:02:35,058 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\urls.py changed, reloading.
+2024-10-27 12:02:36,203 INFO Watching for file changes with StatReloader
+2024-10-27 12:02:56,766 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-27 12:02:57,729 INFO Watching for file changes with StatReloader
+2024-10-27 12:03:34,973 ERROR Internal Server Error: /api/animals/
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py", line 57, in animal_list_json
+    return JsonResponse(animal_data, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\response.py", line 733, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AnimalType is not JSON serializable
+2024-10-27 12:03:35,098 WARNING Not Found: /url_to_image
+2024-10-27 12:04:42,640 ERROR Internal Server Error: /api/animals/
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py", line 57, in animal_list_json
+    return JsonResponse(animal_data, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\response.py", line 733, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AnimalType is not JSON serializable
+2024-10-27 12:05:18,321 ERROR Internal Server Error: /api/animals/
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py", line 57, in animal_list_json
+    return JsonResponse(animal_data, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\response.py", line 733, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AnimalType is not JSON serializable
+2024-10-27 12:05:25,031 ERROR Internal Server Error: /api/animals/
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py", line 57, in animal_list_json
+    return JsonResponse(animal_data, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\response.py", line 733, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AnimalType is not JSON serializable
+2024-10-27 12:11:18,409 ERROR Internal Server Error: /api/animals/
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py", line 57, in animal_list_json
+    return JsonResponse(animal_data, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\http\response.py", line 733, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AnimalType is not JSON serializable
+2024-10-27 12:11:18,744 WARNING Not Found: /favicon.ico
+2024-10-27 12:13:33,182 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-27 12:13:34,359 INFO Watching for file changes with StatReloader
+2024-10-27 12:13:37,521 ERROR Internal Server Error: /api/animals/
+2024-10-27 12:14:03,076 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-27 12:14:04,080 INFO Watching for file changes with StatReloader
+2024-10-27 14:44:23,213 INFO Watching for file changes with StatReloader
+2024-10-27 15:17:43,652 WARNING Not Found: /undefined
+2024-10-27 15:17:50,769 WARNING Not Found: /undefined
+2024-10-27 15:18:03,170 WARNING Not Found: /undefined
+2024-10-27 15:20:31,728 WARNING Not Found: /undefined
+2024-10-27 15:21:54,433 WARNING Not Found: /undefined
+2024-10-27 15:27:21,191 WARNING Not Found: /undefined
+2024-10-27 15:28:52,373 WARNING Not Found: /undefined
+2024-10-27 15:28:54,312 WARNING Not Found: /undefined
+2024-10-27 15:39:08,638 WARNING Not Found: /undefined
+2024-10-27 15:40:06,986 WARNING Not Found: /undefined
+2024-10-27 15:40:14,424 WARNING Not Found: /undefined
+2024-10-27 15:40:16,148 WARNING Not Found: /undefined
+2024-10-27 15:40:17,837 WARNING Not Found: /undefined
+2024-10-27 15:40:19,757 WARNING Not Found: /undefined
+2024-10-27 15:40:22,812 WARNING Not Found: /undefined
+2024-10-27 15:41:19,639 WARNING Not Found: /undefined
+2024-10-27 15:41:22,531 WARNING Not Found: /undefined
+2024-10-27 15:41:33,002 WARNING Not Found: /undefined
+2024-10-27 15:42:23,456 WARNING Not Found: /undefined
+2024-10-27 15:42:25,325 WARNING Not Found: /undefined
+2024-10-27 15:42:32,502 WARNING Not Found: /undefined
+2024-10-27 15:43:07,386 WARNING Not Found: /undefined
+2024-10-27 15:43:08,760 WARNING Not Found: /undefined
+2024-10-27 15:44:59,460 WARNING Not Found: /undefined
+2024-10-27 15:45:43,218 WARNING Not Found: /undefined
+2024-10-27 15:46:07,441 WARNING Not Found: /undefined
+2024-10-27 15:46:46,941 WARNING Not Found: /undefined
+2024-10-27 15:46:50,094 WARNING Not Found: /undefined
+2024-10-27 15:47:24,254 WARNING Not Found: /undefined
+2024-10-27 15:47:28,717 WARNING Not Found: /undefined
+2024-10-27 15:48:03,203 WARNING Not Found: /undefined
+2024-10-27 15:48:04,764 WARNING Not Found: /undefined
+2024-10-27 15:48:25,339 WARNING Not Found: /undefined
+2024-10-27 15:48:29,551 WARNING Not Found: /undefined
+2024-10-27 15:48:36,715 WARNING Not Found: /undefined
+2024-10-27 15:48:44,460 WARNING Not Found: /undefined
+2024-10-27 15:49:18,296 WARNING Not Found: /undefined
+2024-10-27 15:49:19,323 WARNING Not Found: /undefined
+2024-10-27 15:49:20,616 WARNING Not Found: /undefined
+2024-10-27 15:49:21,457 WARNING Not Found: /undefined
+2024-10-27 15:49:34,464 WARNING Not Found: /undefined
+2024-10-27 15:49:57,036 WARNING Not Found: /undefined
+2024-10-27 15:49:59,572 WARNING Not Found: /undefined
+2024-10-27 15:50:58,477 WARNING Not Found: /undefined
+2024-10-27 15:51:00,257 WARNING Not Found: /undefined
+2024-10-27 15:51:04,604 WARNING Not Found: /undefined
+2024-10-27 15:51:06,099 WARNING Not Found: /undefined
+2024-10-27 15:51:12,717 WARNING Not Found: /undefined
+2024-10-27 15:51:15,359 WARNING Not Found: /undefined
+2024-10-27 15:51:18,098 WARNING Not Found: /undefined
+2024-10-27 15:51:50,051 WARNING Not Found: /undefined
+2024-10-27 15:51:50,987 WARNING Not Found: /undefined
+2024-10-27 15:51:52,129 WARNING Not Found: /undefined
+2024-10-27 15:52:03,045 WARNING Not Found: /undefined
+2024-10-27 15:52:06,364 WARNING Not Found: /undefined
+2024-10-27 15:53:21,486 WARNING Not Found: /undefined
+2024-10-27 15:53:23,010 WARNING Not Found: /undefined
+2024-10-27 15:53:42,302 WARNING Not Found: /undefined
+2024-10-27 15:53:43,170 WARNING Not Found: /undefined
+2024-10-27 15:53:44,084 WARNING Not Found: /undefined
+2024-10-27 15:53:47,175 WARNING Not Found: /undefined
+2024-10-27 15:54:22,944 WARNING Not Found: /undefined
+2024-10-27 15:56:08,280 WARNING Not Found: /undefined
+2024-10-27 15:56:17,062 WARNING Not Found: /undefined
+2024-10-27 15:56:26,056 WARNING Not Found: /undefined
+2024-10-27 15:56:46,762 WARNING Not Found: /undefined
+2024-10-27 15:59:07,472 WARNING Not Found: /undefined
+2024-10-27 15:59:34,813 WARNING Not Found: /undefined
+2024-10-27 16:00:05,789 WARNING Not Found: /undefined
+2024-10-27 16:01:02,577 WARNING Not Found: /undefined
+2024-10-27 16:01:25,371 WARNING Not Found: /undefined
+2024-10-27 16:01:55,108 WARNING Not Found: /undefined
+2024-10-27 16:02:21,184 WARNING Not Found: /undefined
+2024-10-27 16:02:45,204 WARNING Not Found: /undefined
+2024-10-27 16:04:06,079 WARNING Not Found: /undefined
+2024-10-27 16:04:41,389 WARNING Not Found: /undefined
+2024-10-27 16:04:45,012 WARNING Not Found: /undefined
+2024-10-27 16:05:45,488 WARNING Not Found: /undefined
+2024-10-27 16:06:03,233 WARNING Not Found: /undefined
+2024-10-27 18:03:19,575 INFO Watching for file changes with StatReloader
