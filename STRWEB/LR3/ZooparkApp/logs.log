@@ -5922,3 +5922,18 @@ TypeError: Object of type AnimalType is not JSON serializable
 2024-10-27 18:03:19,575 INFO Watching for file changes with StatReloader
 2024-10-27 19:45:20,035 INFO Watching for file changes with StatReloader
 2024-10-27 21:56:55,794 INFO Watching for file changes with StatReloader
+2024-10-28 01:36:55,725 INFO Watching for file changes with StatReloader
+2024-10-28 12:54:52,481 INFO Watching for file changes with StatReloader
+2024-10-28 16:07:59,916 INFO Watching for file changes with StatReloader
+2024-10-28 16:34:06,061 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\urls.py changed, reloading.
+2024-10-28 16:34:07,553 INFO Watching for file changes with StatReloader
+2024-10-28 16:34:10,502 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-28 16:34:11,631 INFO Watching for file changes with StatReloader
+2024-10-28 16:34:54,621 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-28 16:34:55,684 INFO Watching for file changes with StatReloader
+2024-10-28 16:37:11,274 WARNING Not Found: /statistic/api/statistic/family-count
+2024-10-28 19:17:31,681 WARNING Not Found: /favicon.ico
+2024-10-28 19:20:49,811 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\urls.py changed, reloading.
+2024-10-28 19:20:51,411 INFO Watching for file changes with StatReloader
+2024-10-28 22:49:18,448 INFO Watching for file changes with StatReloader
+2024-10-28 23:56:39,540 INFO Watching for file changes with StatReloader

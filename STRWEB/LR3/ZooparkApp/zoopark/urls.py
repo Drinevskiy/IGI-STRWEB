@@ -37,6 +37,8 @@ urlpatterns = [
     path("add-feedback/", views.add_feedback, name="add-feedback"),
     path("other/", views.other, name="other"),
     path('api/animals/', views.animal_list_json, name='animal-list-json'),
+    path('api/statistic/family-count', views.plot_statistic_animal_json, name='plot-statistic-animal-json'),
+    path('api/statistic/aviary-count', views.plot_statistic_aviary_json, name='plot-statistic-aviary-json'),
 
     path(r'^new/(?P<pk>\d+)/$', views.new, name='new'),
     path(r'^animal/(?P<pk>\d+)/$', views.animal, name='animal'),

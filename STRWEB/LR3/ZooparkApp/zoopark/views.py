@@ -247,9 +247,31 @@ def statistic(request):
     if family_name:
         count = Animal.objects.filter(family__name=family_name).count()
         context['family_info'] = [family_name, count]
-    context["plot"] = get_graphic()    
+    # context["plot"] = get_graphic()    
     return render(request, "zoopark/statistic.html", context)
 
+def plot_statistic_animal_json(request):
+    try:
+        families = AnimalFamily.objects.values_list("name", flat=True).distinct()
+        family_count = {}
+        for family in families:
+            count = (Animal.objects.filter(family__name=family).count())
+            family_count[family] = count
+        return JsonResponse(family_count, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+    
+def plot_statistic_aviary_json(request):
+    try:
+        aviaries = Aviary.objects.values_list("name", flat=True).distinct()
+        aviary_count = {}
+        for aviary in aviaries:
+            count = (Animal.objects.filter(aviary__name=aviary).count())
+            aviary_count[aviary] = count
+        return JsonResponse(aviary_count, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+    
 def get_graphic():
     families = AnimalFamily.objects.values_list("name", flat=True).distinct()
     counts = []

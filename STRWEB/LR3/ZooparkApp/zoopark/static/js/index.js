@@ -386,3 +386,30 @@ document.getElementById('nextPagination').addEventListener('click', () => {
       displayAnimals(currentPage);
   }
 });
+
+
+
+
+
+function successHandler(position) {
+  console.log("Широта: ", position.coords.latitude);
+  console.log("Долгота: ", position.coords.longitude);
+  console.log("Высота: ", position.coords.altitude);
+  console.log("Скорость перемещения: ", position.coords.speed);
+  console.log("Точность: ", position.coords.accuracy);
+  console.log("Направление: ", position.coords.heading);
+};
+function errorHandler(error) {  
+  console.log(error.message);    // выводим сообщение об ошибке
+  console.log(error.code);    // выводим код ошибки
+}
+navigator.geolocation.getCurrentPosition(successHandler, errorHandler);
+
+async function dislpayBatteryStatus(){
+  const batteryManager = await navigator.getBattery();
+  console.log("is charging: ", batteryManager.charging);
+  console.log("charging time (sec): ", batteryManager.chargingTime);
+  console.log("discharging time (sec): ", batteryManager.dischargingTime);
+  console.log("charge level: ", batteryManager.level);
+}
+dislpayBatteryStatus();

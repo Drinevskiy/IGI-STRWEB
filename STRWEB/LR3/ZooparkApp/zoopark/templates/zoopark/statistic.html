@@ -146,7 +146,24 @@
     <p>Виды  животных в {{ aviary_info.0.name }}: {{ aviary_info.2|join:", " }}.</p>
     <p>Численность вида {{ type_info.0.name }} в зоопарке составляет {{ type_info.1 }} {% if type_info.1 == 1 %}особь{% elif type_info.1 > 1 and type_info.1 < 5%}особи{% else %}особей{% endif%}.</p>
     <p>Численность семейства {{ family_info.0 }} в зоопарке составляет {{ family_info.1 }} {% if family_info.1 == 1 %}особь{% elif family_info.1 > 1 and family_info.1 < 5%}особи{% else %}особей{% endif%}.</p>
+    <div class="charts-container">
+        <div class="chart-wrapper">
+            <canvas id="myChartBar"></canvas>
+        </div>
+        <div class="chart-wrapper">
+            <canvas id="myChartPolarArea"></canvas>
+        </div>
+        <div class="chart-wrapper">
+            <canvas id="myChartLine"></canvas>
+        </div>
+    </div>
+    <button id="saveBtn">Сохранить графики</button>
+
     {% comment %} <img src="../../static/media/images/graph.png"></img> {% endcomment %}
-    {{ plot|safe }}
+    {% comment %} {{ plot|safe }} {% endcomment %}
     {% comment %} <img src="{% static 'media/images/graph.png' %}"/> {% endcomment %}
+{% endblock %}
+{% block scripts %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'js/statistic.js' %}"></script>
 {% endblock %}
