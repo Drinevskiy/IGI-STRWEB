@@ -1,0 +1,248 @@
+.input-filter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.input-filter [for]{
+    position: absolute; /* Позволяет позиционировать label относительно контейнера */
+    left: 38%;     
+    top: 30%; 
+    font-size: 1em; /* Размер шрифта */
+    color: #ffffff; /* Цвет метки */
+    transition: 0.2s linear all; /*Плавный переход при изменении*/
+    pointer-events: none; /* Игнорирование событий мыши на label */
+}
+
+.input-filter [type="text"]{
+    position: absolute;
+    font-size: 1.3em ;
+    font-family: inherit;
+    width: 25%;
+    padding: 0.5em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+}
+
+.input-filter input:focus{
+    background-color: #927acf;
+    border: none;
+    outline: none;
+}
+
+.input-filter input:focus + label,
+.input-filter input:not(:placeholder-shown) + label{
+    top: -20%; 
+    left: 38%; 
+    font-size: 0.9em; /* Уменьшает размер шрифта */
+    color: #FFAE00 ; /* Цвет метки при фокусе */
+}
+
+.input-filter [type="submit"]{
+    font-size: 1.3em ;
+    font-family: inherit;
+    padding: 0.5em 0.75em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+    margin-left: 35%;
+    transition: 0.2s linear all; /* Плавный переход при изменении */
+}
+
+.input-filter [type="submit"]:hover{
+    background-color: #927acf;
+
+}
+
+
+.employee-pagination-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.employee-pagination{
+    display: inline-flex;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.employee-pagination button{
+    padding: 15px 20px;
+    color: #3778e1;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    font-size: 1.3em;
+    background-color: #ffffff;
+    border: none;
+    border-left: 1px solid #ccc;
+}
+
+.employee-pagination button.active{
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #3778e1;
+}
+
+.employee-pagination button[disabled]{
+    background-color: #b9b9b9;
+    border: none;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#employeeForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#employeeForm > div {
+    background-color: #5b2fcc;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px #000000;
+    margin-bottom: 20px;
+    padding: 20px;
+    /* display: flex;  */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+
+#employeeForm .form-element {
+    position: relative;
+    /* height: 100px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-bottom: 30px;
+}
+
+#employeeForm .form-element .form-text-input + label{
+    position: absolute; /*Позволяет позиционировать label относительно контейнера */
+    left: 9%;    
+    top: 15px; 
+    /* top: 50%;  */
+    font-size: 1.1em; /* Размер шрифта */
+    color: #ffffff; /* Цвет метки */
+    transition: 0.2s linear all; /*Плавный переход при изменении*/
+    pointer-events: none; /* Игнорирование событий мыши на label */
+}
+
+#employeeForm .form-element > .form-text-input{
+    top: 25px;
+    /* position: absolute; */
+    font-size: 1.1em ;
+    font-family: inherit;
+    width: 500px;
+    padding: 0.5em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+}
+
+#employeeForm .form-element .form-text-input:focus{
+    background-color: #927acf;
+    border: none;
+    outline: none;
+}
+
+
+#employeeForm .form-element .form-text-input:focus + label,
+#employeeForm .form-element .form-text-input:not(:placeholder-shown) + label{
+    top: -8px; 
+    left: 8.5%; 
+    font-size: 0.9em; /* Уменьшает размер шрифта */
+    /* color: #FFAE00;  */
+    color: #97ff48; 
+}
+
+
+
+/* Select mark */
+
+#employeeForm .form-element .form-select + label{
+    position: absolute; /*Позволяет позиционировать label относительно контейнера*/
+    left: 8.5%;     
+    top: -8px; 
+    font-size: 0.9em; /* Размер шрифта */
+    color: #ffffff; /* Цвет метки */
+    transition: 0.2s linear all; /*Плавный переход при изменении*/
+    pointer-events: none; /* Игнорирование событий мыши на label */
+}
+
+#employeeForm .form-element > .form-select{
+    /* position: absolute; */
+    top: 100px;
+    font-size: 1.1em ;
+    font-family: inherit;
+    width: 520px;
+    padding: 0.5em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+}
+
+#employeeForm .form-element .form-select:focus{
+    background-color: #927acf;
+    border: none;
+    outline: none;
+}
+
+
+#employeeForm .form-element .form-select:focus + label{
+    /* color: #FFAE00;  */
+    color: #97ff48; 
+
+}
+
+#employeeForm [type="submit"]{
+    width: 88%;
+    color: black;
+    font-family: "Arista", "Bergamasco", sans-serif;
+    font-size: 1.1em;
+    padding: 0.5em 0.75em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+    transition: 0.2s linear all; /* Плавный переход при изменении */
+}
+
+#employeeForm [type="submit"]:hover{
+    background-color: #927acf;
+
+}
+
+#employeeForm [type="submit"]:disabled{
+    background-color: #6a696b;
+    color: #ccc;
+
+}
+/*  */
+
+
+#employeeForm .form-element > .form-text-input.error {
+    outline: 4px solid red;
+    background-color: rgb(212, 120, 217);
+    /* background-color: #a79999; Розовый фон */
+}
+
+#rewardButton, #addButton{
+    display: block;
+    font-size: 1.3em ;
+    font-family: inherit;
+    padding: 0.5em 0.75em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+    transition: 0.2s linear all; /* Плавный переход при изменении */
+}
+
+#rewardButton:hover, #addButton:hover{
+    background-color: #927acf;
+
+}

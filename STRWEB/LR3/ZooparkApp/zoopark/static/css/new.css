@@ -96,3 +96,20 @@
     justify-content: space-between;
     font-size: 28px;
 }
+
+#generate-input button{
+    font-size: 1em ;
+    font-family: inherit;
+    margin: 15px 0;
+    padding: 0.25em 0.5em;
+    background-color: rgb(196, 174, 251);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    transition: 0.2s linear all; /* Плавный переход при изменении */
+}
+
+#generate-input button:hover{
+    background-color: #927acf;
+
+}

@@ -68,6 +68,7 @@
                 <button class="dropbtn custom-pointer">Для админа</button>
                 <div class="dropdown-content">
                     <a class="custom-pointer" href="{% url 'zoopark:statistic' %}">Статистика</a>
+                    <a class="custom-pointer" href="{% url 'zoopark:employees' %}">Сотрудники</a>
                     <a class="custom-pointer" href="{% url 'zoopark:management' %}">Управление</a>
                     <a class="custom-pointer" href="{% url 'admin:index' %}">Админ панель</a>
                 </div>
@@ -97,10 +98,10 @@
                 {% block content %}
                 {% endblock %}
             </div>
-            <div class="loader-container">
+            {% comment %} <div class="loader-container">
                 <div class="loader solid"></div>
                 <div class="loader dotted"></div>
-            </div>
+            </div> {% endcomment %}
         </main>
         <footer>
             <div class="top">

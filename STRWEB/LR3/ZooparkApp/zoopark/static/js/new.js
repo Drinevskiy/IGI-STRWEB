@@ -1,6 +1,8 @@
 container = document.querySelector('#generate-input');
 container.innerHtml = "";
-
+let fontSize;
+let fontColor;
+let backgroundColor;
 editCheckbox = document.querySelector('#edit');
 editCheckbox.addEventListener('change', (e) => {
     while(container.firstChild){
@@ -8,6 +10,10 @@ editCheckbox.addEventListener('change', (e) => {
     }
     if(e.target.checked){
         let card = document.getElementsByClassName("new-card")[0];
+        const computedStyle = window.getComputedStyle(card);
+        fontSize = computedStyle.fontSize;
+        fontColor = computedStyle.color;
+        backgroundColor = computedStyle.backgroundColor;
         const formElement = document.createElement('div');
         const fontSizeInput = document.createElement('input');
         fontSizeInput.id = "font-input";
@@ -48,7 +54,7 @@ editCheckbox.addEventListener('change', (e) => {
         backgroundColorInput.type = "color";
         const backgroundColorLabel = document.createElement('label');
         backgroundColorLabel.setAttribute('for', "font-color-input");
-        backgroundColorLabel.textContent = "Цвет шрифта";
+        backgroundColorLabel.textContent = "Цвет фона";
         formElement2.appendChild(backgroundColorLabel);
         formElement2.appendChild(backgroundColorInput);
         container.appendChild(formElement2);
@@ -56,6 +62,15 @@ editCheckbox.addEventListener('change', (e) => {
             console.log(e.target.value);
             card.style.backgroundColor = e.target.value;
         });
+        const formElement3 = document.createElement('button');
+        formElement3.textContent = 'Сбросить';
+        formElement3.addEventListener('click', () => {
+            card.style.fontSize = fontSize;
+            card.style.color = fontColor;
+            card.style.backgroundColor = backgroundColor;
+        })
+        container.appendChild(formElement3);
+        
     }
 });
 

@@ -10,6 +10,8 @@ from .forms import *
 from last_time import last_change_datetime
 import plotly.graph_objects as go
 import logging
+import json
+from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 def index(request):
@@ -250,6 +252,14 @@ def statistic(request):
     # context["plot"] = get_graphic()    
     return render(request, "zoopark/statistic.html", context)
 
+@user_passes_test(is_superuser)
+def employees(request):
+    employees = Employee.objects.all()
+    context = {"title" : "Сотрудники"}
+    context["employees"] = employees
+    return render(request, "zoopark/employees.html", context)
+
+
 def plot_statistic_animal_json(request):
     try:
         families = AnimalFamily.objects.values_list("name", flat=True).distinct()
@@ -272,6 +282,61 @@ def plot_statistic_aviary_json(request):
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
     
+def employees_json(request):
+    try:
+        employees = Employee.objects.all()
+        employees_data = [
+            {
+                'username': employee.user.username,
+                'first_name': employee.user.first_name,
+                'last_name': employee.user.last_name,
+                'position': employee.position.name,
+                'description': employee.position.description,
+                'salary': employee.position.salary,
+                'email': employee.user.email,
+                'phone': employee.user.phone,
+                'image': employee.image.url if employee.image else '/static/media/images/no.jpg'
+            }
+            for employee in employees
+        ]
+        return JsonResponse(employees_data, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+    
+def positions_json(request):
+    try:
+        positions = Position.objects.all()
+        positions_data = [
+            {
+                'name': position.name,
+                'description': position.description,
+                'salary': position.salary,
+            }
+            for position in positions
+        ]
+        return JsonResponse(positions_data, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+@csrf_exempt
+def add_employee(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        _user = User.objects.create(
+            username = data['last_name'],
+            first_name = data['first_name'],
+            last_name = data['last_name'],
+            phone = data['phone'],
+            email = data['email']
+        )
+        _position = Position.objects.filter(name = data['position']).first()
+        employee = Employee.objects.create(
+            user = _user,
+            position = _position
+        )
+        return JsonResponse({'username': employee.user.username, 'message': 'Employee added successfully!'})
+    return JsonResponse({'error': 'Invalid request'}, status=400)
+
 def get_graphic():
     families = AnimalFamily.objects.values_list("name", flat=True).distinct()
     counts = []

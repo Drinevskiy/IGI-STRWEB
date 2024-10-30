@@ -286,6 +286,8 @@ h3{
   position: relative;
   width: 100px; /* Ширина контейнера */
   height: 100px; /* Высота контейнера */
+  left: 50%;
+  transform: translateX(-50%);
   /* animation: spin 0.9s ease-in-out infinite; Анимация вращения для контейнера */
   animation: spin 0.9s cubic-bezier(.11,.78,.81,.2) infinite; /* Анимация вращения для контейнера */
 }

@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
 });
 
 const targetScrollY = 850; // Целевая высота прокрутки
-const duration = 3500; // Длительность прокрутки в миллисекундах
+const duration = 1500; // Длительность прокрутки в миллисекундах
 const start = window.scrollY; // Начальная позиция
 const change = targetScrollY - start; // Изменение высоты
 const startTime = performance.now(); // Время начала прокрутки

@@ -5937,3 +5937,285 @@ TypeError: Object of type AnimalType is not JSON serializable
 2024-10-28 19:20:51,411 INFO Watching for file changes with StatReloader
 2024-10-28 22:49:18,448 INFO Watching for file changes with StatReloader
 2024-10-28 23:56:39,540 INFO Watching for file changes with StatReloader
+2024-10-29 22:38:42,963 INFO Watching for file changes with StatReloader
+2024-10-29 22:42:00,179 INFO Фамилия Имя вышел из аккаунта.
+2024-10-29 22:42:06,361 INFO Frick Ronald вошел в аккаунт.
+2024-10-29 22:42:13,331 INFO Frick Ronald вышел из аккаунта.
+2024-10-29 22:42:25,740 INFO Фамилия Имя вошел в аккаунт.
+2024-10-29 22:45:40,658 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-29 22:45:41,333 INFO Watching for file changes with StatReloader
+2024-10-29 22:46:02,425 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\urls.py changed, reloading.
+2024-10-29 22:46:02,972 INFO Watching for file changes with StatReloader
+2024-10-29 22:47:41,809 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-29 22:47:42,377 INFO Watching for file changes with StatReloader
+2024-10-29 22:47:49,847 INFO Фамилия Имя вышел из аккаунта.
+2024-10-29 22:47:51,863 WARNING Not Found: /accounts/login/
+2024-10-29 22:47:51,935 WARNING Not Found: /favicon.ico
+2024-10-29 22:48:09,474 INFO Фамилия Имя вошел в аккаунт.
+2024-10-29 23:07:05,340 INFO Watching for file changes with StatReloader
+2024-10-29 23:22:43,845 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-29 23:22:45,081 INFO Watching for file changes with StatReloader
+2024-10-29 23:34:34,067 WARNING Not Found: /favicon.ico
+2024-10-30 00:00:13,234 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\urls.py changed, reloading.
+2024-10-30 00:00:14,701 INFO Watching for file changes with StatReloader
+2024-10-30 00:00:17,559 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 00:00:18,779 INFO Watching for file changes with StatReloader
+2024-10-30 00:09:31,213 ERROR Internal Server Error: /api/statistic/employees
+2024-10-30 00:11:27,919 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\urls.py changed, reloading.
+2024-10-30 00:11:29,230 INFO Watching for file changes with StatReloader
+2024-10-30 00:11:39,279 ERROR Internal Server Error: /api/statistic/employees
+2024-10-30 00:11:52,556 ERROR Internal Server Error: /api/statistic/employees
+2024-10-30 00:13:59,200 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 00:14:00,358 INFO Watching for file changes with StatReloader
+2024-10-30 00:14:03,393 ERROR Internal Server Error: /api/statistic/employees
+2024-10-30 00:14:04,732 ERROR Internal Server Error: /api/statistic/employees
+2024-10-30 00:14:32,265 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 00:14:33,529 INFO Watching for file changes with StatReloader
+2024-10-30 00:20:29,910 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 00:20:31,103 INFO Watching for file changes with StatReloader
+2024-10-30 00:20:47,912 WARNING Not Found: /employees/{% if images/employee1_KGWb6BY.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:20:47,928 WARNING Not Found: /employees/{% if images/employy.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:20:47,934 WARNING Not Found: /employees/{% if images/otzyv-3.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:20:47,938 WARNING Not Found: /employees/{% if images/employee3_8kW8HZo.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:20:47,948 WARNING Not Found: /employees/{% if images/woman.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:20:47,962 WARNING Not Found: /employees/{% if images/avatar.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:20:48,147 WARNING Not Found: /employees/{% if images/rahXFwliu9g.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:20:48,152 WARNING Not Found: /employees/{% if images/elictric.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:20:48,159 WARNING Not Found: /employees/{% if images/woman2.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:28:27,055 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 00:28:28,406 INFO Watching for file changes with StatReloader
+2024-10-30 00:29:17,182 WARNING Not Found: /employees/{% if /media/images/woman.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:17,197 WARNING Not Found: /employees/{% if /media/images/employee1_KGWb6BY.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:17,224 WARNING Not Found: /employees/{% if /media/images/otzyv-3.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:17,226 WARNING Not Found: /employees/{% if /media/images/avatar.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:17,241 WARNING Not Found: /employees/{% if /media/images/employee3_8kW8HZo.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:17,255 WARNING Not Found: /employees/{% if /media/images/employy.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:17,395 WARNING Not Found: /employees/{% if /media/images/rahXFwliu9g.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:17,402 WARNING Not Found: /employees/{% if /media/images/elictric.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:17,414 WARNING Not Found: /employees/{% if /media/images/woman2.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:22,206 WARNING Not Found: /employees/{% if /media/images/employee3_8kW8HZo.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:22,222 WARNING Not Found: /employees/{% if /media/images/otzyv-3.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:22,240 WARNING Not Found: /employees/{% if /media/images/employy.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:22,263 WARNING Not Found: /employees/{% if /media/images/employee1_KGWb6BY.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:22,270 WARNING Not Found: /employees/{% if /media/images/woman.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:22,288 WARNING Not Found: /employees/{% if /media/images/avatar.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:22,513 WARNING Not Found: /employees/{% if /media/images/woman2.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:22,530 WARNING Not Found: /employees/{% if /media/images/elictric.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 00:29:22,542 WARNING Not Found: /employees/{% if /media/images/rahXFwliu9g.jpg %}undefined{% else %}{% static 'media/images/no.jpg' %}{% endif %}
+2024-10-30 09:51:01,617 INFO Watching for file changes with StatReloader
+2024-10-30 11:31:11,317 WARNING Not Found: /favicon.ico
+2024-10-30 14:07:07,375 INFO Watching for file changes with StatReloader
+2024-10-30 14:30:48,123 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\urls.py changed, reloading.
+2024-10-30 14:30:49,547 INFO Watching for file changes with StatReloader
+2024-10-30 14:33:14,279 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 14:33:15,455 INFO Watching for file changes with StatReloader
+2024-10-30 14:33:35,565 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\urls.py changed, reloading.
+2024-10-30 14:33:36,750 INFO Watching for file changes with StatReloader
+2024-10-30 14:33:51,077 WARNING Not Found: /api/employees/
+2024-10-30 14:33:51,245 WARNING Not Found: /favicon.ico
+2024-10-30 14:36:02,257 WARNING Not Found: /api/statistic/employees
+2024-10-30 14:36:17,208 WARNING Not Found: /api/statistic/employees
+2024-10-30 14:36:22,582 WARNING Not Found: /api/statistic/employees
+2024-10-30 14:40:28,717 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 14:40:29,937 INFO Watching for file changes with StatReloader
+2024-10-30 14:50:18,896 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\urls.py changed, reloading.
+2024-10-30 14:50:20,113 INFO Watching for file changes with StatReloader
+2024-10-30 15:09:31,390 INFO Watching for file changes with StatReloader
+2024-10-30 15:13:45,940 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 15:13:47,324 INFO Watching for file changes with StatReloader
+2024-10-30 15:14:36,528 WARNING Not Found: /favicon.ico
+2024-10-30 15:15:40,295 ERROR Internal Server Error: /add-employee/
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py", line 334, in add_employee
+    return JsonResponse({'id': employee.id, 'message': 'Employee added successfully!'})
+                               ^^^^^^^^^^^
+AttributeError: 'Employee' object has no attribute 'id'
+2024-10-30 15:15:59,973 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 15:16:01,223 INFO Watching for file changes with StatReloader
+2024-10-30 15:16:24,853 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 15:16:25,940 INFO Watching for file changes with StatReloader
+2024-10-30 15:16:43,483 ERROR Internal Server Error: /add-employee/
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: users_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py", line 325, in add_employee
+    _user = User.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: users_user.username
+2024-10-30 15:18:44,237 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 15:18:45,577 INFO Watching for file changes with StatReloader
+2024-10-30 15:19:17,521 ERROR Internal Server Error: /add-employee/
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py", line 336, in add_employee
+    return JsonResponse({'id': employee.id, 'message': 'Employee added successfully!'})
+                               ^^^^^^^^^^^
+AttributeError: 'Employee' object has no attribute 'id'
+2024-10-30 15:24:19,677 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 15:24:20,840 INFO Watching for file changes with StatReloader
+2024-10-30 15:24:35,214 WARNING Not Found: /favicon.ico
+2024-10-30 15:45:42,150 INFO Watching for file changes with StatReloader
+2024-10-30 15:53:50,973 INFO Watching for file changes with StatReloader
+2024-10-30 20:37:27,228 INFO Watching for file changes with StatReloader
+2024-10-30 20:51:44,641 INFO D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py changed, reloading.
+2024-10-30 20:51:45,251 INFO Watching for file changes with StatReloader
+2024-10-30 20:53:32,938 ERROR Internal Server Error: /add-employee/
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: users_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Study\4_semestr\IGI\253502_Drinevskiy_8\STRWEB\LR3\ZooparkApp\zoopark\views.py", line 325, in add_employee
+    _user = User.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\drine\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: users_user.username

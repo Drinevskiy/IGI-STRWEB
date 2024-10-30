@@ -26,6 +26,7 @@ urlpatterns = [
     path("service/", views.service, name="service"),
     path("tickets/", views.tickets, name="tickets"),
     path("statistic/", views.statistic, name="statistic"),
+    path("employees/", views.employees, name="employees"),
     path("management/", views.management, name="management"),
     path("about/", views.about, name="about"),
     path("news/", views.news, name="news"),
@@ -39,6 +40,10 @@ urlpatterns = [
     path('api/animals/', views.animal_list_json, name='animal-list-json'),
     path('api/statistic/family-count', views.plot_statistic_animal_json, name='plot-statistic-animal-json'),
     path('api/statistic/aviary-count', views.plot_statistic_aviary_json, name='plot-statistic-aviary-json'),
+    path('api/employees', views.employees_json, name='employees-json'),
+    path('api/positions', views.positions_json, name='positions-json'),
+
+    path('add-employee/', views.add_employee, name='add_employee'),
 
     path(r'^new/(?P<pk>\d+)/$', views.new, name='new'),
     path(r'^animal/(?P<pk>\d+)/$', views.animal, name='animal'),

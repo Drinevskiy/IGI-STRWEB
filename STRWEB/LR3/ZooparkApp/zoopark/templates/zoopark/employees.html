@@ -1,0 +1,120 @@
+{% extends "zoopark/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'css/statistic.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contacts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/employees.css' %}">
+{% endblock %}
+{% block content %}
+
+<h2 align="center">Сотрудники</h2>
+<div class="input-filter">
+    <input name="filterInput" id="filterInput" type="text" placeholder=""/>
+    <label for="filterInput">Поиск</label>  
+    <input type="submit" id="filterButton" class="custom-pointer" value="Найти" >
+    
+    {% comment %} <button type="button"  value="Найти"></button>
+    
+    <input type="text" id="filterInput" placeholder="Введите текст для поиска..."> {% endcomment %}
+</div>
+
+<table class="table-employees">
+    {% comment %} <caption></caption> {% endcomment %}
+    <thead>
+        <tr>
+            <th></th>
+            <th>Фото</th>
+            <th onclick="sortTable(2)">Фамилия <span class="sort-arrow" id="lastNameArrow"></span></th>
+            <th onclick="sortTable(3)">Имя <span class="sort-arrow" id="firstNameArrow"></span></th>
+            <th onclick="sortTable(4)">Должность <span class="sort-arrow" id="positionArrow"></span></th>
+            <th onclick="sortTable(5)">Обязанности <span class="sort-arrow" id="descriptionArrow"></span></th>
+            <th onclick="sortTable(6)">Зарплата <span class="sort-arrow" id="salaryArrow"></span></th>
+            <th onclick="sortTable(7)">Почта <span class="sort-arrow" id="emailArrow"></span></th>
+            <th onclick="sortTable(8)">Телефон <span class="sort-arrow" id="phoneArrow"></span></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% comment %} {% for item in employees %}
+        <tr>
+                <td><input type="checkbox" id="employee_{{ item.user.username }}"></td>
+
+                <td class="td-with-image"><img src="{% if item.image %}{{ item.image.url }}{% else %}{% static 'media/images/no.jpg' %}{% endif %}"></td>
+                <td>{{ item.user.last_name }}</td>
+                <td>{{ item.user.first_name }}</td>
+                <td>{{ item.position.name }}</td>
+                <td>{{ item.position.description }}</td>
+                <td>{{ item.position.salary }}</td>
+                <td>{{ item.user.email }}</td>
+                <td>{{ item.user.phone }}</td>
+            </tr>
+        {% endfor %} {% endcomment %}
+    </tbody>
+</table>
+<div id="preloader" class="loader-container" style="display:none;">
+    <div class="loader solid"></div>
+    <div class="loader dotted"></div>
+</div>
+<div class="employee-pagination-wrapper">
+    <div class="employee-pagination" id="employeePagination">
+        <button type="button" id="prevPagination">&lt</button>
+        <button type="button" id="nextPagination">&gt</button>
+    </div>
+</div>
+<div class="buttons-container">
+    <button id="addButton">Добавить</button>
+    <button id="rewardButton">Премировать</button>
+</div>
+<div id="rewardMessage" class="reward-message" style="margin-top: 16px; display: none;">
+    {% comment %} <h3>Текст премирования:</h3> {% endcomment %}
+    <p id="rewardText"></p>
+</div>
+<div id="formContainer" style="display: none;">
+    <form id="employeeForm">
+        <div>
+        <div class="form-element">
+            <input type="text" id="lastName" class="form-text-input" placeholder="" required>
+            <label for="lastName">Фамилия</label>
+        </div>
+        <div class="form-element">
+            <input type="text" id="firstName" class="form-text-input" placeholder="" required>
+            <label for="firstName">Имя</label>
+        </div>
+
+        <div class="form-element">
+            <input type="text" id="blogUrl" class="form-text-input" placeholder="" required>
+            <label for="blogUrl">Блог</label>
+        </div>
+
+        <div class="form-element">
+            <select id="position" class="form-select" required>
+                <option value="">Выберите должность</option>
+                <!-- Должности будут загружены здесь -->
+            </select>
+            <label for="position">Должность</label>
+            
+        </div>
+
+        <div class="form-element">
+            <input type="text" id="phone" class="form-text-input" placeholder="" required>
+            <label for="phone">Телефон</label>
+        </div>
+
+        <div class="form-element">
+            <input type="text" id="email" class="form-text-input" placeholder="" required>
+            <label for="email">Почта</label>
+        </div>
+
+        
+        <button type="submit" id="submitButton" disabled>Добавить в таблицу</button>
+    </div>
+    </form>
+    <div id="validationMessage" style="color: red; margin-top: 10px;"></div>
+</div>
+
+<div class="contact-card" id="employeeDetails" style="margin: 20px auto;"></div>
+{% endblock %}
+{% block scripts %}
+    <script src="{% static 'js/employees.js' %}"></script>
+{% endblock %}
