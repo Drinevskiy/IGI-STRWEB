@@ -36,3 +36,14 @@ updateDisplay();
 
 // Запускаем таймер
 const interval = setInterval(countdown, 1000);
+
+async function dislpayBatteryStatus(){
+    const batteryManager = await navigator.getBattery();
+    batteryText = document.querySelector('.user-actions #battery > span');
+    console.log("charge level type: ", typeof batteryManager.level);
+
+    batteryText.textContent = `${batteryManager.level * 100} %`;
+    battery = document.querySelector('.user-actions #battery > div > div');
+    battery.style.width = `${batteryManager.level * 100}%`;
+  }
+  dislpayBatteryStatus();

@@ -295,6 +295,8 @@ function displayLinePlot(){
                 borderColor: 'blue',
                 borderWidth: 1,
                 radius: 0,
+                
+                
                 // fill: false
             },
             {

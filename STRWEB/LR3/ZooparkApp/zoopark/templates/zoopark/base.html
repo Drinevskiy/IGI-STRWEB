@@ -76,6 +76,7 @@
             {% endif %}
         </nav>
         <div class="user-actions">
+            <div id="battery"><span>12%</span><div><div></div></div></div>
             <span id="timer">60:00</span>
             {% if user.is_authenticated %}
             {% comment %} <a href="{% url 'users:logout' %}"><img src="{% static 'media/images/logout.png' %}" width="40px"></a> {% endcomment %}

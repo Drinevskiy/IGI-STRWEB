@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
 });
 
 const targetScrollY = 850; // Целевая высота прокрутки
-const duration = 1500; // Длительность прокрутки в миллисекундах
+const duration = 2500; // Длительность прокрутки в миллисекундах
 const start = window.scrollY; // Начальная позиция
 const change = targetScrollY - start; // Изменение высоты
 const startTime = performance.now(); // Время начала прокрутки
@@ -29,9 +29,7 @@ function animateScroll(currentTime) {
     const progress = Math.min(elapsed / duration, 1); // Прогресс (от 0 до 1)
 
     // Вычисляем текущее значение прокрутки
-    const easeInOutQuad = progress < 0.5 
-        ? 2 * progress * progress 
-        : -1 + (4 - 2 * progress) * progress;
+    const easeInOutQuad = progress < 0.5 ? 2 * progress * progress : -1 + (4 - 2 * progress) * progress;
     const currentScrollY = start + change * easeInOutQuad;
 
     window.scrollTo(0, currentScrollY); // Прокручиваем страницу

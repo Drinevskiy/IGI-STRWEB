@@ -151,10 +151,10 @@ h3{
     border: 1px solid #FFAE00;
     border-radius: 5px;
   }
-  .user-actions a:nth-child(2){
+  .user-actions a:nth-child(3){
     color: #FFAE00;
   }
-  .user-actions a:nth-child(2):hover{
+  .user-actions a:nth-child(3):hover{
     background-color: #FFAE00;
     color: #fff;
     text-decoration: none;
@@ -171,6 +171,26 @@ h3{
 .user-actions #timer{
   font-size: 28px;
   color: #fff;
+}
+.user-actions #battery{
+  font-size: 28px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.user-actions #battery > div{
+  display: inline-block;
+  width:50px;
+  height: 20px;
+  margin-left: 15px;
+  outline-offset: 5px;
+  outline: 5px solid #FFAE00;
+}
+.user-actions #battery > div > div{
+  width: 0%;
+  background-color: #4CAF50; /* Color representing the charge */
+  height: 100%; /* Fill the height of the parent */
+  transition: width 1.5s;
 }
 
   a {

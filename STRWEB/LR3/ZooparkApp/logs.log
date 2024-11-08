@@ -6219,3 +6219,19 @@ Traceback (most recent call last):
     return super().execute(query, params)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 django.db.utils.IntegrityError: UNIQUE constraint failed: users_user.username
+2024-10-31 10:53:05,759 INFO Watching for file changes with StatReloader
+2024-10-31 14:13:30,776 INFO Watching for file changes with StatReloader
+2024-10-31 14:57:22,837 INFO Watching for file changes with StatReloader
+2024-10-31 15:03:17,210 INFO Watching for file changes with StatReloader
+2024-10-31 15:10:03,591 INFO Watching for file changes with StatReloader
+2024-10-31 18:13:19,041 WARNING Not Found: /about/undefined
+2024-10-31 18:13:19,272 WARNING Not Found: /favicon.ico
+2024-10-31 18:13:38,359 WARNING Not Found: /about/undefined
+2024-10-31 18:14:23,208 WARNING Not Found: /about/undefined
+2024-10-31 18:14:33,689 WARNING Not Found: /about/undefined
+2024-10-31 18:15:29,092 WARNING Not Found: /about/undefined
+2024-10-31 18:15:32,664 WARNING Not Found: /about/undefined
+2024-10-31 22:15:12,764 INFO Watching for file changes with StatReloader
+2024-11-06 11:40:20,863 INFO Watching for file changes with StatReloader
+2024-11-06 14:14:48,278 INFO Watching for file changes with StatReloader
+2024-11-06 14:17:03,044 INFO Фамилия Имя вошел в аккаунт.

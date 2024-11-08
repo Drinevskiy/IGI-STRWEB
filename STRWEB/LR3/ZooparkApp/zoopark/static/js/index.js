@@ -391,19 +391,7 @@ document.getElementById('nextPagination').addEventListener('click', () => {
 
 
 
-function successHandler(position) {
-  console.log("Широта: ", position.coords.latitude);
-  console.log("Долгота: ", position.coords.longitude);
-  console.log("Высота: ", position.coords.altitude);
-  console.log("Скорость перемещения: ", position.coords.speed);
-  console.log("Точность: ", position.coords.accuracy);
-  console.log("Направление: ", position.coords.heading);
-};
-function errorHandler(error) {  
-  console.log(error.message);    // выводим сообщение об ошибке
-  console.log(error.code);    // выводим код ошибки
-}
-navigator.geolocation.getCurrentPosition(successHandler, errorHandler);
+
 
 async function dislpayBatteryStatus(){
   const batteryManager = await navigator.getBattery();

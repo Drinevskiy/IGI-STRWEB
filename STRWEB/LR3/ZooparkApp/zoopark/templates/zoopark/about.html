@@ -4,6 +4,7 @@
 {% block title %}{{title}}{% endblock %}
 {% block style %} 
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bdd9c13a-9998-4275-b985-0de12c70686f&lang=ru_RU" type="text/javascript"></script>
 {% endblock %}
 {% block content %}
     <h1>О зоопарке</h1>
@@ -12,6 +13,7 @@
         <video src="{{company.video.url}}" loop autoplay controls>Ошибка загрузки видео</video>
         <img src="{{company.image.url}}"/>
     </div>
+    <div id="map" style="width: 800px; height: 600px; margin: 0 auto;"></div>
     <div class="certificate" style="
         -webkit-border-image: url('{{company.certificate.background_image.url}}') 250 stretch repeat;
         -moz-border-image: url('{{company.certificate.background_image.url}}') 250 stretch repeat;
@@ -26,4 +28,7 @@
     <p class="info">{{company.info}}</p>
     <p class="history">{{company.history}}</p>
     <p id="requisites"><span>Реквизиты: </span>{{company.requisites}}</p>
+{% endblock %}
+{% block scripts %}
+    <script src="{% static 'js/about.js' %}"></script>
 {% endblock %}

@@ -278,6 +278,7 @@ document.getElementById('employeeForm').addEventListener('submit', (event) => {
 
     const blogUrl = document.getElementById('blogUrl').value;
     const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
     const validationMessage = document.getElementById('validationMessage');
 
     // Проверка валидности URL
@@ -289,9 +290,12 @@ document.getElementById('employeeForm').addEventListener('submit', (event) => {
     // const isValidPhone = phonePattern.test(phone.replace(/\s/g, '').replace(/[-]/g, ''));
     const isValidPhone = phonePattern.test(phone);
 
+    const emailPattern = /^.+@.+\..+$/;
+    const isValidEmail = emailPattern.test(email);
     // Сброс ошибок
     document.getElementById('blogUrl').classList.remove('error');
     document.getElementById('phone').classList.remove('error');
+    document.getElementById('email').classList.remove('error');
     validationMessage.textContent = '';
 
     // Проверка и вывод сообщений
@@ -304,9 +308,13 @@ document.getElementById('employeeForm').addEventListener('submit', (event) => {
         document.getElementById('phone').classList.add('error');
         validationMessage.textContent += 'Неверный номер телефона. Должен быть в формате: 80291112233, 8 (029) 1112233, +375 (29) 111-22-33 или +375 (29) 111 22 33.\n';
     }
+    if (!isValidEmail) {
+        document.getElementById('email').classList.add('error');
+        validationMessage.textContent += 'Неверная почта. Должна быть в формате: drinevskiy@gmail.com.\n';
+    }
 
     // Если все валидно, можно отправить данные или выполнить другие действия
-    if (isValidUrl && isValidPhone) {
+    if (isValidUrl && isValidPhone && isValidEmail) {
         // Здесь вы можете добавить логику для сохранения данных
         // alert('Данные успешно сохранены!');
         addEmployee();

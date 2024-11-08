@@ -20,7 +20,7 @@ const snake = document.getElementById('anim-snake');
       snake.style.top = `${snakePositionY - 10}px`; // 50% + смещение по синусоиде
 
       // Если змея скрылась за правым краем header, возвращаем ее на левый край
-      if (snakePositionX > headerWidth + 200) {
+      if (snakePositionX > headerWidth + 400) {
         snakePositionX = -300; // Возвращаем змею на левый край
         
     }
