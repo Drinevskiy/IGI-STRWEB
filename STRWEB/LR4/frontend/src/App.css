@@ -1,0 +1,16 @@
+.App {
+  padding: 10px 20px;
+  margin: 0 auto;
+  flex: 1;
+  width: 80%;
+  /* text-align: center; */
+  /* background-color: aliceblue; */
+}
+
+.app-footer{
+  display: flex; /* Используем Flexbox */
+    flex-direction: column; /* Вертикальное расположение */
+    min-height: 100vh; /* Минимальная высота 100% от высоты окна */
+    grid-row: 2;
+    width: 100%;
+}

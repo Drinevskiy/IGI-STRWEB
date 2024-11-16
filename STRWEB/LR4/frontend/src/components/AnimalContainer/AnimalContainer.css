@@ -1,0 +1,17 @@
+.animal-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    gap: 70px; /* Промежутки между карточками */
+    margin: 50px 0;
+    justify-content: space-between; /* Распределяет карточки с равными промежутками */
+}
+
+.animal-cards-container a {
+    flex: 1 1 500px; /* Элементы будут расти, сжиматься и иметь минимальную ширину 350px */
+    /* max-width: 350px; Максимальная ширина карточки */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.animal-cards-container a:hover {
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+}

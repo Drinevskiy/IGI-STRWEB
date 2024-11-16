@@ -1,0 +1,32 @@
+/* Article.css */
+
+.article-container {
+    width: 70%; /* Set width to 60% */
+    margin: 0 auto 90px; /* Center the container */
+    /* text-align: center; Center all text */
+}
+
+
+.article-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.article-title {
+    font-size: 24px; /* Title font size */
+    margin: 10px 0; /* Space above and below the title */
+}
+
+.article-date {
+    font-size: 14px; /* Smaller font for the date */
+    color: #777; /* Light gray color for the date */
+    margin-bottom: 20px; /* Space below the date */
+}
+
+.article-text {
+    font-size: 16px; /* Text font size */
+    line-height: 1.6; /* Line height for readability */
+    color: #333; /* Dark text color */
+    text-indent: 2em;
+}
