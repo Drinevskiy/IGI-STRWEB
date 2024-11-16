@@ -1,27 +1,38 @@
 import React from 'react';
 import {NewsCard} from './NewsCard';
+import { useState, useEffect } from 'react';
+import axios from '../../utils/axios';
 // import NewsF
 import './NewsContainer.css'; // Optional: Import styles specific to NewsCardContainer
 
 const NewsContainer = () => {
+    const [news, setNews] = useState([]);
+
+    useEffect(() => {
+        const fetchNews = async () => {
+            try {
+                const response = await axios.get('/news');
+                setNews(response.data);
+            } catch (error) {
+                console.error('Ошибка при получении данных:', error);
+            }
+        };
+
+        fetchNews();
+    }, []);
     return (
         <div id="news-card-container">
-            {/* {newsList.map((newItem) => (
-                <NewsCard key={newItem.id} news={{
-                    imageUrl: newItem.image.url,
-                    header: newItem.header,
-                    shortDescription: newItem.short_description,
-                    id: newItem.id,
-                }} />
-            ))} */}
+            {news.map((newItem) => (
+                <NewsCard key={newItem._id} newItem={newItem} />
+            ))}
+            {/* <NewsCard/>
             <NewsCard/>
             <NewsCard/>
             <NewsCard/>
             <NewsCard/>
             <NewsCard/>
             <NewsCard/>
-            <NewsCard/>
-            <NewsCard/>
+            <NewsCard/> */}
         </div>
     );
 };

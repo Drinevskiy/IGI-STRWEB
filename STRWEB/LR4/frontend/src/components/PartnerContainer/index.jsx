@@ -1,32 +1,47 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {PartnerCard} from './PartnerCard';
 import './PartnerContainer.css';
-
-// const PartnerContainer = ({ partners }) => {
-//   return (
-//     <section className="sponsor-section">
-//       <h2 className="sponsor-title">Наши партнеры</h2>
-//       <div className="sponsor-container">
-//         {partners.map((partner, index) => (
-//           <SponsorCard key={index} sponsor={partner} />
-//         ))}
-//       </div>
-//     </section>
-//   );
-// };
+import axios from '../../utils/axios';
 
 const PartnerContainer = () => {
-    return (
-      <section className="sponsor-section">
-        <h2 className="sponsor-title">Наши партнеры</h2>
-        <div className="sponsor-container">
-            <PartnerCard/>
-            <PartnerCard/>
-            <PartnerCard/>
-            <PartnerCard/>
-        </div>
-      </section>
-    );
-  };
+  const [partners, setPartners] = useState([]);
+
+    useEffect(() => {
+        const fetchPartners = async () => {
+            try {
+                const response = await axios.get('/partners');
+                setPartners(response.data);
+            } catch (error) {
+                console.error('Ошибка при получении данных:', error);
+            }
+        };
+
+        fetchPartners();
+    }, []);
+  return (
+    <section className="sponsor-section">
+      <h2 className="sponsor-title">Наши партнеры</h2>
+      <div className="sponsor-container">
+        {partners.map((partner) => (
+          <PartnerCard key={partner._id} partner={partner} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+// const PartnerContainer = () => {
+//     return (
+//       <section className="sponsor-section">
+//         <h2 className="sponsor-title">Наши партнеры</h2>
+//         <div className="sponsor-container">
+//             <PartnerCard/>
+//             <PartnerCard/>
+//             <PartnerCard/>
+//             <PartnerCard/>
+//         </div>
+//       </section>
+//     );
+//   };
 
 export {PartnerContainer};

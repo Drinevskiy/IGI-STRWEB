@@ -1,9 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Header.css";
+// import useToken from '../../utils/auth';
+import { useAuth } from '../../utils/AuthContext';
 
 export const Header = () => {
-  let isAuth = true;
+  const { token, clearToken } = useAuth();
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    if(window.confirm("Вы действительно хотите выйти?")){
+      clearToken();
+      navigate('/'); 
+    }
+  };
   return (
     <div className="root-header">
         <div className="inner">
@@ -15,14 +25,14 @@ export const Header = () => {
             <Link to="partners">Спонсоры</Link>
           </div>
           <div className="buttons">
-            {!isAuth ? (
+            {!token ? (
               <>
                 <Link to="/login">Войти</Link>
                 <Link to="/registration">Регистрация</Link>
               </>
             ) : (
               <>
-                <Link to="/logout">Выйти</Link> 
+                <button onClick={handleLogout}>Выйти</button> 
                 <Link to="/profile">Профиль</Link>
               </>
 

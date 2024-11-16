@@ -46,7 +46,8 @@
 }
 
 .buttons{
-  margin-top: 7px;
+  display: flex;
+  align-items: stretch;
 }
 
 .buttons a {
@@ -61,6 +62,23 @@
 }
 
 .buttons a:hover {
+  background-color: #dfb14f;
+  color: #000000;
+}
+
+.buttons button {
+  margin-left: 10px;
+  /* font-size: 20px; */
+  background-color: #d69f28;
+  color: #fff;
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 5px;
+  border: 1px solid #6860dc;
+  text-decoration: none;
+}
+
+.buttons button:hover {
   background-color: #dfb14f;
   color: #000000;
 }

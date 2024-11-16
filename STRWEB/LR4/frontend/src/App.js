@@ -5,29 +5,30 @@ import { Header, Footer, AnimalCard,
   NewsContainer, NewsFullCard, AnimalFullCard, 
   PartnerContainer, Profile, NotFound} from "./components";
 import { Routes, Route } from 'react-router-dom';
-
+import { AuthProvider } from './utils/AuthContext';
 
 function App() {
   return (
     <div>
-      <Header/>
-      <div class="app-footer">
-        <div className='App'>
-          <Routes>
-            <Route path="/" element={<AnimalContainer/>}/>
-            <Route path="/registration" element={<RegistrationForm/>}/>
-            <Route path="/login" element={<LoginForm/>}/>
-            <Route path="/news" element={<NewsContainer/>}/>
-            <Route path="/news/1" element={<NewsFullCard/>}/>
-            <Route path="/animals/1" element={<AnimalFullCard/>}/>
-            <Route path="/profile" element={<Profile/>}/>
-            <Route path="/partners" element={<PartnerContainer/>}/>
-            <Route path="*" element={<NotFound />}/>
-          </Routes>
+      <AuthProvider>
+        <Header/>
+        <div class="app-footer">
+          <div className='App'>
+            <Routes>
+              <Route path="/" element={<AnimalContainer/>}/>
+              <Route path="/registration" element={<RegistrationForm/>}/>
+              <Route path="/login" element={<LoginForm/>}/>
+              <Route path="/news" element={<NewsContainer/>}/>
+              <Route path="/news/:id" element={<NewsFullCard/>}/>
+              <Route path="/animals/:id" element={<AnimalFullCard/>}/>
+              <Route path="/profile" element={<Profile/>}/>
+              <Route path="/partners" element={<PartnerContainer/>}/>
+              <Route path="*" element={<NotFound />}/>
+            </Routes>
+          </div>
+          <Footer/>
         </div>
-        <Footer/>
-      </div>
-
+      </AuthProvider>
     </div>
    
     // <div className="App">

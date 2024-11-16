@@ -1,6 +1,7 @@
 import express from 'express';
 import config from 'config';
 import mongoose from 'mongoose';
+import cors from 'cors';
 
 import { registerMulter, registerRoutes } from './utils/index.js';
 
@@ -12,7 +13,7 @@ mongoose
 const app = express();
 
 app.use(express.json());
-
+app.use(cors());
 app.get('/', (req, res) => {
     res.send("Hello")
 });

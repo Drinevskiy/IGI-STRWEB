@@ -18,7 +18,7 @@ export const register = async (req, res) =>{
         }, 
         'randomkey',
         {
-            expiresIn: '30d',
+            expiresIn: '1h',
         })
 
         const {passwordHash, ...userData} = user._doc;
@@ -54,7 +54,7 @@ export const login = async (req, res) => {
         }, 
         'randomkey',
         {
-            expiresIn: '30d',
+            expiresIn: '1h',
         })
 
         const {passwordHash, ...userData} = user._doc;
