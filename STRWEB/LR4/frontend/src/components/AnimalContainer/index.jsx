@@ -22,45 +22,10 @@ const AnimalContainer = () => {
     return (
         <div className="animal-cards-container">
             {animals.map((animal) => (
-                <AnimalCard key={animal.pk} animal={animal} />
+                <AnimalCard key={animal._id} animal={animal} />
             ))}
         </div>
     );
 };
-
-AnimalContainer.propTypes = {
-    animals: PropTypes.arrayOf(
-        PropTypes.shape({
-            pk: PropTypes.number.isRequired,
-            name: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired,
-            type: PropTypes.string.isRequired,
-            family: PropTypes.string.isRequired,
-            age: PropTypes.number.isRequired,
-            aviary: PropTypes.string.isRequired,
-            image: PropTypes.shape({
-                url: PropTypes.string,
-            }),
-        })
-    ).isRequired,
-};
-
-// const AnimalContainer = () => {
-//     let animals;
-//     React.useEffect(() => {
-//         axios.get('/animals')
-//             .then(res => {animals = res.data;console.log(animals)})
-//             .catch(err => console.error('Ошибка:', err));
-//     }, [])
-//     return (
-//         <div className="animal-cards-container">
-//             <AnimalCard />
-//             <AnimalCard />
-//             <AnimalCard />
-//             <AnimalCard />
-//             <AnimalCard />
-//         </div>
-//     );
-// };
 
 export {AnimalContainer};

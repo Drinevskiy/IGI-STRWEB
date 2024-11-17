@@ -19,11 +19,11 @@
   }
   
   .profile-avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    border-radius: 30%;
     object-fit: cover;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень для аватара */
   }
   
@@ -31,17 +31,20 @@
     font-size: 28px;
     font-weight: bold;
     color: #1e90ff; /* Насыщенный синий цвет для никнейма */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
   
   .profile-email {
-    font-size: 16px;
-    color: #777; /* Серый цвет для email */
+    font-size: 18px;
+    color: #aaaaaa; /* Серый цвет для email */
   }
   
   .profile-content {
     width: 80%;
     max-width: 800px;
+  }
+  .profile-content h2{
+    text-align: center;
   }
 
 .password-form {
@@ -51,6 +54,17 @@
     margin-top: 30px;
   }
   
+  .profile-content .error-message{
+    color: red;
+    text-align: center;
+
+  }
+
+  .profile-content .success-message{
+    color: rgb(55, 243, 92);
+    text-align: center;
+  }
+
   .form-group {
     display: flex;
     flex-direction: column;

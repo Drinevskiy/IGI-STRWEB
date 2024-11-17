@@ -6,7 +6,7 @@ export const registerValidator = [
     body('password')
         .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/)
         .withMessage('Пароль должен содержать минимум 8 символов, включая заглавные и строчные буквы, цифры.'),
-    body('avatarUrl', 'Неверная ссылка на аватарку').optional().isURL()
+    // body('avatarUrl', 'Неверная ссылка на аватарку').optional().isURL()
 ];
 
 export const loginValidator = [

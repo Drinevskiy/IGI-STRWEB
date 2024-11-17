@@ -2,5 +2,10 @@
 {
     "port": 5000,
     "mongoUri": "mongodb+srv://drinevskiy3:1234qwerty@cluster0.qqv7q.mongodb.net/zoopark?retryWrites=true&w=majority&appName=Cluster0",
-    "uploads": "uploads"
+    "uploads": "uploads",
+    "SECRET_KEY": "randomkey",
+    "REFRESH_SECRET_KEY": "sdr432e5t2HJdjsyf57sd46yt2v",
+    "ACCESS_TOKEN_EXPIRES_IN": "1h",
+    "REFRESH_TOKEN_EXPIRES_IN": "7d",
+    "SALT_ROUNDS": 15
 }

@@ -13,11 +13,11 @@ const logo = "/icons/logo.png";
 export const Footer = () => {
   return (
     <footer>
-      <div class="copyright">
+      <div className="copyright">
           <span><img src={logo}/></span>
           <p>© 2024 Kirad, Inc. <br/>All rights reserved.</p>
       </div>
-      <div class="links">
+      <div className="links">
         <a href="https://www.youtube.com/channel/UCRWCw25KZqqxu5OVeb37hEA" target="_blank">
             <img src={youtube}/>
         </a>

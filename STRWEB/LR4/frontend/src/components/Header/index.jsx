@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
+import axios from '../../utils/axios';
 // import useToken from '../../utils/auth';
 import { useAuth } from '../../utils/AuthContext';
 
@@ -10,8 +11,14 @@ export const Header = () => {
   const navigate = useNavigate();
   const handleLogout = () => {
     if(window.confirm("Вы действительно хотите выйти?")){
-      clearToken();
-      navigate('/'); 
+      axios.post('/auth/logout',{}, { withCredentials: true })
+            .then(res => {
+                clearToken();
+                navigate('/'); 
+                // setToken(res.data.token);
+            })
+            .catch(error => {console.error(error)});
+      
     }
   };
   return (
@@ -23,6 +30,7 @@ export const Header = () => {
           <div className="nav">
             <Link to="news">Новости</Link>
             <Link to="partners">Спонсоры</Link>
+            <Link to="apis">API</Link>
           </div>
           <div className="buttons">
             {!token ? (

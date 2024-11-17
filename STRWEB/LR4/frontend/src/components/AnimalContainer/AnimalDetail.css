@@ -47,3 +47,9 @@
 .animal-additional-info p {
     margin: 10px 0; /* Space between additional info paragraphs */
 }
+
+.animal-created-updated-info{
+    color: #9a9a9a;
+    text-align: end;
+    font-size: 12px;
+}

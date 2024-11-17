@@ -7,7 +7,7 @@ const NewsCard = ({ newItem }) => {
         <div className="new-card">
             <Link to={`${newItem._id}`}>
                 <img src='/icons/vk_logo.png' alt={newItem.header} />
-                {/* <img src={newItem.imageUrl} alt={newItem.header} /> */}
+                {/* <img src={newItem.image} alt={newItem.header} /> */}
                 <div className="new-info">
                     <h2>{newItem.header}</h2>
                 </div>
@@ -18,9 +18,9 @@ const NewsCard = ({ newItem }) => {
 
 NewsCard.propTypes = {
     newItem: PropTypes.shape({
-        imageUrl: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
         header: PropTypes.string.isRequired,
-        _id: PropTypes.number.isRequired,
+        _id: PropTypes.string.isRequired,
     }).isRequired,
 };
 

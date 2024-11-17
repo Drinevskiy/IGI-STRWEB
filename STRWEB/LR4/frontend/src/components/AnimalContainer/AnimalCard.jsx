@@ -35,16 +35,14 @@ const AnimalCard = ({ animal }) => {
 
 AnimalCard.propTypes = {
     animal: PropTypes.shape({
-        pk: PropTypes.number.isRequired,
+        _id: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         type: PropTypes.string.isRequired,
         family: PropTypes.string.isRequired,
-        age: PropTypes.number.isRequired,
-        aviary: PropTypes.string.isRequired,
-        image: PropTypes.shape({
-            url: PropTypes.string,
-        }),
+        date_of_birth: PropTypes.string.isRequired,
+        aviary: PropTypes.object.isRequired,
+        image: PropTypes.string.isRequired,
     }).isRequired,
 };
 // const AnimalCard = () => {

@@ -9,3 +9,5 @@ export * from "./NewsContainer/NewsFullCard";
 export * from "./Profile";
 export * from "./PartnerContainer";
 export * from "./NotFound";
+export * from "./Nationalize";
+export * from "./Joke";

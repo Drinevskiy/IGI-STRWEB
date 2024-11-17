@@ -5,8 +5,11 @@ import * as Controllers from '../controllers/index.js';
 export default async (app) => {
     // Пользователи
     app.post('/auth/login', Validators.loginValidator, handleValidationErrors, Controllers.UserController.login);
+    app.post('/auth/logout',  Controllers.UserController.logout);
     app.post('/auth/register', Validators.registerValidator, handleValidationErrors, Controllers.UserController.register);
     app.get('/auth/profile', checkAuth, Controllers.UserController.profile);
+    app.patch('/auth/profile', checkAuth, Controllers.UserController.changePassword);
+    // app.post('/auth/refresh', refreshToken);
     // Партнеры
     app.get('/partners', Controllers.PartnerController.getAll);
     app.get('/partners/:id', Controllers.PartnerController.getOne);

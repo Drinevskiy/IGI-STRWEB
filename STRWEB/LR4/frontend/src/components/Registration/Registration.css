@@ -11,7 +11,7 @@ form {
 
 label {
     display: block;
-    margin-bottom: 10px; /* Space between label and input */
+    margin-bottom: 10px; 
     font-weight: bold; /* Make labels bold */
 }
 
@@ -21,7 +21,7 @@ input[type="password"],
 input[type="file"] {
     width: 95%; /* Full width inputs */
     padding: 10px; /* Padding inside inputs */
-    margin-bottom: 15px; /* Space below inputs */
+    margin-top: 5px; 
     border: 1px solid #b0e0e6; /* Light blue border */
     border-radius: 5px; /* Rounded corners for inputs */
     transition: border-color 0.3s; /* Smooth transition for border color */
@@ -36,7 +36,8 @@ input[type="password"]:focus {
     outline: none; /* Remove default outline */
 }
 
-button {
+form button {
+    margin-top: 15px;;
     background-color: #87cefa; /* Blue background for the button */
     color: #fff; /* White text */
     padding: 10px 15px; /* Padding for the button */
@@ -48,6 +49,6 @@ button {
     transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
-button:hover {
+form button:hover {
     background-color: #00bfff; /* Darker blue on hover */
 }

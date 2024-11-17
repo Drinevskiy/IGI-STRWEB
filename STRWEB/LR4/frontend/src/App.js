@@ -4,6 +4,7 @@ import { Header, Footer, AnimalCard,
   AnimalContainer, RegistrationForm, LoginForm, 
   NewsContainer, NewsFullCard, AnimalFullCard, 
   PartnerContainer, Profile, NotFound} from "./components";
+import { ApiPage } from './pages';
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './utils/AuthContext';
 
@@ -12,7 +13,7 @@ function App() {
     <div>
       <AuthProvider>
         <Header/>
-        <div class="app-footer">
+        <div className="app-footer">
           <div className='App'>
             <Routes>
               <Route path="/" element={<AnimalContainer/>}/>
@@ -23,6 +24,7 @@ function App() {
               <Route path="/animals/:id" element={<AnimalFullCard/>}/>
               <Route path="/profile" element={<Profile/>}/>
               <Route path="/partners" element={<PartnerContainer/>}/>
+              <Route path="/apis" element={<ApiPage/>}/>
               <Route path="*" element={<NotFound />}/>
             </Routes>
           </div>
