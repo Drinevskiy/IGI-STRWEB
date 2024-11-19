@@ -17,6 +17,9 @@ const AnimalFullCard = () => {
     const [modifyDateUserTimeZone, setModifyDateUserTimeZone] = useState('');
     const [modifyDateUserUTC, setModifyDateUserUTC] = useState('');
     const [userTimeZone, setUserTimeZone] = useState('');
+    const [image, setImage] = useState(null);
+    const [errorMessage, setErrorMessage] = useState('');
+
 
 
     useEffect(() => {
@@ -25,6 +28,7 @@ const AnimalFullCard = () => {
                 const response = await axios.get(`animals/${id}`);
                 console.log(response.data);
                 setAnimal(response.data);
+                
             } catch (error) {
                 console.error('Ошибка при получении данных:', error);
                 if (error.response && error.response.status === 500) {
@@ -39,7 +43,7 @@ const AnimalFullCard = () => {
         fetchAnimal();
     }, []);
 
-    useEffect(() => {
+    useEffect(() =>  {
         if (animal) {
             const addTime = getDateInfo(animal.createdAt);
             const modifyTime = getDateInfo(animal.updatedAt);
@@ -48,8 +52,43 @@ const AnimalFullCard = () => {
             setAddDateUserUTC(addTime.utcTime);
             setModifyDateUserTimeZone(modifyTime.userTime);
             setModifyDateUserUTC(modifyTime.utcTime);
+            const image = animal.image ? animal.image : 'uploads/lapka.jpg';
+            axios.get(image, { responseType: 'blob' })
+            .then(response => {
+                const imageUrl = URL.createObjectURL(response.data);
+                setImage(imageUrl);
+            })
+            .catch(error =>
+                console.error('Ошибка при получении животного:', error)
+            );
         }
     }, [animal]);
+
+    function updateAnimal(){
+        console.log({animal});
+        navigate('/edit-animal', { state: { animal } });
+    }
+
+    function deleteAnimal(){
+        const token = localStorage.getItem('token');
+        axios.delete(`/animals/${animal._id}`, {
+            headers: {
+            Authorization: `Bearer ${token}`,
+            },
+            withCredentials: true
+        })
+        .then(res => 
+            navigate('/')
+        )
+        .catch(error=>{
+            if(error.response.status === 403){
+                navigate('/login');
+            }
+            setErrorMessage('Животное еще хочет жить.');
+        }
+        )
+    }
+
 
     if (loading) {
         return <div>Загрузка...</div>; // Индикатор загрузки
@@ -61,7 +100,9 @@ const AnimalFullCard = () => {
     return (
         <>
         <div className="animal-detail-container">
-            <img src='/icons/logo.png' alt={animal.name} className="animal-image" />
+            {image && <img src={image} className="animal-image" alt={animal.name} />}
+
+            {/* <img src='/icons/logo.png' alt={animal.name} className="animal-image" /> */}
             {/* <img src={animal.imageUrl} alt={animal.name} className="animal-image" /> */}
             <div className="animal-info">
                 <h1 className="animal-name">{animal.name}</h1>
@@ -74,6 +115,11 @@ const AnimalFullCard = () => {
                     <p><strong>Вольер:</strong> {animal.aviary.name}</p>
                 </div>
             </div>
+        </div>
+        {errorMessage && <div className="error-message" style={{textAlign: "center", color: "red", marginBottom: "15px"}}>{errorMessage}</div>}
+        <div class="animal-update-delete-buttons">
+            <button className="update" onClick={updateAnimal}>Обновить</button>
+            <button className="delete" onClick={deleteAnimal}>Удалить</button>
         </div>
         <div className="animal-created-updated-info">
             <div>Дата добавления. {userTimeZone}: {addDateUserTimeZone}, UTC: {addDateUserUTC}</div>

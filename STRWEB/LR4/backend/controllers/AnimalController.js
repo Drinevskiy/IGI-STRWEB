@@ -41,7 +41,7 @@ export const create = async (req, res) => {
             image: req.body.image
         });
         const animal = await doc.save();
-        res.json(animal);
+        res.status(201).json(animal);
     } catch (err) {
         console.log(err);
         return res.status(500).json({
@@ -53,7 +53,7 @@ export const create = async (req, res) => {
 export const update = async (req, res) => {
     try {
         const id = req.params.id;
-        const updatedAnimal = await AnimalModel.findByIdAndUpdate(id, {
+        const updateFields = {
             name: req.body.name,
             type: req.body.type,
             family: req.body.family,
@@ -61,9 +61,13 @@ export const update = async (req, res) => {
             aviary: req.body.aviary, // Ссылка на вольер
             date_of_receipt: req.body.date_of_receipt,
             date_of_birth: req.body.date_of_birth,
-            image: req.body.image
-        }, { new: true }); // Возвращаем обновленный документ
+        };
 
+        // Проверяем, не является ли image пустой строкой
+        if (req.body.image) {
+            updateFields.image = req.body.image; // Добавляем image только если оно не пустое
+        }
+        const updatedAnimal = await AnimalModel.findByIdAndUpdate(id, updateFields, { new: true }); // Возвращаем обновленный документ
         if (!updatedAnimal) {
             return res.status(404).json({ message: 'Животное не найдено.' });
         }

@@ -10,5 +10,5 @@ export default function getAgeString(dateOfBirth) {
     }
 
     // Возвращаем строку с правильным склонением
-    return age === 1 ? `${age} год` : age < 5 ? `${age} года` : `${age} лет`;
+    return age === 1 ? `${age} год` : age > 0 && age < 5 ? `${age} года` : `${age} лет`;
 }

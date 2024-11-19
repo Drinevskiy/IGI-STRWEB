@@ -29,7 +29,7 @@ input[type="file"] {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus{
     /* border-color: #87cefa; Darker blue on focus */
     border-color: #000000; /* Darker blue on focus */
     background-color: #cde3ea;

@@ -40,7 +40,7 @@ export const register = async (req, res) =>{
 
         const {passwordHash, ...userData} = user._doc;
         
-        res.json({
+        res.status(201).json({
             ...userData,
             token
         });

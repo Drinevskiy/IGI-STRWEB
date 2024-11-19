@@ -53,3 +53,42 @@
     text-align: end;
     font-size: 12px;
 }
+
+
+.animal-update-delete-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.animal-update-delete-buttons .update{
+    padding: 10px 15px;
+    width: 150px;
+    background-color: #87cefa;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: inherit;
+    transition: background-color 0.3s;
+}
+
+.animal-update-delete-buttons .update:hover{
+    background-color: #00bfff; 
+}
+
+.animal-update-delete-buttons .delete{
+    padding: 10px 15px;
+    width: 150px;
+    background-color: #ea4a4a;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: inherit;
+    transition: background-color 0.3s;
+}
+
+.animal-update-delete-buttons .delete:hover{
+    background-color: #cd1d1d; 
+}

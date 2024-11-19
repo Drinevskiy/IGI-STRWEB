@@ -2,6 +2,8 @@ export * from "./Header";
 export * from "./Footer";
 export * from "./AnimalContainer/AnimalFullCard";
 export * from "./AnimalContainer";
+export * from "./AnimalContainer/AddAnimalForm";
+export * from "./AnimalContainer/EditAnimalForm";
 export * from "./Registration";
 export * from "./Login";
 export * from "./NewsContainer";
