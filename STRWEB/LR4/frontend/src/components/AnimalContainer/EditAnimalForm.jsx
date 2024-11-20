@@ -112,16 +112,6 @@ const EditAnimalForm = () => {
                     if (response.status === 200) {
                         setSuccessMessage('Животное успешно обновлено!');
                         setErrorMessage(''); // Clear any previous error messages
-                        // Reset form
-                        // setAnimalData({
-                        //     name: '',
-                        //     description: '',
-                        //     type: '',
-                        //     family: '',
-                        //     date_of_birth: '',
-                        //     date_of_receipt: '',
-                        //     aviary: { _id: '', name: '' },
-                        // });
                     }
                 }).catch(error => {
                     if(error.response.status === 403){
@@ -158,16 +148,6 @@ const EditAnimalForm = () => {
                 if (response.status === 200) {
                     setSuccessMessage('Животное успешно обновлено!');
                     setErrorMessage(''); // Clear any previous error messages
-                    // Reset form
-                    // setAnimalData({
-                    //     name: '',
-                    //     description: '',
-                    //     type: '',
-                    //     family: '',
-                    //     date_of_birth: '',
-                    //     date_of_receipt: '',
-                    //     aviary: { _id: '', name: '' },
-                    // });
                 }
             }).catch(error => {
                 if(error.response.status === 403){

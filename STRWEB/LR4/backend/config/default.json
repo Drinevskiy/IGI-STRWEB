@@ -7,5 +7,12 @@
     "REFRESH_SECRET_KEY": "sdr432e5t2HJdjsyf57sd46yt2v",
     "ACCESS_TOKEN_EXPIRES_IN": "1h",
     "REFRESH_TOKEN_EXPIRES_IN": "7d",
-    "SALT_ROUNDS": 15
+    "SALT_ROUNDS": 15,
+    "GOOGLE_CLIENT_ID": "940446352817-aaqs49po2d62e740fdp1cl32kpf3bvpo.apps.googleusercontent.com",
+    "GOOGLE_CLIENT_SECRET": "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",
+    "GOOGLE_CALLBACK_URL": "http://localhost:5000/callback/google-profile",
+    "FACEBOOK_CLIENT_ID": "facebookid",
+    "FACEBOOK_CLIENT_SECRET": "facebooksecret",
+    "FACEBOOK_CALLBACK_URL": "http://localhost:5000/callback/facebook-profile",
+    "SESSION_SECRET_KEY": "VH3u7uBdjeIU274nNKjdbk9q2b" 
 }

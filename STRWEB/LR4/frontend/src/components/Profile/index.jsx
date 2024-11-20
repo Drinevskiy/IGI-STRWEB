@@ -28,7 +28,7 @@ const Profile = () => {
           withCredentials: true
         });
         setUser(response.data);
-
+        // console.log(response.data);
         const avatar = response.data.avatarUrl ? response.data.avatarUrl : 'uploads/avatarka.jpg';
         const avatarResponse = await axios.get(avatar, { responseType: 'blob' });
         const avatarUrl = URL.createObjectURL(avatarResponse.data);
@@ -104,7 +104,7 @@ const Profile = () => {
         <p className="profile-email">{user.email}</p>
       </div>
       <DateDisplay/>
-      <div className="profile-content">
+      {!user.isServices && <div className="profile-content">
         <h2>Изменение пароля</h2>
         {errors.map((error, index) => (
           <div key={index} className='error-message'>
@@ -147,7 +147,7 @@ const Profile = () => {
             Изменить пароль
           </button>
         </form>
-      </div>
+      </div>}
     </div>
   );
 };

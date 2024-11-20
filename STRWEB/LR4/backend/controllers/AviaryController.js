@@ -34,7 +34,7 @@ export const create = async (req, res) => {
             heating: req.body.heating
         });
         const aviary = await doc.save();
-        res.json(aviary); 
+        res.status(201).json(aviary); 
     } catch(err){
         console.log(err);
         return res.status(500).json({

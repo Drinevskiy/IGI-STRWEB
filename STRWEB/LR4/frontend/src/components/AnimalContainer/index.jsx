@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {AnimalCard} from './AnimalCard'; // Adjust the import path as necessary
 import './AnimalContainer.css';
 import axios from '../../utils/axios';
+import {useAuth} from '../../utils/AuthContext';
 
 const AnimalContainer = () => {
     const [animals, setAnimals] = useState([]);
@@ -11,6 +12,8 @@ const AnimalContainer = () => {
     const [sortProperty, setSortProperty] = useState('name');
     const [sortDirection, setSortDirection] = useState('asc');
     const navigate = useNavigate();
+    const location = useLocation();
+    const { token, saveToken } = useAuth();
 
     useEffect(() => {
         const fetchAnimals = async () => {
@@ -24,6 +27,15 @@ const AnimalContainer = () => {
 
         fetchAnimals();
     }, []);
+
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        const accessToken = params.get('accessToken');
+        console.log(accessToken);
+        if (accessToken) {
+            saveToken(accessToken);
+        }
+    }, [location]);
 
     function addAnimal(){
         navigate('/add-animal');

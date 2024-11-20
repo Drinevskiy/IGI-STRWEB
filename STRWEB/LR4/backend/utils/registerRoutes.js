@@ -9,6 +9,10 @@ export default async (app) => {
     app.post('/auth/register', Validators.registerValidator, handleValidationErrors, Controllers.UserController.register);
     app.get('/auth/profile', checkAuth, Controllers.UserController.profile);
     app.patch('/auth/profile', checkAuth, Controllers.UserController.changePassword);
+    app.get('/auth/google', Controllers.UserController.googleLogin)
+    app.get('/auth/facebook', Controllers.UserController.facebookLogin)
+    app.get('/callback/google-profile', Controllers.UserController.googleRedirect);
+    app.get('/callback/facebook-profile', Controllers.UserController.facebookRedirect);
     // app.post('/auth/refresh', refreshToken);
     // Партнеры
     app.get('/partners', Controllers.PartnerController.getAll);

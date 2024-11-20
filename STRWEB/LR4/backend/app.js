@@ -1,10 +1,15 @@
 import express from 'express';
+import session from 'express-session';
 import config from 'config';
 import cookieParser from 'cookie-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 
-import { registerMulter, registerRoutes } from './utils/index.js';
+import { registerMulter, registerRoutes, registerPassport } from './utils/index.js';
+
+const SESSION_SECRET_KEY = config.get('SESSION_SECRET_KEY');
+
+
 
 mongoose
     .connect(config.get('mongoUri'))
@@ -19,12 +24,24 @@ app.use(cors({
     origin: 'http://localhost:3000', // Укажите адрес вашего клиента
     credentials: true
 }));
+app.use(session({
+    secret: SESSION_SECRET_KEY, // Замените на ваш секретный ключ
+    resave: false,
+    saveUninitialized: false,
+    cookie: { secure: false } // Установите true, если используете HTTPS
+}));
+
+// app.use(passport.initialize());
+// app.use(passport.session());
+
 app.get('/', (req, res) => {
     res.send("Hello")
 });
 
 registerMulter(app);
 registerRoutes(app);
+registerPassport();
+  
 
 const PORT = config.get('port') || 5000;
 app.listen(PORT, () => console.log(`Start server on port ${PORT}`));

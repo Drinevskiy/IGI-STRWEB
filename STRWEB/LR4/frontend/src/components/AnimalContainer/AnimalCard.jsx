@@ -9,14 +9,14 @@ const AnimalCard = ({ animal }) => {
     const [image, setImage] = useState(null);
     useEffect(() => {
         const image = animal.image ? animal.image : 'uploads/lapka.jpg';
-            axios.get(image, { responseType: 'blob' })
-            .then(response => {
-                const imageUrl = URL.createObjectURL(response.data);
-                setImage(imageUrl);
-            })
-            .catch(error =>
-                console.error('Ошибка при получении животного:', error)
-            );
+        axios.get(image, { responseType: 'blob' })
+        .then(response => {
+            const imageUrl = URL.createObjectURL(response.data);
+            setImage(imageUrl);
+        })
+        .catch(error =>
+            console.error('Ошибка при получении животного:', error)
+        );
       }, []);
     return (
         <article>

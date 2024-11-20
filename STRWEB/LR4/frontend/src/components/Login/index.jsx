@@ -2,8 +2,14 @@ import React, { useState } from 'react';
 import axios from '../../utils/axios';
 import { useSelector } from 'react-redux'; 
 import { Navigate } from 'react-router-dom';
+import './Login.css'
 // import useToken from '../../utils/auth';
 import { useAuth } from '../../utils/AuthContext';
+
+const google_logo = "/icons/google_logo.png";
+const facebook_logo = "/icons/facebook_logo.png";
+
+
 
 const LoginForm = () => {
     const { token, saveToken } = useAuth();
@@ -63,52 +69,73 @@ const LoginForm = () => {
         // console.log(formData);
     };
 
+    function loginWithGoogle(){
+        window.open('http://localhost:5000/auth/google', '_self');
+        // axios.get('/auth/google')
+    }
+    
+    function loginWithFacebook(){
+        console.log("facebook");
+    }
+
     if(token){
         return <Navigate to='/'/>
     }
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label>
-                    Электронная почта
-                    <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                </label>
-                {errors.find(error => error.path === 'email') && (
-                    <span style={{ color: 'red' }}>
-                        {errors.find(error => error.path === 'email').msg}
-                    </span>
-                )}
-            </div>
-            <div>
-                <label>
-                    Пароль
-                    <input
-                        type="password"
-                        name="password"
-                        value={formData.password}
-                        onChange={handleChange}
-                        required
-                    />
-                </label>
-                {errors.find(error => error.path === 'password') && (
-                    <span style={{ color: 'red' }}>
-                        {errors.find(error => error.path === 'password').msg}
-                    </span>
-                )}
-            </div>
-            {errors.find(error => error.message) && (
-                    <span style={{ color: 'red' }}>
-                        {errors.find(error => error.message).message}
-                    </span>
-                )}
-            <button type="submit">Войти</button>
-        </form>
+        <>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label>
+                        Электронная почта
+                        <input
+                            type="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+                    </label>
+                    {errors.find(error => error.path === 'email') && (
+                        <span style={{ color: 'red' }}>
+                            {errors.find(error => error.path === 'email').msg}
+                        </span>
+                    )}
+                </div>
+                <div>
+                    <label>
+                        Пароль
+                        <input
+                            type="password"
+                            name="password"
+                            value={formData.password}
+                            onChange={handleChange}
+                            required
+                        />
+                    </label>
+                    {errors.find(error => error.path === 'password') && (
+                        <span style={{ color: 'red' }}>
+                            {errors.find(error => error.path === 'password').msg}
+                        </span>
+                    )}
+                </div>
+                {errors.find(error => error.message) && (
+                        <span style={{ color: 'red' }}>
+                            {errors.find(error => error.message).message}
+                        </span>
+                    )}
+                <button type="submit">Войти</button>
+            </form>
+            <div className='auth-services'>
+            <button className='google' onClick={loginWithGoogle}>
+                <img src={google_logo}></img>
+                <p>Войти с помощью Google</p>
+            </button>
+            <button className='facebook' onClick={loginWithFacebook}>
+                <img src={facebook_logo}></img>
+                <p>Войти с помощью Facebook</p>
+            </button>
+        </div>
+        </>
     );
 };
 

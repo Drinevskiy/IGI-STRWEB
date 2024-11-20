@@ -34,7 +34,7 @@ export const create = async (req, res) => {
             publication_date: req.body.publication_date 
         });
         const news = await doc.save();
-        res.json(news); 
+        res.status(201).json(news); 
     } catch(err){
         console.log(err);
         return res.status(500).json({

@@ -33,7 +33,7 @@ export const create = async (req, res) => {
             imageUrl: req.body.imageUrl
         });
         const partner = await doc.save();
-        res.json(partner); 
+        res.status(201).json(partner); 
     } catch(err){
         console.log(err);
         return res.status(500).json({

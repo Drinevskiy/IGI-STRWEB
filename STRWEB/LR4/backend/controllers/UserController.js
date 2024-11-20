@@ -2,6 +2,7 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import UserModel from '../models/User.js';
 import config from 'config';
+import passport from "passport";
 
 const SECRET_KEY = config.get('SECRET_KEY');
 const REFRESH_SECRET_KEY = config.get('REFRESH_SECRET_KEY');
@@ -117,10 +118,22 @@ export const logout = async (req, res) => {
 
 export const profile = async (req, res) => {
     try{
-        const user = await UserModel.findById(req.userId);
+        let user;
+        if(req.isGoogle){
+            user = await UserModel.findOne({ googleId: req.userId });
+        }
+        else if(req.isFacebook){
+
+        } 
+        else{
+            user = await UserModel.findById(req.userId);
+        }
         console.log(user);
         if(user){
-            const {passwordHash, ...userData} = user._doc;
+            let {passwordHash, ...userData} = user._doc;
+            if(req.isGoogle || req.isFacebook){
+                userData.isServices = true;
+            }
             return res.json(userData);
         }
         else{
@@ -164,3 +177,64 @@ export const changePassword = async (req, res) => {
         return res.status(500).json({ message: "Не удалось изменить пароль" });
     }
 };
+
+// Обновленный googleLogin
+export const googleLogin = (req, res) => {
+    passport.authenticate('google', { scope: ['profile', 'email'], prompt: 'select_account' })(req, res);
+}
+
+// Обновленный googleRedirect
+export const googleRedirect = (req, res) => {
+    passport.authenticate('google', { failureRedirect: "http://localhost:3000/login" }, (err, user) => {
+        console.log(user);
+        // console.log(accessToken);
+        if (err || !user) {
+            // return res.json({
+            //     accessToken: req.accessToken
+            // })
+            return res.redirect("http://localhost:3000/login");
+        }
+        req.logIn(user, (err) => {
+
+            if (err) {
+                console.log(err);
+                return res.redirect("http://localhost:3000/login");
+            }
+            // return res.json({ accessToken });
+            // Successful authentication, redirect to success.
+            // res.redirect(`http://localhost:3000/`);
+            res.redirect(`http://localhost:3000/?accessToken=${user.accessToken}`);
+        });
+    })(req, res);
+}
+
+// Обновленный googleLogin
+export const facebookLogin = (req, res) => {
+    passport.authenticate('facebook')(req,res);
+    // passport.authenticate('facebook', { scope: ['profile', 'email'], prompt: 'select_account' })(req, res);
+}
+
+// Обновленный googleRedirect
+export const facebookRedirect = (req, res) => {
+    passport.authenticate('facebook', { successRedirect: "http://localhost:3000/", failureRedirect: "http://localhost:3000/login" }, (err, user) => {
+        console.log(user);
+        // console.log(accessToken);
+        if (err || !user) {
+            // return res.json({
+            //     accessToken: req.accessToken
+            // })
+            return res.redirect("http://localhost:3000/login");
+        }
+        req.logIn(user, (err) => {
+
+            if (err) {
+                console.log(err);
+                return res.redirect("http://localhost:3000/login");
+            }
+            // return res.json({ accessToken });
+            // Successful authentication, redirect to success.
+            // res.redirect(`http://localhost:3000/`);
+            res.redirect(`http://localhost:3000/?accessToken=${user.accessToken}`);
+        });
+    })(req, res);
+}
