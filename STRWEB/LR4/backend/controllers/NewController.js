@@ -27,6 +27,7 @@ export const getOne = async (req, res) => {
 
 export const create = async (req, res) => {
     try{
+        console.log(req.body);
         const doc = new NewModel({
             header: req.body.header,
             description: req.body.description,
@@ -34,7 +35,7 @@ export const create = async (req, res) => {
             publication_date: req.body.publication_date 
         });
         const news = await doc.save();
-        res.status(201).json(news); 
+        res.json(news); 
     } catch(err){
         console.log(err);
         return res.status(500).json({

@@ -10,13 +10,13 @@ const animalSchema = new mongoose.Schema({
     type: {
         type: String,
         required: true,
-        maxlength: 20,
+        maxlength: 40,
         trim: true
     },
     family: {
         type: String,
         required: true,
-        maxlength: 20,
+        maxlength: 40,
         trim: true
     },
     description: {

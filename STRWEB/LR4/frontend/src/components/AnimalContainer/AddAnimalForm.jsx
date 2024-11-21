@@ -102,6 +102,7 @@ const AddAnimalForm = () => {
                             date_of_birth: '',
                             date_of_receipt: '',
                             aviary: { _id: '', name: '' },
+                            photo: ''
                         });
                     }
                 }).catch(error => {

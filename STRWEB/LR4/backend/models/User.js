@@ -32,6 +32,11 @@ const UserSchema = new mongoose.Schema(
             type: String,
             required: false,
             default: ''
+        },
+        twitterId: {
+            type: String,
+            required: false,
+            default: ''
         }
     },{
         timestamps: true

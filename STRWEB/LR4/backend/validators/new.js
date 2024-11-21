@@ -7,7 +7,7 @@ export const newCreateValidator = [
         .trim(),
 
     body('description')
-        .isLength({ min: 1, max: 1000 })
+        .isLength({ min: 1, max: 3000 })
         .withMessage("Описание должно содержать от 1 до 1000 символов")
         .trim(),
 

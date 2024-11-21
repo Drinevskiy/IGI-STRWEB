@@ -6,8 +6,7 @@ const NewsCard = ({ newItem }) => {
     return (
         <div className="new-card">
             <Link to={`${newItem._id}`}>
-                <img src='/icons/vk_logo.png' alt={newItem.header} />
-                {/* <img src={newItem.image} alt={newItem.header} /> */}
+                <img src={newItem.image} alt={newItem.header} />
                 <div className="new-info">
                     <h2>{newItem.header}</h2>
                 </div>

@@ -10,7 +10,7 @@ const newsSchema = new mongoose.Schema({
     description: {
         type: String,
         required: true,
-        maxlength: 1000,
+        maxlength: 3000,
         trim: true
     },
     image: {

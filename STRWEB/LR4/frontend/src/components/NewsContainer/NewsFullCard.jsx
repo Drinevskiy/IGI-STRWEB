@@ -40,8 +40,8 @@ const NewsFullCard = () => {
     }
     return (
         <div className="article-container">
-            <img src='/icons/instagram_logo.png' alt={newItem.title} className="article-image" />
-            {/* <img src={newItem.image} alt={newItem.title} className="article-image" /> */}
+            {/* <img src='/icons/instagram_logo.png' alt={newItem.title} className="article-image" /> */}
+            <img src={newItem.image} alt={newItem.title} className="article-image" />
             <h1 className="article-title">{newItem.header}</h1>
             <p className="article-date">{formatDate(newItem.publication_date)}</p>
             <div className="article-text">{newItem.description}</div>

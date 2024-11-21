@@ -10,7 +10,6 @@ const ACCESS_TOKEN_EXPIRES_IN = config.get('ACCESS_TOKEN_EXPIRES_IN');
 export const refreshToken = async (req, res, next) => {
     // Если токен истек, попробуем использовать refresh token
     const refreshToken = req.cookies.refreshToken; // Получаем refresh token из куков
-    // console.log(refreshToken);
     if (!refreshToken) {
         return logout(req,res);
     }

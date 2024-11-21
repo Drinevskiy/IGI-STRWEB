@@ -7,12 +7,12 @@ export const animalCreateValidator = [
         .trim(),
 
     body('type')
-        .isLength({ min: 1, max: 20 })
+        .isLength({ min: 1, max: 40 })
         .withMessage("Вид должен содержать от 1 до 20 символов")
         .trim(),
 
     body('family')
-        .isLength({ min: 1, max: 20 })
+        .isLength({ min: 1, max: 40 })
         .withMessage("Семейство должно содержать от 1 до 20 символов")
         .trim(),
 

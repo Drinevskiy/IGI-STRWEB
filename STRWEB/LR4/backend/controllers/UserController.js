@@ -28,8 +28,6 @@ export const register = async (req, res) =>{
         const user = await doc.save();
         const token = jwt.sign({id: user._id,}, SECRET_KEY, {expiresIn: ACCESS_TOKEN_EXPIRES_IN,});
         const refreshToken = jwt.sign({ id: user._id }, REFRESH_SECRET_KEY, { expiresIn: REFRESH_TOKEN_EXPIRES_IN });
-        // const token = jwt.sign({id: user._id,}, SECRET_KEY, {expiresIn: '1m',});
-        // const refreshToken = jwt.sign({ id: user._id }, REFRESH_SECRET_KEY, { expiresIn: '7d' });
         user.refreshTokens.push(refreshToken);
         await user.save();
 
@@ -67,8 +65,6 @@ export const login = async (req, res) => {
                 message: "Ошибка входа. Проверьте email и пароль."
             }])
         }
-        // const token = jwt.sign({id: user._id,}, SECRET_KEY, {expiresIn: '1m',});
-        // const refreshToken = jwt.sign({ id: user._id }, REFRESH_SECRET_KEY, { expiresIn: '7d' });
         const token = jwt.sign({id: user._id,}, SECRET_KEY, {expiresIn: ACCESS_TOKEN_EXPIRES_IN,});
         const refreshToken = jwt.sign({ id: user._id }, REFRESH_SECRET_KEY, { expiresIn: REFRESH_TOKEN_EXPIRES_IN });
         user.refreshTokens.push(refreshToken);
@@ -122,16 +118,15 @@ export const profile = async (req, res) => {
         if(req.isGoogle){
             user = await UserModel.findOne({ googleId: req.userId });
         }
-        else if(req.isFacebook){
-
+        else if(req.isTwitter){
+            user = await UserModel.findOne({ twitterId: req.userId });
         } 
         else{
             user = await UserModel.findById(req.userId);
         }
-        console.log(user);
         if(user){
             let {passwordHash, ...userData} = user._doc;
-            if(req.isGoogle || req.isFacebook){
+            if(req.isGoogle || req.isTwitter){
                 userData.isServices = true;
             }
             return res.json(userData);
@@ -178,63 +173,64 @@ export const changePassword = async (req, res) => {
     }
 };
 
-// Обновленный googleLogin
 export const googleLogin = (req, res) => {
     passport.authenticate('google', { scope: ['profile', 'email'], prompt: 'select_account' })(req, res);
 }
 
-// Обновленный googleRedirect
 export const googleRedirect = (req, res) => {
     passport.authenticate('google', { failureRedirect: "http://localhost:3000/login" }, (err, user) => {
-        console.log(user);
-        // console.log(accessToken);
         if (err || !user) {
-            // return res.json({
-            //     accessToken: req.accessToken
-            // })
             return res.redirect("http://localhost:3000/login");
         }
         req.logIn(user, (err) => {
-
             if (err) {
                 console.log(err);
                 return res.redirect("http://localhost:3000/login");
             }
-            // return res.json({ accessToken });
-            // Successful authentication, redirect to success.
-            // res.redirect(`http://localhost:3000/`);
             res.redirect(`http://localhost:3000/?accessToken=${user.accessToken}`);
         });
     })(req, res);
 }
 
-// Обновленный googleLogin
 export const facebookLogin = (req, res) => {
     passport.authenticate('facebook')(req,res);
     // passport.authenticate('facebook', { scope: ['profile', 'email'], prompt: 'select_account' })(req, res);
 }
 
-// Обновленный googleRedirect
 export const facebookRedirect = (req, res) => {
     passport.authenticate('facebook', { successRedirect: "http://localhost:3000/", failureRedirect: "http://localhost:3000/login" }, (err, user) => {
-        console.log(user);
-        // console.log(accessToken);
         if (err || !user) {
-            // return res.json({
-            //     accessToken: req.accessToken
-            // })
             return res.redirect("http://localhost:3000/login");
         }
         req.logIn(user, (err) => {
-
             if (err) {
                 console.log(err);
                 return res.redirect("http://localhost:3000/login");
             }
-            // return res.json({ accessToken });
-            // Successful authentication, redirect to success.
-            // res.redirect(`http://localhost:3000/`);
             res.redirect(`http://localhost:3000/?accessToken=${user.accessToken}`);
         });
     })(req, res);
+}
+
+export const twitterLogin = (req, res) => {
+    passport.authenticate('twitter', {scope: ['profile', 'email']})(req,res);
+}
+
+export const twitterRedirect = (req, res, next) => {
+    passport.authenticate('twitter', { successRedirect: "http://localhost:3000/", failureRedirect: "http://localhost:3000/login" }, (err, user) => {
+        if (err || !user) {
+            return res.redirect("http://localhost:3000/login");
+        }
+        req.logIn(user, (err) => {
+            if (err) {
+                console.log(err);
+                return res.redirect("http://localhost:3000/login");
+            }
+            res.cookie('refreshToken', user.accessTokenSecret, {
+                httpOnly: true,
+                sameSite: 'Strict',
+            });
+            res.redirect(`http://localhost:3000/?accessToken=${user.accessToken}`);
+        });
+    })(req, res, next);
 }

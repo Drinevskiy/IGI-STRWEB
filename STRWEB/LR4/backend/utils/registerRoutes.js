@@ -11,9 +11,11 @@ export default async (app) => {
     app.patch('/auth/profile', checkAuth, Controllers.UserController.changePassword);
     app.get('/auth/google', Controllers.UserController.googleLogin)
     app.get('/auth/facebook', Controllers.UserController.facebookLogin)
+    app.get('/auth/twitter', Controllers.UserController.twitterLogin)
     app.get('/callback/google-profile', Controllers.UserController.googleRedirect);
     app.get('/callback/facebook-profile', Controllers.UserController.facebookRedirect);
-    // app.post('/auth/refresh', refreshToken);
+    app.get('/callback/twitter-profile', Controllers.UserController.twitterRedirect);
+
     // Партнеры
     app.get('/partners', Controllers.PartnerController.getAll);
     app.get('/partners/:id', Controllers.PartnerController.getOne);
@@ -31,7 +33,7 @@ export default async (app) => {
     // Новости
     app.get('/news', Controllers.NewController.getAll);
     app.get('/news/:id', Controllers.NewController.getOne);
-    app.post('/news', checkAuth, Validators.newCreateValidator, handleValidationErrors, Controllers.NewController.create);
+    app.post('/news',  Validators.newCreateValidator, handleValidationErrors, Controllers.NewController.create);
     app.patch('/news/:id', checkAuth, handleValidationErrors, Controllers.NewController.update);
     app.delete('/news/:id', checkAuth, Controllers.NewController.remove);
 

@@ -6,6 +6,8 @@ import axios from '../../utils/axios';
 // import useToken from '../../utils/auth';
 import { useAuth } from '../../utils/AuthContext';
 
+const logo = "/icons/logo.png";
+
 export const Header = () => {
   const { token, clearToken } = useAuth();
   const navigate = useNavigate();
@@ -23,9 +25,10 @@ export const Header = () => {
   };
   return (
     <div className="root-header">
-        <div className="inner">
+        {/* <div className="inner"> */}
           <a className="logo" href="/">
-            <div>Каталог</div>
+            <img src={logo}/>
+            {/* <div>Каталог</div> */}
           </a>
           <div className="nav">
             <Link to="news">Новости</Link>
@@ -46,7 +49,7 @@ export const Header = () => {
 
             )}
           </div>
-        </div>
+        {/* </div> */}
     </div>
   );
 };

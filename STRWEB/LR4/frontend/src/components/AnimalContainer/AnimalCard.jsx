@@ -14,7 +14,7 @@ const AnimalCard = ({ animal }) => {
             const imageUrl = URL.createObjectURL(response.data);
             setImage(imageUrl);
         })
-        .catch(error =>
+            .catch(error =>
             console.error('Ошибка при получении животного:', error)
         );
       }, []);
@@ -25,7 +25,6 @@ const AnimalCard = ({ animal }) => {
                     {image && <img src={image} alt={animal.name} />}
                     <div className="animal-info">
                         <h2>{animal.name}</h2>
-                        <hr />
                         <p>{animal.description}</p>
                         <ul className="animal-details">
                             <li><span>Вид:</span> {animal.type}</li>

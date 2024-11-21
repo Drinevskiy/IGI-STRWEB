@@ -50,7 +50,7 @@ const AnimalContainer = () => {
                 // Convert date_of_birth strings to Date objects for comparison
                 const dateA = new Date(a.date_of_birth);
                 const dateB = new Date(b.date_of_birth);
-                comparison = dateA - dateB; // This will yield a positive or negative number
+                comparison = dateB - dateA; // This will yield a positive or negative number
             } else if (sortProperty === 'aviary') {
                 // Sort by aviary name
                 const aviaryA = a.aviary.name.toLowerCase();

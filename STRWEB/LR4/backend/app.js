@@ -1,6 +1,8 @@
 import express from 'express';
 import session from 'express-session';
+import passport from 'passport';
 import config from 'config';
+import cookieSession from 'cookie-session';
 import cookieParser from 'cookie-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
@@ -8,8 +10,6 @@ import cors from 'cors';
 import { registerMulter, registerRoutes, registerPassport } from './utils/index.js';
 
 const SESSION_SECRET_KEY = config.get('SESSION_SECRET_KEY');
-
-
 
 mongoose
     .connect(config.get('mongoUri'))
@@ -29,10 +29,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     cookie: { secure: false } // Установите true, если используете HTTPS
-}));
-
-// app.use(passport.initialize());
-// app.use(passport.session());
+})); 
 
 app.get('/', (req, res) => {
     res.send("Hello")

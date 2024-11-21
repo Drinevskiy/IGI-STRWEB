@@ -8,7 +8,7 @@ import { useAuth } from '../../utils/AuthContext';
 
 const google_logo = "/icons/google_logo.png";
 const facebook_logo = "/icons/facebook_logo.png";
-
+const twitter_logo = "/icons/twitter_logo.png";
 
 
 const LoginForm = () => {
@@ -71,11 +71,14 @@ const LoginForm = () => {
 
     function loginWithGoogle(){
         window.open('http://localhost:5000/auth/google', '_self');
-        // axios.get('/auth/google')
     }
     
     function loginWithFacebook(){
-        console.log("facebook");
+        window.open('http://localhost:5000/auth/facebook', '_self');
+    }
+
+    function loginWithTwitter(){
+        window.open('http://localhost:5000/auth/twitter', '_self');
     }
 
     if(token){
@@ -130,9 +133,13 @@ const LoginForm = () => {
                 <img src={google_logo}></img>
                 <p>Войти с помощью Google</p>
             </button>
-            <button className='facebook' onClick={loginWithFacebook}>
+            {/* <button className='facebook' onClick={loginWithFacebook}>
                 <img src={facebook_logo}></img>
                 <p>Войти с помощью Facebook</p>
+            </button> */}
+            <button className='twitter' onClick={loginWithTwitter}>
+                <img src={twitter_logo}></img>
+                <p>Войти с помощью Twitter</p>
             </button>
         </div>
         </>
