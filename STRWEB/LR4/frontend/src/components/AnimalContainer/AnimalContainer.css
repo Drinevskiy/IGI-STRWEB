@@ -1,19 +1,19 @@
 .animal-cards-container {
     display: flex;
-    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
-    gap: 70px; /* Промежутки между карточками */
+    flex-wrap: wrap;
+    gap: 70px;
     margin: 50px 0;
-    justify-content: space-between; /* Распределяет карточки с равными промежутками */
+    justify-content: space-between; 
 }
 
 .animal-cards-container a {
-    flex: 1 1 250px; /* Элементы будут расти, сжиматься и иметь минимальную ширину 350px */
-    max-width: 250px; /* Максимальная ширина карточки */
-    text-decoration: none; /* Убираем подчеркивание */
+    flex: 1 1 250px; 
+    max-width: 250px; 
+    text-decoration: none; 
 }
 
 .animal-cards-container a:hover {
-    text-decoration: none; /* Убираем подчеркивание при наведении */
+    text-decoration: none; 
 }
 
 
@@ -32,7 +32,6 @@
     font-size: 16px;
     margin: 0 auto;
     width: 40%;
-    /* max-width: 400px; Limit maximum width */
 }
 
 
@@ -43,13 +42,12 @@
     font-size: 16px;
     margin: 0 auto;
     width: 42%;
-    /* max-width: 400px; Limit maximum width */
 }
 
 #animal-container-elements input:focus,
 #animal-container-elements select:focus {
-    border-color: #007bff; /* Change border color on focus */
-    outline: none; /* Remove default outline */
+    border-color: #007bff;
+    outline: none; 
 }
 
 #animal-container-elements .sorting-input{
@@ -98,20 +96,18 @@
 }
 
 .new-animal-form .form-group textarea{
-    width: 95%; /* Full width inputs */
-    padding: 10px; /* Padding inside inputs */
+    width: 95%;
+    padding: 10px; 
     margin-top: 5px; 
     border: 1px solid #ccc;
-    /* border: 1px solid #000000; Light blue border */
-    border-radius: 5px; /* Rounded corners for inputs */
-    transition: border-color 0.3s; /* Smooth transition for border color */
+    border-radius: 5px; 
+    transition: border-color 0.3s; 
 }
 
 .new-animal-form .form-group textarea:focus{
-    /* border-color: #87cefa; Darker blue on focus */
-    border-color: #000000; /* Darker blue on focus */
+    border-color: #000000; 
     background-color: #cde3ea;
-    outline: none; /* Remove default outline */
+    outline: none; 
 }
 
 .new-animal-form .success-message {

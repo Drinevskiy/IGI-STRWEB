@@ -2,32 +2,22 @@
   background-color: #e3e3e3;
   padding: 10px 10%;
   border-bottom: 1px solid #e0e0e0;
-  /* margin-bottom: 30px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* .inner {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .logo {
   display: inline-block;
-  /* margin: 10px; */
   width: 60px;
 }
 
 .logo img {
   max-width: 100%;
   height: auto;
-  /* background-color: #dfb14f; */
-  /* background-color: #4361ee; */
 }
 
 .nav{
-  /* margin-top: 7px; */
   align-items: center;
 }
 
@@ -52,7 +42,6 @@
 
 .buttons a {
   margin-left: 10px;
-  /* font-size: 20px; */
   background-color: #d69f28;
   color: #fff;
   padding: 8px 10px;

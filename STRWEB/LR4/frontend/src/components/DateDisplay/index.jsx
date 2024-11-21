@@ -7,7 +7,6 @@ const DateDisplay = () => {
   const [utcDate, setUtcDate] = useState('');
 
   useEffect(() => {
-    // Получаем временную зону пользователя
     const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     setUserTimeZone(timeZone);
     

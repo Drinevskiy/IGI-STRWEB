@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import './AnimalCard.css'; // Ensure to create a CSS file for styling
+import './AnimalCard.css'; 
 import getAgeString from '../../format functions/getAgeString';
 import axios from '../../utils/axios';
 

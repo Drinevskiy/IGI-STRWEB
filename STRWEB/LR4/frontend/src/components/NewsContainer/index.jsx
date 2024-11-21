@@ -2,8 +2,7 @@ import React from 'react';
 import {NewsCard} from './NewsCard';
 import { useState, useEffect } from 'react';
 import axios from '../../utils/axios';
-// import NewsF
-import './NewsContainer.css'; // Optional: Import styles specific to NewsCardContainer
+import './NewsContainer.css'; 
 
 const NewsContainer = () => {
     const [news, setNews] = useState([]);
@@ -17,22 +16,14 @@ const NewsContainer = () => {
                 console.error('Ошибка при получении данных:', error);
             }
         };
-
         fetchNews();
     }, []);
+
     return (
         <div id="news-card-container">
             {news.map((newItem) => (
                 <NewsCard key={newItem._id} newItem={newItem} />
             ))}
-            {/* <NewsCard/>
-            <NewsCard/>
-            <NewsCard/>
-            <NewsCard/>
-            <NewsCard/>
-            <NewsCard/>
-            <NewsCard/>
-            <NewsCard/> */}
         </div>
     );
 };

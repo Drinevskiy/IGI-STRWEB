@@ -30,18 +30,4 @@ const PartnerContainer = () => {
   );
 };
 
-// const PartnerContainer = () => {
-//     return (
-//       <section className="sponsor-section">
-//         <h2 className="sponsor-title">Наши партнеры</h2>
-//         <div className="sponsor-container">
-//             <PartnerCard/>
-//             <PartnerCard/>
-//             <PartnerCard/>
-//             <PartnerCard/>
-//         </div>
-//       </section>
-//     );
-//   };
-
 export {PartnerContainer};

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from '../../utils/axios'; // Adjust the import path as necessary
+import axios from '../../utils/axios'; 
 import { Navigate, useNavigate, useLocation } from 'react-router-dom';
 
 const EditAnimalForm = () => {
@@ -24,28 +24,13 @@ const EditAnimalForm = () => {
     useEffect(() => {
         const fetchAviaries = async () => {
             try {
-                const response = await axios.get('/aviary'); // Adjust endpoint as necessary
+                const response = await axios.get('/aviary'); 
                 setAviaries(response.data);
             } catch (error) {
                 console.error('Ошибка при получении вольеров:', error);
                 setErrorMessage('Не удалось загрузить данные о вольерах.');
             }
         };
-        // const image = location.state.animal.photo ? location.state.animal.photo : 'uploads/lapka.jpg';
-        // axios.get(image, { responseType: 'blob' })
-        // .then(response => {
-        //     const imageUrl = URL.createObjectURL(response.data);
-        //     console.log(imageUrl);
-        //     console.log(animalData);
-        //     setAnimalData((prevData) => ({
-        //         ...prevData,
-        //         photo: imageUrl,
-        //     }));
-        //     // setImage(imageUrl);
-        // })
-        // .catch(error =>
-        //     console.error('Ошибка при получении животного:', error)
-        // );
         fetchAviaries();
     }, []);
 
@@ -76,7 +61,6 @@ const EditAnimalForm = () => {
         const date_receipt = new Date(date_of_receipt);
         const date_birth = new Date(date_of_birth);
         const date_now = new Date();
-        // Validate that date of receipt is not earlier than date of birth
         if (date_receipt > date_now || date_birth > date_now) {
             setErrorMessage('Нельзя указать дату позже текущей.');
             return;
@@ -89,7 +73,6 @@ const EditAnimalForm = () => {
         if (animalData.photo) {
             const formDataToUpload = new FormData();
             formDataToUpload.append('image', animalData.photo);
-            
             axios.post('/upload', formDataToUpload, { withCredentials: true })
             .then(res => {
                 const animData = {
@@ -111,7 +94,7 @@ const EditAnimalForm = () => {
                 }).then(response => {
                     if (response.status === 200) {
                         setSuccessMessage('Животное успешно обновлено!');
-                        setErrorMessage(''); // Clear any previous error messages
+                        setErrorMessage('');
                     }
                 }).catch(error => {
                     if(error.response.status === 403){
@@ -120,7 +103,7 @@ const EditAnimalForm = () => {
                     console.error('Ошибка при обновлении животного:', error);
                     setErrorMessage('Произошла ошибка при обновлении животного.');
                 })
-            }) // Получаем URL загруженного изображения
+            }) 
             .catch (error => {
                 console.error(error);
                 setErrorMessage('Ошибка при загрузке изображения.');
@@ -147,7 +130,7 @@ const EditAnimalForm = () => {
                 
                 if (response.status === 200) {
                     setSuccessMessage('Животное успешно обновлено!');
-                    setErrorMessage(''); // Clear any previous error messages
+                    setErrorMessage('');
                 }
             }).catch(error => {
                 if(error.response.status === 403){

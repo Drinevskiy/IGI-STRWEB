@@ -47,9 +47,7 @@ class Nationalize extends Component {
           />
           <button type="submit">Отправить</button>
         </form>
-
         {error && <div style={{ color: 'red' }}>{error}</div>}
-
         {results.length > 0 && (
           <div>
             <h2>Вероятные национальности:</h2>

@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import PropTypes from 'prop-types';
-import './AnimalDetail.css'; // Import the CSS file
+import './AnimalDetail.css';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from '../../utils/axios';
 import getAgeString from '../../format functions/getAgeString';
@@ -20,8 +19,6 @@ const AnimalFullCard = () => {
     const [image, setImage] = useState(null);
     const [errorMessage, setErrorMessage] = useState('');
 
-
-
     useEffect(() => {
         const fetchAnimal = async () => {
             try {
@@ -39,7 +36,6 @@ const AnimalFullCard = () => {
                 setLoading(false);
             }
         };
-
         fetchAnimal();
     }, []);
 
@@ -91,7 +87,7 @@ const AnimalFullCard = () => {
 
 
     if (loading) {
-        return <div>Загрузка...</div>; // Индикатор загрузки
+        return <div>Загрузка...</div>; 
     }
     if (!animal) {
         navigate('*'); // Перенаправление на путь, если животное не найдено
@@ -101,9 +97,6 @@ const AnimalFullCard = () => {
         <>
         <div className="animal-detail-container">
             {image && <img src={image} className="animal-image" alt={animal.name} />}
-
-            {/* <img src='/icons/logo.png' alt={animal.name} className="animal-image" /> */}
-            {/* <img src={animal.imageUrl} alt={animal.name} className="animal-image" /> */}
             <div className="animal-info">
                 <h1 className="animal-name">{animal.name}</h1>
                 <p className="animal-description">{animal.description}</p>

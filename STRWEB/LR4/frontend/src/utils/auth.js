@@ -1,13 +1,3 @@
-// export function setToken(userToken){
-//     sessionStorage.setItem('token', userToken);
-// };
-
-// export function getToken() {
-//     const tokenString = sessionStorage.getItem('token');
-//     // const userToken = JSON.parse(tokenString);
-//     return tokenString;
-//     // return userToken?.token;
-//   }
 import { useState } from 'react';
 export default function useToken() {
   const getToken = () => {
@@ -20,7 +10,7 @@ export default function useToken() {
   };
   const clearToken = () => {
     localStorage.removeItem('token');
-    setToken(null); // Обнуляем состояние
+    setToken(null);
   };
   return {
     setToken: saveToken,

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
 import axios from '../../utils/axios';
-// import useToken from '../../utils/auth';
 import { useAuth } from '../../utils/AuthContext';
 
 const logo = "/icons/logo.png";
@@ -17,7 +16,6 @@ export const Header = () => {
             .then(res => {
                 clearToken();
                 navigate('/'); 
-                // setToken(res.data.token);
             })
             .catch(error => {console.error(error)});
       
@@ -25,10 +23,8 @@ export const Header = () => {
   };
   return (
     <div className="root-header">
-        {/* <div className="inner"> */}
           <a className="logo" href="/">
             <img src={logo}/>
-            {/* <div>Каталог</div> */}
           </a>
           <div className="nav">
             <Link to="news">Новости</Link>
@@ -49,7 +45,6 @@ export const Header = () => {
 
             )}
           </div>
-        {/* </div> */}
     </div>
   );
 };

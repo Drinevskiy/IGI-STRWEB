@@ -1,51 +1,50 @@
 /* AnimalDetail.css */
 
 .animal-detail-container {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center vertically */
-    /* width: 80%; Set width to 80% */
-    margin: 20px auto; /* Center the container */
-    padding: 30px; /* Padding around the container */
-    background-color: #f9f9f9; /* Light background color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    display: flex; 
+    align-items: center; 
+    margin: 20px auto; 
+    padding: 30px; 
+    background-color: #f9f9f9;
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .animal-image {
-    flex: 1; /*Take up proportional space */
-    max-width: 600px; /*Set max width for the image */
+    flex: 1; 
+    max-width: 600px; 
     align-self: flex-start;
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 40px; /* Space between image and text */
-    border-radius: 8px; /* Rounded corners for the image */
+    height: auto; 
+    margin-right: 40px; 
+    border-radius: 8px; 
 }
 
 .animal-info {
-    flex: 2; /* Take up more space than the image */
+    flex: 2; 
 }
 
 .animal-name {
-    font-size: 38px; /* Font size for the name */
-    font-weight: bold; /* Bold font */
-    margin: 0 0 10px; /* Margin below the name */
-    color: #333; /* Dark text color */
+    font-size: 38px; 
+    font-weight: bold; 
+    margin: 0 0 10px; 
+    color: #333; 
 }
 
 .animal-description {
-    font-size: 16px; /* Font size for the description */
-    line-height: 1.6; /* Line height for readability */
-    color: #555; /* Slightly lighter text color */
-    margin-bottom: 20px; /* Space below description */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555; 
+    margin-bottom: 20px;
     text-indent: 2em;
 }
 
 .animal-additional-info {
-    font-size: 16px; /* Font size for additional info */
-    color: #444; /* Darker text color for additional info */
+    font-size: 16px; 
+    color: #444; 
 }
 
 .animal-additional-info p {
-    margin: 10px 0; /* Space between additional info paragraphs */
+    margin: 10px 0;
 }
 
 .animal-created-updated-info{

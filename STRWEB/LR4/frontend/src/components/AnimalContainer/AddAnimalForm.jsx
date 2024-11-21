@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from '../../utils/axios'; // Adjust the import path as necessary
+import axios from '../../utils/axios'; 
 import { useNavigate } from 'react-router-dom';
 
 const AddAnimalForm = () => {
@@ -22,7 +22,7 @@ const AddAnimalForm = () => {
     useEffect(() => {
         const fetchAviaries = async () => {
             try {
-                const response = await axios.get('/aviary'); // Adjust endpoint as necessary
+                const response = await axios.get('/aviary'); 
                 setAviaries(response.data);
             } catch (error) {
                 console.error('Ошибка при получении вольеров:', error);
@@ -56,7 +56,6 @@ const AddAnimalForm = () => {
         const date_receipt = new Date(date_of_receipt);
         const date_birth = new Date(date_of_birth);
         const date_now = new Date();
-        // Validate that date of receipt is not earlier than date of birth
         if (date_receipt > date_now || date_birth > date_now) {
             setErrorMessage('Нельзя указать дату позже текущей.');
             return;
@@ -65,11 +64,9 @@ const AddAnimalForm = () => {
             setErrorMessage('Дата поступления не может быть раньше даты рождения.');
             return;
         }
-        // console.log(animalData);
         if (animalData.photo) {
             const formDataToUpload = new FormData();
             formDataToUpload.append('image', animalData.photo);
-            
             axios.post('/upload', formDataToUpload, { withCredentials: true })
             .then(res => {
                 const animData = {
@@ -92,8 +89,7 @@ const AddAnimalForm = () => {
                     
                     if (response.status === 201) {
                         setSuccessMessage('Животное успешно добавлено!');
-                        setErrorMessage(''); // Clear any previous error messages
-                        // Reset form
+                        setErrorMessage('');
                         setAnimalData({
                             name: '',
                             description: '',
@@ -112,7 +108,7 @@ const AddAnimalForm = () => {
                     console.error('Ошибка при добавлении животного:', error);
                     setErrorMessage('Произошла ошибка при добавлении животного.');
                 })
-            }) // Получаем URL загруженного изображения
+            }) 
             .catch (error => {
                 console.error(error);
                 setErrorMessage('Ошибка при загрузке изображения.');

@@ -1,54 +1,53 @@
 /* RegistrationForm.css */
 
 form {
-    background-color: #ffffff; /* White background for the form */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    margin: 20px auto; /* Center the form */
-    max-width: 400px; /* Max width for the form */
+    margin: 20px auto;
+    max-width: 400px;
 }
 
 label {
     display: block;
-    margin-bottom: 10px; 
-    font-weight: bold; /* Make labels bold */
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="file"] {
-    width: 95%; /* Full width inputs */
-    padding: 10px; /* Padding inside inputs */
-    margin-top: 5px; 
-    border: 1px solid #b0e0e6; /* Light blue border */
-    border-radius: 5px; /* Rounded corners for inputs */
-    transition: border-color 0.3s; /* Smooth transition for border color */
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b0e0e6;
+    border-radius: 5px;
+    transition: border-color 0.3s;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="password"]:focus{
-    /* border-color: #87cefa; Darker blue on focus */
-    border-color: #000000; /* Darker blue on focus */
+input[type="password"]:focus {
+    border-color: #000000;
     background-color: #cde3ea;
-    outline: none; /* Remove default outline */
+    outline: none;
 }
 
 form button {
-    margin-top: 15px;;
-    background-color: #87cefa; /* Blue background for the button */
-    color: #fff; /* White text */
-    padding: 10px 15px; /* Padding for the button */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners for button */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
+    margin-top: 15px;
+    background-color: #87cefa;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     width: 100%;
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #00bfff; /* Darker blue on hover */
+    background-color: #00bfff;
 }

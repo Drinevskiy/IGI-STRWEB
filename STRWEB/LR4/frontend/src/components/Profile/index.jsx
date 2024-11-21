@@ -28,7 +28,6 @@ const Profile = () => {
           withCredentials: true
         });
         setUser(response.data);
-        // console.log(response.data);
         const avatar = response.data.avatarUrl ? response.data.avatarUrl : 'uploads/avatarka.jpg';
         const avatarResponse = await axios.get(avatar, { responseType: 'blob' });
         const avatarUrl = URL.createObjectURL(avatarResponse.data);
@@ -45,17 +44,14 @@ const Profile = () => {
     setErrors([]); // Сбрасываем ошибки перед новой валидацией
     const validationErrors = [];
 
-    // Валидация нового пароля
     if (!passwordRegex.test(newPassword)) {
       validationErrors.push({ path: 'newPassword', msg: 'Пароль должен содержать минимум 8 символов, включая заглавные и строчные буквы, цифры.' });
     }
 
-    // Проверка совпадения паролей
     if (newPassword !== confirmPassword) {
       validationErrors.push({ path: 'confirmPassword', msg: 'Пароли не совпадают.' });
     }
 
-    // Если есть ошибки валидации, устанавливаем их и прерываем выполнение
     if (validationErrors.length > 0) {
       setErrors(validationErrors);
       return;

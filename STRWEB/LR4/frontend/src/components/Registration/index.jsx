@@ -14,8 +14,8 @@ const RegistrationForm = () => {
         photo: null,
     });
     const [errors, setErrors] = useState([]);
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Регулярное выражение для проверки email
-    const usernameRegex = /^.{3,15}$/; // Проверка длины username от 3 до 15 символов
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    const usernameRegex = /^.{3,15}$/; 
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/;
 
     const handleChange = (e) => {
@@ -31,38 +31,31 @@ const RegistrationForm = () => {
         e.preventDefault();
         const validationErrors = [];
 
-        // Валидация username
         if (!usernameRegex.test(formData.username)) {
             validationErrors.push({ path: 'username', msg: 'Ник пользователя должен содержать от 3 до 15 символов.' });
         }
 
-        // Валидация email
         if (!emailRegex.test(formData.email)) {
             validationErrors.push({ path: 'email', msg: 'Неверный формат почты.' });
         }
 
-        // Валидация пароля
         if (!passwordRegex.test(formData.password)) {
             validationErrors.push({ path: 'password', msg: 'Пароль должен содержать минимум 8 символов, включая заглавные и строчные буквы, цифры.' });
         }
 
-        // Проверка совпадения паролей
         if (formData.password !== formData.confirmPassword) {
             validationErrors.push({ path: 'confirmPassword', msg: 'Пароли не совпадают.' });
         }
 
-        // Валидация avatarUrl (если присутствует)
         if (formData.avatarUrl && !/^https?:\/\/.+\..+/.test(formData.avatarUrl)) {
             validationErrors.push({ path: 'avatarUrl', msg: 'Неверная ссылка на аватарку.' });
         }
 
-        // Если есть ошибки валидации, устанавливаем их и прерываем отправку
         if (validationErrors.length > 0) {
             setErrors(validationErrors);
             return;
         }
 
-        // let avatarUrl = '';
         if (formData.photo) {
             const formDataToUpload = new FormData();
             formDataToUpload.append('image', formData.photo);
@@ -74,26 +67,20 @@ const RegistrationForm = () => {
                     username: formData.username,
                     email: formData.email,
                     password: formData.password,
-                    avatarUrl, // Добавляем URL аватара
+                    avatarUrl,
                 };
                 axios.post('/auth/register', registrationData, { withCredentials: true })
                     .then(res => {
-                        // console.log('isAuth');
-                        console.log(res.data);
                         saveToken(res.data.token);
-                        // setToken(res.data.token);
                     })
                     .catch(error => {
                         if (error.response && error.response.status === 409) {
-                            // Обработка ошибок валидации от сервера
-                            console.log(error.response.data);
                             setErrors(error.response.data);
                         } else {
                             console.error(error);
                         }});
-                // Add form submission logic here (e.g., API call)
                 console.log(formData);
-            }) // Получаем URL загруженного изображения
+            }) 
             .catch (error => {
                 console.error(error);
                 setErrors(prev => [...prev, { msg: 'Ошибка при загрузке изображения.' }]);
@@ -105,25 +92,17 @@ const RegistrationForm = () => {
                 username: formData.username,
                 email: formData.email,
                 password: formData.password,
-                // avatarUrl, // Добавляем URL аватара
             };
             axios.post('/auth/register', registrationData, { withCredentials: true })
                 .then(res => {
-                    // console.log('isAuth');
-                    console.log(res.data);
                     saveToken(res.data.token);
-                    // setToken(res.data.token);
                 })
                 .catch(error => {
                     if (error.response && error.response.status === 409) {
-                        // Обработка ошибок валидации от сервера
-                        console.log(error.response.data);
                         setErrors(error.response.data);
                     } else {
                         console.error(error);
                     }});
-            // Add form submission logic here (e.g., API call)
-            console.log(formData);
         }
     };
 

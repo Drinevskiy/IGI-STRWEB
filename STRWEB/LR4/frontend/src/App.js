@@ -1,12 +1,6 @@
-// import logo from './logo.svg';
 import './App.css';
-import { Header, Footer, AnimalCard, 
-  AnimalContainer, RegistrationForm, LoginForm, 
-  NewsContainer, NewsFullCard, AnimalFullCard, 
-  PartnerContainer, Profile, NotFound,
-  AddAnimalForm,
-  EditAnimalForm} from "./components";
-import { ApiPage } from './pages';
+import * as Components from "./components";
+import { ApiPage, HomePage } from './pages';
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './utils/AuthContext';
 
@@ -14,45 +8,28 @@ function App() {
   return (
     <div>
       <AuthProvider>
-        <Header/>
+        <Components.Header/>
         <div className="app-footer">
           <div className='App'>
             <Routes>
-              <Route path="/" element={<AnimalContainer/>}/>
-              <Route path="/add-animal" element={<AddAnimalForm/>}/>
-              <Route path="/edit-animal" element={<EditAnimalForm/>}/>
-              <Route path="/registration" element={<RegistrationForm/>}/>
-              <Route path="/login" element={<LoginForm/>}/>
-              <Route path="/news" element={<NewsContainer/>}/>
-              <Route path="/news/:id" element={<NewsFullCard/>}/>
-              <Route path="/animals/:id" element={<AnimalFullCard/>}/>
-              <Route path="/profile" element={<Profile/>}/>
-              <Route path="/partners" element={<PartnerContainer/>}/>
+              <Route path="/" element={<HomePage/>}/>
+              <Route path="/add-animal" element={<Components.AddAnimalForm/>}/>
+              <Route path="/edit-animal" element={<Components.EditAnimalForm/>}/>
+              <Route path="/registration" element={<Components.RegistrationForm/>}/>
+              <Route path="/login" element={<Components.LoginForm/>}/>
+              <Route path="/news" element={<Components.NewsContainer/>}/>
+              <Route path="/news/:id" element={<Components.NewsFullCard/>}/>
+              <Route path="/animals/:id" element={<Components.AnimalFullCard/>}/>
+              <Route path="/profile" element={<Components.Profile/>}/>
+              <Route path="/partners" element={<Components.PartnerContainer/>}/>
               <Route path="/apis" element={<ApiPage/>}/>
-              <Route path="*" element={<NotFound />}/>
+              <Route path="*" element={<Components.NotFound />}/>
             </Routes>
           </div>
-          <Footer/>
+          <Components.Footer/>
         </div>
       </AuthProvider>
     </div>
-   
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 

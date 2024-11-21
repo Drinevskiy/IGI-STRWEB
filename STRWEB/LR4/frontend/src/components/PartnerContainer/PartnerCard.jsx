@@ -1,7 +1,10 @@
 import React from 'react';
 import './PartnerCard.css';
 
+const no_photo = '/no_photo.jpg';
+
 const PartnerCard = ({ partner }) => {
+  console.log(partner);
   return (
     <a
       className="sponsor-link"
@@ -12,8 +15,7 @@ const PartnerCard = ({ partner }) => {
       <div className="sponsor-card">
         <img
           className="sponsor-image"
-          // src={partner.image}
-          src='logo512.png'
+          src={partner.imageUrl || no_photo}
           alt={partner.name}
         />
         <p className="sponsor-name">{partner.name}</p>
@@ -21,25 +23,5 @@ const PartnerCard = ({ partner }) => {
     </a>
   );
 };
-
-// const PartnerCard = () => {
-//     return (
-//       <a
-//         className="sponsor-link"
-//         href="{sponsor.url}"
-//         target="_blank"
-//         rel="noopener noreferrer"
-//       >
-//         <div className="sponsor-card">
-//           <img
-//             className="sponsor-image"
-//             src="https://i.pinimg.com/736x/56/cb/fd/56cbfd28d5fd92e026c88ad9e287fc0b.jpg"
-//             alt=""
-//           />
-//           <p className="sponsor-name">Coca Cola</p>
-//         </div>
-//       </a>
-//     );
-//   };
 
 export {PartnerCard};

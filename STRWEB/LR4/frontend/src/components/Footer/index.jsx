@@ -1,8 +1,4 @@
 import React from "react";
-
-// import vk from "/icons/vk_logo.png";
-// import instagram from "/icons/instagram_logo.png";
-// import youtube from "/icons/youtube_logo.png";
 import "./Footer.css";
 
 const vk = "/icons/vk_logo.png";
@@ -28,15 +24,6 @@ export const Footer = () => {
             <img src={instagram}/>
         </a>
       </div>
-        {/* <div className="inner">
-          <a className="logo" href="/">
-            <div>Aniland</div>
-          </a>
-          <div className="buttons">
-            <button>Войти</button>
-            <button>Регистрация</button>
-          </div>
-        </div> */}
     </footer>
   );
 };
